@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.SafeGroupDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.SafeGroup">
+	    <id column="id" property="id" jdbcType="INTEGER" />
+		<result column="groupid" property="groupid" jdbcType="INTEGER" />
+		<result column="zzid" property="zzid" jdbcType="INTEGER" />
+		<result column="dwid" property="dwid" jdbcType="INTEGER" />
+		<result column="driverid" property="driverid" jdbcType="VARCHAR" />
+		<result column="carid" property="carid" jdbcType="VARCHAR" />
+		<result column="drivers" property="drivers" jdbcType="VARCHAR" />
+		<result column="cars" property="cars" jdbcType="VARCHAR" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="flag" property="flag" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="regid" property="regid" jdbcType="INTEGER" />
+		<result column="regtime" property="regtime" jdbcType="TIMESTAMP" />
+	<association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="loginname" jdbcType="VARCHAR" />
+    </association>
+    
+    <association property="company" javaType="com.web.pojo.Company">
+        <result property="comname" jdbcType="VARCHAR" />
+    </association>
+    
+    <association property="driver" javaType="com.web.pojo.Driver">
+        <result property="name" jdbcType="VARCHAR" />
+    </association>
+    
+    <association property="safeGroupList" javaType="com.web.pojo.SafeGroupList">
+        <result property="groupname" jdbcType="VARCHAR" />
+        <result property="zzname" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+	
+
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.SafeGroup">
+		select i.*,s.zzname, u.loginname,u.userno,c.comname
+		from tp_safegroup_driver_car i
+		left join tp_safegrouplist s
+        on i.zzid = s.zzid 
+		left join tp_sys_user u
+        on i.operid = u.userno 
+        left join tp_basic_company c
+        on i.dwid = c.comid 
+        where i.id = #{id,jdbcType=INTEGER} 
+	</select>
+	
+	<!-- 后台管理 -->
+	<insert id="insertSafeGroup" parameterType="com.web.pojo.SafeGroup">
+	    replace into
+		tp_safegroup_driver_car(id,groupid,zzid,dwid,driverid,drivers,carid,cars,operid,opertime,remark,regid,regtime)
+		values
+		(
+		#{id,jdbcType=INTEGER},
+		#{groupid,jdbcType=INTEGER},
+		#{zzid,jdbcType=INTEGER},
+		#{dwid,jdbcType=INTEGER},
+		#{driverid,jdbcType=VARCHAR},
+		#{drivers,jdbcType=VARCHAR},
+		#{carid,jdbcType=VARCHAR},
+		#{cars,jdbcType=VARCHAR},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{regid,jdbcType=INTEGER},
+		#{regtime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap" parameterType="com.web.pojo.SafeGroup">
+		select *
+		from tp_safegroup_driver_car
+		where groupid = #{groupid,jdbcType=INTEGER}
+	</select>
+	
+	<select id="queryByDwidGroupid" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select *
+		from tp_safegroup_driver_car where state = 1
+		<if test="dwid != null">
+		     and dwid = #{dwid}
+		</if>
+		<if test="groupid != null">
+		    and groupid = #{groupid}
+		</if>
+		
+	</select>
+	
+	<select id="queryAll" resultMap="BaseResultMap"
+		parameterType="long">
+		select *
+		from tp_safegroup_driver_car
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	
+	<select id="queryAllByGroupId" resultMap="BaseResultMap"
+		parameterType="long">
+		select dc.*,s.groupname,s.zzname
+		from tp_safegroup_driver_car dc
+		left join tp_safegrouplist s
+		on (dc.groupid = s.groupid and s.flag = 1)
+		where dc.groupid = #{groupid,jdbcType=INTEGER}
+	</select>
+	
+	
+	<select id="queryByGroupId" resultMap="BaseResultMap"
+		parameterType="long">
+		select *
+		from tp_safegroup_driver_car
+		where state = 1 and flag = 1
+		and groupid = #{groupid,jdbcType=INTEGER}
+	</select>
+	
+	<update id="updateSafeGroup" parameterType="com.web.pojo.SafeGroup">
+		update tp_safegroup_driver_car
+		set
+		groupid = #{groupid,jdbcType=INTEGER},
+		driverid = #{driverid,jdbcType=VARCHAR},
+		drivers = #{drivers,jdbcType=VARCHAR},
+		carid = #{carid,jdbcType=VARCHAR},
+		cars= #{cars,jdbcType=VARCHAR},
+		zzid = #{zzid,jdbcType=INTEGER},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		remark = #{remark,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_safegroup_driver_car
+		set state = 0
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+<!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.SafeGroupList">
+  		select count(*) 
+  		from tp_safegroup_driver_car 
+  		where state = 1
+  		<if test="groupid!= null">
+  		    and groupid = #{groupid,jdbcType=VARCHAR}
+  		</if>
+  	</select>
+
+  	<!-- 后台分页管理 -->
+  	
+  	<!--查询总记录数 -->
+  	<select id="getCountByAll" resultType="java.lang.Integer" parameterType="java.util.HashMap">
+		select count(*)  
+		from tp_safegroup_driver_car bc 
+		left join tp_basic_company oc 
+		on (bc.dwid = oc.comid and oc.state = 1) 
+		where bc.state = 1 
+		<if test="dwid != null">
+		    and bc.dwid = #{dwid}
+		</if>
+		<if test="searchname != null">
+		and bc.groupid = #{searchname} 
+  		</if>
+  		<if test="searchstarttime != null">
+		  and bc.regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+	       and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= bc.opertime
+		</if>
+  		order by bc.regtime desc 
+  	</select>
+  	
+  	<!--分页、条件查询 -->
+  	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select bc.*,oc.comname,d.name,sf.groupname
+		from tp_safegroup_driver_car bc 
+		left join tp_basic_company oc 
+		on (bc.dwid = oc.comid and oc.state = 1) 
+		left join tp_basic_driver d
+		on (bc.zzid = d.id and oc.state = 1)
+		left join tp_safegrouplist sf
+		on (bc.groupid = sf.groupid and oc.state = 1)
+		where bc.state = 1 
+		<if test="dwid != null">
+		    and bc.dwid = #{dwid}
+		</if>
+		<if test="searchname != null">
+		and bc.groupid = #{searchname}  
+  		</if>
+  		<if test="searchstarttime != null">
+		  and bc.regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+	       and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= bc.opertime
+		</if>
+  		order by bc.regtime desc limit #{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+  	</select>
+</mapper>

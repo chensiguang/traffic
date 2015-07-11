@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.AdminDao" >
+  <resultMap id="BaseResultMap" type="com.web.pojo.Admin" >
+    <id column="userno" property="userno" jdbcType="INTEGER" />
+    <result column="loginname" property="loginname" jdbcType="VARCHAR" />
+    <result column="passowrd" property="passowrd" jdbcType="VARCHAR" />
+    <result column="adminflag" property="adminflag" jdbcType="INTEGER" />
+  </resultMap>
+
+ <select id="findUserByName" resultMap="BaseResultMap" parameterType="String">
+		select *
+		from tp_sys_user
+		where state = 1 and loginname = #{loginname,jdbcType=VARCHAR}
+	</select>
+</mapper>

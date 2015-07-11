@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.TypeDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Type">
+		<id column="typeid" property="typeid" jdbcType="INTEGER" />
+		<result column="typename" property="typename" jdbcType="VARCHAR" />
+		<result column="groupid" property="groupid" jdbcType="INTEGER" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="regid" property="regid" jdbcType="INTEGER" />
+		<result column="regtime" property="regtime" jdbcType="TIMESTAMP" />
+	 <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+	
+  		<!-- 查找操作人 -->
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Type">
+		select i.*, u.username,u.userno from tp_global_type i left join tp_sys_user u
+        on i.operid = u.userno where i.typeid = #{id,jdbcType=INTEGER} 
+	</select>
+	
+
+	
+	<!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		select *
+		from tp_global_type where state = 1 
+		order by typeid desc
+	</select>
+
+	<insert id="insertType" parameterType="com.web.pojo.Type">
+		insert into
+		tp_global_type(typeid,typename,operid,opertime,remark,regtime)
+		values
+		(
+		#{typeid,jdbcType=INTEGER},
+		#{typename,jdbcType=VARCHAR},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{regtime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Type">
+		select *
+		from tp_global_type
+		where typeid = #{id,jdbcType=INTEGER}
+	</select>
+	
+	<update id="updateType" parameterType="com.web.pojo.Type">
+		update tp_global_type
+		set
+		typename = #{typename,jdbcType=VARCHAR},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		remark = #{remark,jdbcType=VARCHAR}
+		where typeid = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_global_type
+		set state = 0
+		where typeid = #{id,jdbcType=INTEGER}
+	</update>
+	
+		 <!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.Type">
+  		select 
+  			count(*) 
+  		from tp_global_type 
+  		where state = 1
+  		<if test="id != null">
+  		and typeid != #{id,jdbcType=INTEGER} 
+  		</if>
+  		and typename = #{typename,jdbcType=VARCHAR}
+  	</select>
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_global_type where state = 1 
+		<if test="searchtypename != null">
+		    and typename like CONCAT('%',#{searchtypename},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		    and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		     and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select *
+		from tp_global_type where state = 1 
+		
+		<if test="searchtypename != null">
+		    and typename like CONCAT('%',#{searchtypename},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		    and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		     and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+		order by typeid desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+</mapper>

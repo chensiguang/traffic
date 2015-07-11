@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.InterchangeDao" >
+  <resultMap id="BaseResultMap" type="com.web.pojo.Interchange" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="qid" property="qid" jdbcType="INTEGER" />
+    <result column="aid" property="aid" jdbcType="INTEGER" />
+    <result column="question" property="question" jdbcType="VARCHAR" />
+     <result column="answer" property="answer" jdbcType="VARCHAR" />
+     <result column="username" property="username" jdbcType="VARCHAR" />
+  <!--   <result column="opertime" property="opertime" jdbcType="TIMESTAPE" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAPE" />
+    <result column="operid" property="operid" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" /> -->
+  </resultMap>
+
+   <!--   前台显示 -->
+  <select id="selectInterchangeList" resultMap="BaseResultMap" >
+    select 
+    q.qid,q.question,q.opertime,a.aid,a.answer,u.username 
+    from tp_interchange_question q
+    left join  tp_interchange_answer a on q.qid = a.qid 
+    left join tp_sys_user u on u.userno = q.operid
+    where q.state=1 and a.state=1 order by q.opertime desc limit ${param1},${param2}
+  </select>
+  
+  <select id="selectCount" parameterType="map" resultType="java.lang.Integer" >
+    select 
+    count(qid) 
+    from 
+    (
+    select 
+    q.qid,q.question,q.opertime,a.aid,a.answer 
+    from tp_interchange_question q
+    left join  tp_interchange_answer a on q.qid = a.qid 
+    where q.state=1 and a.state=1
+    ) as total
+  </select>
+  
+  
+  
+  
+                 <!-- 后台管理 -->
+
+ 	<select id="queryAll" resultMap="BaseResultMap">
+		select q.*,u.username
+		from tp_interchange_question q
+		left join tp_sys_user u on q.operid = u.userno
+		where q.state !=0 and u.state !=0
+		order by q.opertime desc
+	</select>
+
+	<insert id="insertInterchange" parameterType="com.web.pojo.Interchange">
+		insert into
+		tp_interchange_answer(aid,qid,answer,operid,opertime)
+		values
+		(
+		#{aid,jdbcType=INTEGER},
+		#{qid,jdbcType=INTEGER},
+		#{answer,jdbcType=VARCHAR},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Interchange">
+		select a.*,q.question,u.username
+		from tp_interchange_answer a
+		left join tp_interchange_question q on a.qid = q.qid
+		left join tp_sys_user u on u.userno = a.operid
+		where a.state =1 and u.state =1 and q.state =1 and q.qid =
+		#{id,jdbcType=INTEGER}
+	</select>
+	
+	<select id="queryEditDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Interchange">
+		select a.*,q.question,u.username
+		from tp_interchange_answer a
+		left join tp_interchange_question q on a.qid = q.qid
+		left join tp_sys_user u on u.userno = a.operid
+		where a.state =1 and u.state =1 and q.state =1 and a.aid =
+		#{id,jdbcType=INTEGER}
+	</select>
+
+	<update id="updateInterchange" parameterType="com.web.pojo.Interchange">
+		update tp_interchange_answer
+		set
+		answer = #{answer,jdbcType=VARCHAR},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		operid = #{operid,jdbcType=INTEGER}
+		where state = 1 and aid = #{id,jdbcType=INTEGER}
+	</update>
+
+	<delete id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_interchange_answer
+		set state = 0
+		where aid = #{id,jdbcType=INTEGER}
+	</delete>
+
+
+<!--	后台管理分页  -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_interchange_question
+		where 1=1 
+		 <if test="searchquestion != null">
+		  and question like CONCAT('%',#{searchquestion},'%' )
+		 </if>
+		 
+		 <if test="searchstarttime != null">
+		  and opertime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		 </if>
+		 
+		 <if test="searchendtime != null">
+	        and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= opertime
+		 </if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select q.*,u.username
+		from tp_interchange_question q
+		left join tp_sys_user u on q.operid = u.userno
+		where q.state =1 and u.state =1
+		 <if test="searchquestion != null">
+		  and q.question like CONCAT('%',#{searchquestion},'%' )
+		 </if>
+		  <if test="searchstarttime != null">
+		  and q.opertime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		 </if>
+		 
+		 <if test="searchendtime != null">
+	        and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= q.opertime
+		 </if>
+		 
+		order by opertime desc limit
+		#{curnum,jdbcType=INTEGER}
+		,#{pagesize,jdbcType=INTEGER}
+	</select>
+</mapper>

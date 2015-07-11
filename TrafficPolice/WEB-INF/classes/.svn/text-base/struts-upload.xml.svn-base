@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="com.web.upload" namespace="/" extends="struts-default">
+		<action name="uploadAdvertisement" class="com.web.action.FileAction"
+			method="advertisement">
+			<!-- 动态设置savePath的属性值 -->
+			<!-- <param name="savePath">style</param> -->
+			<result name="success" type="dispatcher">admin/page/success.jsp</result>
+			<result name="default" type="dispatcher">admin/page/Startpage.jsp</result>
+			<result name="input" type="redirectAction">uploadfailed_errorInputAdvertisement.action
+			</result>
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/x-png,image/gif,image/jpeg,image/png,image/pjpeg</param>
+				<!-- 文件大小, 以字节为单位(200k) -->
+				<param name="maximumSize">204800</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="uploadfailed_*" class="com.web.action.FileAction"
+			method="{1}">
+			<result name="success" type="dispatcher">admin/page/success.jsp</result>
+		</action>
+	</package>
+	<package name="com.web.upload.json" namespace="/" extends="json-default">
+		<action name="uploadEditImage" class="com.web.action.FileAction"
+			method="editUpload_json">
+			<result name="success" type="json"></result>
+			<result name="input" type="json">uploadEditImageFailed.action
+			</result>
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/x-png,image/gif,image/jpeg,image/png,image/pjpeg</param>
+				<!-- 文件大小, 以字节为单位(10M) -->
+				<param name="maximumSize">10240000</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="uploadAppendix" class="com.web.action.FileAction"
+			method="editUpload_json">
+			<result name="success" type="json"></result>
+			<result name="input" type="json">uploadEditImageFailed.action
+			</result>
+			<interceptor-ref name="fileUpload">
+				<!-- 文件大小, 以字节为单位(1G) -->
+				<param name="maximumSize">1099511627776</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="uploadEditImageFailed" class="com.web.action.FileAction"
+			method="errorInputEditImage">
+			<result name="success" type="json"></result>
+		</action>
+		
+		
+		
+		<action name="fileUpload" class="com.web.action.FileAction"
+			method="fileUpload">
+			<result name="success" type="json"></result>
+			<interceptor-ref name="fileUpload">
+				<!-- 文件大小, 以字节为单位1G) -->
+				<param name="maximumSize">1073741824</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>

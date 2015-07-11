@@ -1,0 +1,27 @@
+2014-12-13 22:54:49  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:183160997 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.lang.NullPointerException
+	at com.mysql.jdbc.ResultSetImpl.buildIndexMapping(ResultSetImpl.java:737)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1130)
+	at com.mysql.jdbc.DatabaseMetaData$9.forEach(DatabaseMetaData.java:5085)
+	at com.mysql.jdbc.DatabaseMetaData$9.forEach(DatabaseMetaData.java:5018)
+	at com.mysql.jdbc.IterateBlock.doForAll(IterateBlock.java:51)
+	at com.mysql.jdbc.DatabaseMetaData.getTables(DatabaseMetaData.java:5017)
+	at com.mchange.v2.c3p0.impl.NewProxyDatabaseMetaData.getTables(NewProxyDatabaseMetaData.java:2828)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:104)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)
+2014-12-13 23:17:19  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:184511006 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.lang.NullPointerException
+	at com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:7008)
+	at com.mysql.jdbc.DatabaseMetaData$9.forEach(DatabaseMetaData.java:5111)
+	at com.mysql.jdbc.DatabaseMetaData$9.forEach(DatabaseMetaData.java:5018)
+	at com.mysql.jdbc.IterateBlock.doForAll(IterateBlock.java:51)
+	at com.mysql.jdbc.DatabaseMetaData.getTables(DatabaseMetaData.java:5017)
+	at com.mchange.v2.c3p0.impl.NewProxyDatabaseMetaData.getTables(NewProxyDatabaseMetaData.java:2828)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:104)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)

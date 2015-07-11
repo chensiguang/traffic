@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.BranchDao" >
+  <resultMap id="BaseResultMap" type="com.web.pojo.Branch" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="branch_name" property="branchName" jdbcType="VARCHAR" />
+    <result column="branch_address" property="branchAddress" jdbcType="VARCHAR" />
+    <result column="branch_phone" property="branchPhone" jdbcType="VARCHAR" />
+    <result column="operid" property="operid" jdbcType="INTEGER" />
+    <result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="lng" property="lng" jdbcType="DOUBLE" />
+    <result column="lat" property="lat" jdbcType="DOUBLE" />
+      <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="loginname" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+<!--   前台显示 -->
+  <select id="selectBranchList" resultMap="BaseResultMap" >
+    select 
+     * 
+    from tp_basic_branch 
+    where state = 1 order by opertime desc limit ${param1},${param2}
+  </select>
+  
+  <select id="selectBranchInfoById" parameterType="java.lang.Integer" resultMap="BaseResultMap" >
+    select 
+     * 
+    from tp_basic_branch 
+    where state = 1 and id = #{id,jdbcType=INTEGER}
+  </select>
+  
+   <select id="selectCount" resultType="java.lang.Integer" >
+    select 
+    count(id) 
+    from tp_basic_branch 
+    where state = 1 
+    order by id desc
+  </select>
+  
+   
+  
+   <!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		select *
+		from tp_basic_branch where state = 1 
+		order by id desc
+	</select>
+
+	<insert id="insertBranch" parameterType="com.web.pojo.Branch">
+		insert into
+		tp_basic_branch(id,branch_name,branch_address,branch_phone,lng,lat,updatetime,remark,operid,opertime)
+		values
+		(
+		#{id,jdbcType=INTEGER},
+		#{branchName,jdbcType=VARCHAR},
+		#{branchAddress,jdbcType=VARCHAR},
+		#{branchPhone,jdbcType=VARCHAR},
+		#{lng,jdbcType=DOUBLE},
+		#{lat,jdbcType=DOUBLE},
+		#{updatetime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP}
+		)
+
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Driver">
+		select *
+		from tp_basic_branch
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Driver">
+		select i.*, u.loginname,u.userno from tp_basic_branch i left join tp_sys_user u
+        on i.operid = u.userno where i.id = #{id,jdbcType=INTEGER} 
+	</select>
+
+	<update id="updateBranch" parameterType="com.web.pojo.Branch">
+		update tp_basic_branch
+		set
+		branch_name = #{branchName,jdbcType=VARCHAR},
+		branch_address = #{branchAddress,jdbcType=VARCHAR},
+		branch_phone = #{branchPhone,jdbcType=VARCHAR},
+		lng = #{lng,jdbcType=DOUBLE},
+		lat = #{lat,jdbcType=DOUBLE},
+		updatetime = #{updatetime,jdbcType=TIMESTAMP},
+		remark = #{remark,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_basic_branch
+		set state  = 0
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_basic_branch where state = 1 
+		<if test="searchbranchname != null">
+		  and branch_name like CONCAT('%',#{searchbranchname},'%' )
+		 </if>
+		 
+		 <if test="searchbranchaddress != null">
+		  and branch_address like CONCAT('%',#{searchbranchaddress},'%' )
+		 </if>
+		 
+		 <if test="searchstarttime != null">
+		  and opertime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		 </if>
+		 
+		 <if test="searchendtime != null">
+	        and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= opertime
+		 </if>
+	</select>
+	
+	
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select 
+		   i.*, u.loginname,u.userno 
+		  from tp_basic_branch i 
+		  left join tp_sys_user u  on i.operid = u.userno 
+		  where i.state = 1 and u.state=1
+		  
+		  <if test="searchbranchname != null">
+		  and i.branch_name like CONCAT('%',#{searchbranchname},'%' )
+		 </if>
+		 
+		 <if test="searchbranchaddress != null">
+		  and i.branch_address like CONCAT('%',#{searchbranchaddress},'%' )
+		 </if>
+		 
+		 <if test="searchstarttime != null">
+		  and i.opertime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		 </if>
+		 
+		 <if test="searchendtime != null">
+	        and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= i.opertime
+		 </if>
+		    order by i.id desc limit #{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+</mapper>

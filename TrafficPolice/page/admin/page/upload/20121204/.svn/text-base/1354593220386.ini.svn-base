@@ -1,0 +1,10 @@
+[ChromePortable]
+CheckRegWrite=true
+AllowMultipleInstances=false
+Incognito=false
+TempCache=true
+AllowOutdatedPlugins=true
+DisableSplashScreen=false
+SplashScreenName=
+AdditionalParameters=
+DeleteTempCache=true

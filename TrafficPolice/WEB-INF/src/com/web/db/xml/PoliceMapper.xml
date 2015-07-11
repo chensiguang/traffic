@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.PoliceDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Police">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="orgid" property="orgid" jdbcType="INTEGER" />
+		<result column="orgname" property="orgname" jdbcType="VARCHAR" />
+		<result column="typeid" property="typeid" jdbcType="INTEGER" />
+		<result column="telephone" property="telephone" jdbcType="VARCHAR" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="addres" property="addres" jdbcType="VARCHAR" />
+		<result column="areaid" property="areaid" jdbcType="INTEGER" />
+		<result column="areaname" property="areaname" jdbcType="VARCHAR" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="sex" property="sex" jdbcType="VARCHAR" />
+		<result column="pno" property="pno" jdbcType="VARCHAR" />
+		<result column="identitycard" property="identitycard" jdbcType="VARCHAR" />
+		<result column="userno" property="userno" jdbcType="INTEGER" />
+	 <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+	
+  		<!-- 查找操作人 -->
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Police">
+		select i.*, u.username,u.userno from tp_basic_police i left join tp_sys_user u
+        on i.operid = u.userno where i.id = #{id,jdbcType=INTEGER} 
+	</select> 
+	
+
+	<select id="selectPoliceList" resultMap="BaseResultMap">
+		SELECT 
+		   p.*,org.orgname,a.areaname,u.userno 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        left join tp_sys_user u on p.id = u.dwno and u.state =1 and u.typeid=2
+        where p.state =1 and org.state =1 and a.state =1 
+		order by opertime desc limit
+		${param1},${param2}
+	</select>
+
+	<select id="selectDetailById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		SELECT 
+		   p.*,org.orgname,a.areaname 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        where p.state =1 and org.state =1 and a.state =1 
+		AND p.id = #{id,jdbcType=INTEGER}
+	</select>
+
+	<select id="selectCount" parameterType="map" resultType="java.lang.Integer">
+		select
+		count(id)
+		from (
+		SELECT 
+		   p.*,org.orgname,a.areaname 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        where p.state =1 and org.state =1 and a.state =1 
+		order by opertime desc limit
+		)
+	</select>
+
+
+
+
+	<!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		SELECT 
+		   p.*,org.orgname,a.areaname,u.userno 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        left join tp_sys_user u on p.id = u.dwno and u.state =1 and u.typeid=2
+        where p.state =1 and org.state =1 and a.state =1 
+		order by opertime desc
+	</select>
+	
+	<select id="selectPoliceListByDwid" resultMap="BaseResultMap">
+		select *
+		from tp_basic_police 
+        where state =1 and orgid = #{dwid}
+	</select>
+	<insert id="insertPolice" parameterType="com.web.pojo.Police">
+		insert into
+		tp_basic_police(id,orgid,typeid,telephone,name,addres,areaid,operid,opertime,remark,sex,pno,identitycard)
+		values
+		(
+		#{id,jdbcType=INTEGER},
+		#{orgid,jdbcType=INTEGER},
+		#{typeid,jdbcType=INTEGER},
+		#{telephone,jdbcType=VARCHAR},
+		#{name,jdbcType=VARCHAR},
+		#{addres,jdbcType=VARCHAR},
+		#{areaid,jdbcType=INTEGER},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{sex,jdbcType=VARCHAR},
+		#{pno,jdbcType=VARCHAR},
+		#{identitycard,jdbcType=VARCHAR}
+		)
+
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Police">
+		SELECT 
+		   p.*,org.orgname,a.areaname 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        where p.state =1 and org.state =1 and a.state =1 
+		and p.id =
+		#{id,jdbcType=INTEGER}
+	</select>
+
+	<update id="updatePolice" parameterType="com.web.pojo.Police">
+		update tp_basic_police
+		set
+		orgid = #{orgid,jdbcType=INTEGER},
+		typeid = #{typeid,jdbcType=INTEGER},
+		telephone = #{telephone,jdbcType=VARCHAR},
+		name = #{name,jdbcType=VARCHAR},
+		areaid = #{areaid,jdbcType=INTEGER},
+		operid = #{operid,jdbcType=INTEGER},
+		remark = #{remark,jdbcType=VARCHAR},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		sex = #{sex,jdbcType=VARCHAR},
+		pno = #{pno,jdbcType=VARCHAR},
+		identitycard = #{identitycard,jdbcType=VARCHAR},
+		addres = #{addres,jdbcType=VARCHAR}
+		where state =1 and id = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_basic_police
+		set state = 0
+	    where state =1 and id = #{id,jdbcType=INTEGER}
+	</update>
+
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from (
+		SELECT 
+		   p.*,org.orgname,a.areaname 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        where p.state =1 and org.state =1 and a.state =1 
+        <if test="searchname != null">
+		and p.name like CONCAT('%',#{searchname},'%' )
+		</if>
+		<if test="searchsex != null">
+		and p.sex like CONCAT('%',#{searchsex},'%' )
+		</if>
+		<if test="searchpno != null">
+		and p.pno like CONCAT('%',#{searchpno},'%' )
+		</if>
+		order by opertime desc) t
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		SELECT 
+		   p.*,org.orgname,a.areaname,u.userno 
+		FROM tp_basic_police p 
+        left join tp_basic_policeorg org on p.orgid = org.id
+        left join tp_basic_area a on p.areaid = a.areaid
+        left join tp_sys_user u on p.id = u.dwno and u.state =1 and u.typeid=2
+        where p.state =1 and org.state =1 and a.state =1 
+        <if test="searchname != null">
+		and p.name like CONCAT('%',#{searchname},'%' )
+		</if>
+		<if test="searchsex != null">
+		and p.sex like CONCAT('%',#{searchsex},'%' )
+		</if>
+		<if test="searchpno != null">
+		and p.pno like CONCAT('%',#{searchpno},'%' )
+		</if>
+		order by opertime desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+	
+	<!--查询数据库中是否已经存在该条交警的信息-->
+	<select id="queryPoliceByIdcard" resultType="java.lang.Integer" parameterType="java.lang.String">
+		select 
+		   count(*) 
+        from tp_basic_police
+        where state =1 and  identitycard = #{idcard,jdbcType=VARCHAR}
+	</select>
+	
+</mapper>

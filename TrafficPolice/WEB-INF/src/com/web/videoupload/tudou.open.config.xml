@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config-nodes SYSTEM "configs.dtd">
+<config-nodes>
+
+	<!-- 不做xml验证 -->
+	<setting name="validating" value="false" />
+	<!-- 允许el表达式 -->
+	<setting name="useElExpression" value="true" />
+
+	<!-- 导入配置 -->
+	<import-dir path="classpath:com/web/videoupload/" filename-pattern="tudou.*.config.xml" />
+
+</config-nodes>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config-nodes>
+<config-nodes>
+
+	<!-- 配置文件 by yao-config.jar -->
+
+	<!-- 配置正文 -->
+	<node name="oauth2" text="OAuth2授权">
+
+		<!-- APP配置信息 -->
+		<!--<node name="app_key" value="" text="开放平台分配的AppKey" /> -->
+		<node name="app_key" value="2a43a6e2271ab544" text="开放平台分配的AppKey" />
+		<!--<node name="app_secret" value="" text="开放平台分配的AppSecret" /> -->
+		<node name="app_secret" value="c83b73d2ff4f459ab32abe6bd4e4d840" text="开放平台分配的AppSecret" />
+		<node name="redirect_uri" value="http://www.tudou.com" text="authorize回转页面" />
+		<node name="display" value="web" text="授权页面的终端类型" />
+
+		<!-- 以下配置不需要更改 -->
+		<node name="urls" text="接口路径 ">
+			<node name="base_url" value="https://api.tudou.com/oauth2" />
+			<node name="authorize" value="${.base_url}/authorize" />
+			<node name="access_token" value="${.base_url}/access_token" />
+			<node name="get_token_info" value="${.base_url}/get_token_info" />
+			<node name="revoke_access_token" value="${.base_url}/revoke_access_token" />
+		</node>
+
+	</node>
+
+</config-nodes>

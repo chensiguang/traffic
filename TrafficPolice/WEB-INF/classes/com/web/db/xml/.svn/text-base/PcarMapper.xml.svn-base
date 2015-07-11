@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.PcarDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Pcar">
+		<result column="udid" property="udid" jdbcType="INTEGER" />
+		<result column="userid" property="userid" jdbcType="INTEGER" />
+		<result column="orgname" property="orgname" jdbcType="VARCHAR" />
+		<result column="carid" property="carid" jdbcType="INTEGER" />
+		<result column="buslicplate" property="buslicplate" jdbcType="VARCHAR" />
+		<result column="comid" property="comid" jdbcType="INTEGER" />
+		<result column="comname" property="comname" jdbcType="VARCHAR" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opername" property="opername" jdbcType="VARCHAR" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+	 <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+	
+  		<!-- 查找操作人 -->
+<!-- 	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Pcar">
+		select i.*, u.username,u.userno from tp_basic_police i left join tp_sys_user u
+        on i.operid = u.userno where i.udid = #{id,jdbcType=INTEGER} 
+	</select> -->
+
+
+	<select id="selectPcarList" resultMap="BaseResultMap">
+		 select 
+             uc.*,c.BusLicPlate,cp.comname,p.id,us.username opername 
+         from tp_basic_police p
+         left join tp_sys_user u on p.id = u.dwno and u.state =1 
+         left join tp_sys_user_car uc on u.userno = uc.userid and uc.state =1 
+         left join tp_basic_car c on uc.carid = c.carid and c.state =1 
+         left join tp_basic_company cp on cp.comid = c.comid  and cp.state =1 
+         left join tp_sys_user us on uc.operid = us.userno and us.state =1 
+         where p.state =1 and p.id = ${param1} order by id 
+		 limit
+		 ${param2},${param3}
+	</select>
+
+	<select id="selectCount" parameterType="map" resultType="java.lang.Integer">
+		select
+		count(udid)
+		from (
+		select 
+             uc.*,c.BusLicPlate,cp.comname,p.id,us.username opername 
+         from tp_basic_police p
+         left join tp_sys_user u on p.id = u.dwno and u.state =1 
+         left join tp_sys_user_car uc on u.userno = uc.userid and uc.state =1 
+         left join tp_basic_car c on uc.carid = c.carid and c.state =1 
+         left join tp_basic_company cp on cp.comid = c.comid  and cp.state =1 
+         left join tp_sys_user us on uc.operid = us.userno and us.state =1 
+         where p.state =1 and p.id = ${param1} 
+         order by id 
+		)
+	</select>
+
+
+
+
+	<!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		 select 
+             uc.*,c.BusLicPlate,cp.comname,p.id,us.username opername 
+         from tp_basic_police p
+         left join tp_sys_user u on p.id = u.dwno and u.state =1 
+         left join tp_sys_user_car uc on u.userno = uc.userid and uc.state =1 
+         left join tp_basic_car c on uc.carid = c.carid and c.state =1 
+         left join tp_basic_company cp on cp.comid = c.comid  and cp.state =1 
+         left join tp_sys_user us on uc.operid = us.userno and us.state =1 
+         where p.state =1 and p.id = #{id,jdbcType=INTEGER} order by id 
+	</select>
+
+	<insert id="insertPcar" parameterType="com.web.pojo.Pcar">
+		insert into
+		tp_sys_user_car(udid,userid,carid,operid,opertime)
+		values
+		(
+		#{udid,jdbcType=INTEGER},
+		#{userid,jdbcType=INTEGER},
+		#{carid,jdbcType=INTEGER},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP}
+		)
+  
+	</insert>
+
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_sys_user_car
+		set state = 0
+	    where state =1 and udid = #{id,jdbcType=INTEGER}
+	</update>
+
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from (
+		 select 
+             uc.*,c.BusLicPlate,cp.comname,us.username opername,p.id 
+         from tp_basic_police p
+         left join tp_sys_user u on p.id = u.dwno and u.state =1 
+         left join tp_sys_user_car uc on u.userno = uc.userid and uc.state =1 
+         left join tp_basic_car c on uc.carid = c.carid and c.state =1 
+         left join tp_basic_company cp on cp.comid = c.comid  and cp.state =1 
+         left join tp_sys_user us on uc.operid = us.userno and us.state =1 
+         where p.state =1 and us.username is not null and p.id = #{id,jdbcType=INTEGER} 
+         <if test="searchbuslicplate != null">
+		  and c.buslicplate like CONCAT('%',#{searchbuslicplate},'%' )
+		 </if>
+         order by id ) t
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		 select 
+             uc.*,c.BusLicPlate,cp.comname,us.username opername,p.id  
+         from tp_basic_police p
+         left join tp_sys_user u on p.id = u.dwno and u.state =1 
+         left join tp_sys_user_car uc on u.userno = uc.userid and uc.state =1 
+         left join tp_basic_car c on uc.carid = c.carid and c.state =1 
+         left join tp_basic_company cp on cp.comid = c.comid  and cp.state =1 
+         left join tp_sys_user us on uc.operid = us.userno and us.state =1 
+         where p.state =1 and us.username is not null  and p.id = #{pid,jdbcType=INTEGER} 
+         <if test="searchbuslicplate != null">
+		  and c.buslicplate like CONCAT('%',#{searchbuslicplate},'%' )
+		 </if>
+         order by id 
+		 limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+	
+	<!-- 查找数据是否存在 -->
+	<select id="querypcardata" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+		select 
+		   count(*) 
+        from tp_sys_user_car
+        where state =1 and  carid = ${param1} and userid = ${param2}
+	</select>
+	
+	
+</mapper>

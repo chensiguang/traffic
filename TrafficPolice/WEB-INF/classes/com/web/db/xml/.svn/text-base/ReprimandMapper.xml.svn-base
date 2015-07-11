@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.ReprimandDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Reprimand">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="dwid" property="dwid" jdbcType="INTEGER" />
+		<result column="loginname" property="loginname" jdbcType="VARCHAR" />
+		<result column="content" property="content" jdbcType="INTEGER" />
+		<result column="time" property="time" jdbcType="TIMESTAMP" />
+		<result column="flag" property="flag" jdbcType="INTEGER" />
+		<result column="state" property="state" jdbcType="INTEGER" />
+		<result column="driverid" property="driverid" jdbcType="INTEGER" />
+		<result column="type" property="type" jdbcType="INTEGER" />
+		<result column="pid" property="pid" jdbcType="INTEGER" />
+		
+	<association property="driver" javaType="com.web.pojo.Driver">
+		    <result column="name" property="name" jdbcType="VARCHAR" />
+		</association>
+		
+	<association property="company" javaType="com.web.pojo.Company">
+		    <result column="comname" property="comname" jdbcType="VARCHAR" />
+		</association>
+	</resultMap>
+
+	
+	<insert id="insertReprimand" parameterType="com.web.pojo.Reprimand">
+		insert into
+		tp_reprimand(id,dwid,loginname,content,time,driverid,type,pid)
+		values
+		(
+		#{id,jdbcType=INTEGER},
+		#{dwid,jdbcType=INTEGER},
+		#{loginname,jdbcType=VARCHAR},
+		#{content,jdbcType=VARCHAR},
+		#{time,jdbcType=TIMESTAMP},
+		#{driverid,jdbcType=INTEGER},
+		#{type,jdbcType=INTEGER},
+		#{pid,jdbcType=INTEGER}
+		)
+	</insert>
+	
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Reprimand">
+		select *
+		from tp_reprimand 
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	
+    <select id="queryAllByDwidAndType" resultMap="BaseResultMap"
+		parameterType="java.util.HashMap">
+		select r.*,d.name
+		from tp_reprimand r
+		left join tp_basic_driver d
+		on r.driverid = d.id
+		where r.type = 0 and r.state = 1
+		<if test="dwid != null">
+		    and r.dwid = #{dwid,jdbcType=INTEGER}
+		</if>
+		<if test="id != null">
+		    and r.pid = #{id,jdbcType=INTEGER}
+		</if>
+		
+	</select>
+	
+    <select id="distinctQueryAllByDwid" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+         select  distinct r.dwid,c.comname
+		from tp_reprimand r
+		left join tp_basic_company c
+		on r.dwid = c.comid
+		where r.state = 1 and r.type = 1
+    </select>
+	
+	
+	<update id="updateReprimand" parameterType="com.web.pojo.Reprimand">
+		update tp_reprimand
+		set
+		dwid = #{dwid,jdbcType=INTEGER},
+		loginname = #{loginname,jdbcType=VARCHAR},
+		content = #{content,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+	
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_reprimand
+		 set state = 0
+		 where id = #{id,jdbcType=INTEGER}
+	</update>
+	
+		<update id="updateFlag" parameterType="java.lang.Integer">
+		update tp_reprimand
+		 set flag = 1
+		 where id = #{id,jdbcType=INTEGER}
+	</update>
+	
+ 
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_reprimand 
+		
+		 where state = 1
+		<if test="type != null">
+		   and type = #{type}
+		</if>
+		<if test="dwid != null">
+		   and dwid = #{dwid}
+		</if>
+		<if test="otherdwid != null">
+		   and dwid != #{otherdwid}
+		</if>
+		
+		<if test="driverid != null">
+		   and driverid = #{driverid}
+		</if>
+		
+		<if test="searchname != null">
+		   and dwid = #{searchname}
+		</if>
+		
+		<if test="searchstarttime != null">
+		  and time >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		   and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= time
+		   </if>
+		<if test="searchname != null">
+		   and dwid = #{searchname}
+		</if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select r.*,c.comname,d.name
+		from tp_reprimand r
+		left join tp_basic_company c
+		on r.dwid = c.comid
+		left join tp_basic_driver d
+		on r.driverid = d.id
+		 where r.state = 1
+		 
+		 <if test="type != null">
+		   and r.type = #{type}
+		</if>
+		<if test="dwid != null">
+		   and r.dwid = #{dwid}
+		</if>
+		<if test="otherdwid != null">
+		   and r.dwid != #{otherdwid}
+		</if>
+		
+		<if test="driverid != null">
+		   and r.driverid = #{driverid}
+		</if>
+		
+		<if test="searchname != null">
+		   and r.dwid = #{searchname}
+		</if>
+		
+		<if test="searchstarttime != null">
+		  and r.time >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		   and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= r.time
+		   </if>
+	   <if test="searchname != null">
+		   and r.dwid = #{searchname}
+		</if>
+		order by id desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select> 
+
+</mapper>

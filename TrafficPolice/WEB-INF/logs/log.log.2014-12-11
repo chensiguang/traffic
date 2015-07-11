@@ -1,0 +1,364 @@
+2014-12-11 20:02:08  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2014-12-11 20:02:08  [ main:175 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2014-12-11 20:02:14  [ main:5881 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@143b93b[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 143b93b, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2014-12-11 20:02:18  [ main:10068 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2014-12-11 20:02:19  [ main:10561 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2014-12-11 20:02:19  [ main:10674 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2014-12-11 20:02:19  [ main:10690 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2014-12-11 20:02:19  [ main:10690 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2014-12-11 20:02:19  [ main:10690 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2014-12-11 20:02:19  [ main:10690 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2014-12-11 20:02:19  [ main:10690 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2014-12-11 20:02:19  [ main:10690 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2014-12-11 20:02:19  [ main:10691 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2014-12-11 20:02:19  [ main:10691 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2014-12-11 20:02:19  [ main:10691 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2014-12-11 20:02:19  [ main:10709 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2014-12-11 20:02:19  [ main:10709 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2014-12-11 20:02:19  [ main:10709 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2014-12-11 20:02:19  [ main:10709 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2014-12-11 20:02:19  [ main:10709 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2014-12-11 20:02:19  [ main:10710 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2014-12-11 20:02:19  [ main:10710 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2014-12-11 20:02:19  [ main:10710 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2014-12-11 20:02:19  [ main:10710 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2014-12-11 20:02:19  [ main:10711 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2014-12-11 20:02:19  [ main:10757 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2014-12-11 20:02:19  [ main:10757 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2014-12-11 20:02:19  [ main:10757 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2014-12-11 20:02:21  [ main:12632 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-12-11 20:02:21  [ main:12633 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-12-11 20:03:00  [ http-8080-1:51836 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@b406b7]
+2014-12-11 20:03:00  [ http-8080-1:51840 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-12-11 20:03:00  [ http-8080-1:51893 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-11 20:03:00  [ http-8080-1:52091 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17d298b]
+2014-12-11 20:03:00  [ http-8080-1:52092 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2014-12-11 20:03:00  [ http-8080-1:52092 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-11 20:03:00  [ http-8080-1:52153 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a2d403]
+2014-12-11 20:03:00  [ http-8080-1:52153 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2014-12-11 20:03:00  [ http-8080-1:52154 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-11 20:03:05  [ http-8080-1:56648 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15c4d5c]
+2014-12-11 20:03:05  [ http-8080-1:56648 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_roles where state = 1 
+2014-12-11 20:03:05  [ http-8080-1:56649 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:03:05  [ http-8080-1:56654 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1f25f3a]
+2014-12-11 20:03:05  [ http-8080-1:56654 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 order by roleno desc limit ?,? 
+2014-12-11 20:03:05  [ http-8080-1:56655 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:03:08  [ http-8080-1:59744 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@193ca0d]
+2014-12-11 20:03:08  [ http-8080-1:59744 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 order by roleno desc 
+2014-12-11 20:03:08  [ http-8080-1:59745 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:03:29  [ http-8080-4:81246 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1372724]
+2014-12-11 20:03:29  [ http-8080-4:81246 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_roles where state = 1 
+2014-12-11 20:03:29  [ http-8080-4:81247 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:03:29  [ http-8080-4:81249 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@127b9b5]
+2014-12-11 20:03:29  [ http-8080-4:81250 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 order by roleno desc limit ?,? 
+2014-12-11 20:03:29  [ http-8080-4:81250 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:03:43  [ http-8080-15:95215 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@10e1012]
+2014-12-11 20:03:43  [ http-8080-15:95215 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_area where state = 1 order by areaid limit ?,? 
+2014-12-11 20:03:43  [ http-8080-15:95216 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 100(Integer)
+2014-12-11 20:03:43  [ http-8080-15:95343 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1c41968]
+2014-12-11 20:03:43  [ http-8080-15:95343 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from ( select * from tp_basic_area where state = 1 order by regtime desc )t 
+2014-12-11 20:03:43  [ http-8080-15:95344 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:03:43  [ http-8080-15:95347 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1fe8aa4]
+2014-12-11 20:03:43  [ http-8080-15:95347 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_area where state = 1 and parentid = ? order by areaid limit ?,? 
+2014-12-11 20:03:43  [ http-8080-15:95347 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(String), 0(Integer), 10(Integer)
+2014-12-11 20:04:04  [ http-8080-18:115637 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@150771a]
+2014-12-11 20:04:04  [ http-8080-18:115638 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_roles where state = 1 
+2014-12-11 20:04:04  [ http-8080-18:115638 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:04:04  [ http-8080-18:115640 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a54986]
+2014-12-11 20:04:04  [ http-8080-18:115640 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 order by roleno desc limit ?,? 
+2014-12-11 20:04:04  [ http-8080-18:115641 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:04:49  [ http-8080-3:160693 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@bc3923]
+2014-12-11 20:04:49  [ http-8080-3:160694 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:04:49  [ http-8080-3:160694 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:04:49  [ http-8080-3:160737 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@160b48a]
+2014-12-11 20:04:49  [ http-8080-3:160738 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:04:49  [ http-8080-3:160738 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:04:52  [ http-8080-4:164158 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@b57b0a]
+2014-12-11 20:04:52  [ http-8080-4:164158 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:04:52  [ http-8080-4:164160 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:01  [ http-8080-4:173028 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@dafd61]
+2014-12-11 20:05:01  [ http-8080-4:173028 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:01  [ http-8080-4:173029 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:04  [ http-8080-5:176393 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@396d8b]
+2014-12-11 20:05:04  [ http-8080-5:176394 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:04  [ http-8080-5:176394 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:04  [ http-8080-5:176433 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@180ca68]
+2014-12-11 20:05:04  [ http-8080-5:176433 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:05  [ http-8080-5:176434 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:05  [ http-8080-6:177171 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@14f3466]
+2014-12-11 20:05:05  [ http-8080-6:177173 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:05  [ http-8080-6:177180 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:05  [ http-8080-6:177184 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@80dee3]
+2014-12-11 20:05:05  [ http-8080-6:177184 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:05  [ http-8080-6:177185 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:06  [ http-8080-7:177984 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@b14b22]
+2014-12-11 20:05:06  [ http-8080-7:177990 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:06  [ http-8080-7:177991 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:06  [ http-8080-7:177997 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d0fc2c]
+2014-12-11 20:05:06  [ http-8080-7:177997 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:06  [ http-8080-7:177998 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:07  [ http-8080-8:178526 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@899af8]
+2014-12-11 20:05:07  [ http-8080-8:178527 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:07  [ http-8080-8:178528 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:07  [ http-8080-8:178537 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b01cb]
+2014-12-11 20:05:07  [ http-8080-8:178537 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:07  [ http-8080-8:178537 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:07  [ http-8080-9:179230 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@120d47]
+2014-12-11 20:05:07  [ http-8080-9:179230 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:07  [ http-8080-9:179231 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:07  [ http-8080-9:179234 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2ddcec]
+2014-12-11 20:05:07  [ http-8080-9:179234 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:07  [ http-8080-9:179235 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:08  [ http-8080-10:179822 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@46004b]
+2014-12-11 20:05:08  [ http-8080-10:179822 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:08  [ http-8080-10:179822 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:08  [ http-8080-10:179827 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@14d63aa]
+2014-12-11 20:05:08  [ http-8080-10:179827 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:08  [ http-8080-10:179827 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:09  [ http-8080-11:180614 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@ef2b32]
+2014-12-11 20:05:09  [ http-8080-11:180614 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:09  [ http-8080-11:180614 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:09  [ http-8080-11:180618 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@167864a]
+2014-12-11 20:05:09  [ http-8080-11:180618 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:09  [ http-8080-11:180619 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:09  [ http-8080-12:180845 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b2a73f]
+2014-12-11 20:05:09  [ http-8080-12:180845 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:09  [ http-8080-12:180845 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:09  [ http-8080-12:180847 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1833133]
+2014-12-11 20:05:09  [ http-8080-12:180847 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:09  [ http-8080-12:180848 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:09  [ http-8080-13:181055 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5ef387]
+2014-12-11 20:05:09  [ http-8080-13:181055 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:09  [ http-8080-13:181056 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:09  [ http-8080-13:181058 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ddcfef]
+2014-12-11 20:05:09  [ http-8080-13:181058 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:09  [ http-8080-13:181058 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:09  [ http-8080-15:181254 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6c0838]
+2014-12-11 20:05:09  [ http-8080-15:181254 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:09  [ http-8080-15:181255 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:09  [ http-8080-15:181256 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@dd9094]
+2014-12-11 20:05:09  [ http-8080-15:181256 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:09  [ http-8080-15:181257 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:10  [ http-8080-14:181489 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@354c44]
+2014-12-11 20:05:10  [ http-8080-14:181489 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:10  [ http-8080-14:181489 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:10  [ http-8080-14:181498 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@da09be]
+2014-12-11 20:05:10  [ http-8080-14:181498 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:10  [ http-8080-14:181498 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:10  [ http-8080-16:181694 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9db288]
+2014-12-11 20:05:10  [ http-8080-16:181694 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:10  [ http-8080-16:181695 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:10  [ http-8080-16:181698 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15c6b8f]
+2014-12-11 20:05:10  [ http-8080-16:181698 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:10  [ http-8080-16:181698 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:10  [ http-8080-17:181877 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@fd6c52]
+2014-12-11 20:05:10  [ http-8080-17:181909 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:10  [ http-8080-17:181909 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:10  [ http-8080-17:181916 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@14150bd]
+2014-12-11 20:05:10  [ http-8080-17:181916 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:10  [ http-8080-17:181917 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:11  [ http-8080-18:183253 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@68b78e]
+2014-12-11 20:05:11  [ http-8080-18:183253 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:11  [ http-8080-18:183254 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:11  [ http-8080-18:183262 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7766ef]
+2014-12-11 20:05:11  [ http-8080-18:183263 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:11  [ http-8080-18:183264 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:16  [ http-8080-18:187617 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a05f6]
+2014-12-11 20:05:16  [ http-8080-18:187617 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:16  [ http-8080-18:187617 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:16  [ http-8080-18:187619 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@176ebe1]
+2014-12-11 20:05:16  [ http-8080-18:187619 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:16  [ http-8080-18:187619 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:17  [ http-8080-18:189040 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@19ec2]
+2014-12-11 20:05:17  [ http-8080-18:189040 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:05:17  [ http-8080-18:189041 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:17  [ http-8080-18:189042 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1724122]
+2014-12-11 20:05:17  [ http-8080-18:189042 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:05:17  [ http-8080-18:189042 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:20  [ http-8080-18:191592 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1c450f6]
+2014-12-11 20:05:20  [ http-8080-18:191593 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno 
+2014-12-11 20:05:20  [ http-8080-18:191593 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:22  [ http-8080-18:193873 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15c8a5d]
+2014-12-11 20:05:22  [ http-8080-18:193873 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:05:22  [ http-8080-18:193874 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:22  [ http-8080-18:193876 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1dd712a]
+2014-12-11 20:05:22  [ http-8080-18:193876 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:05:22  [ http-8080-18:193876 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:05:59  [ http-8080-18:230549 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@18185ce]
+2014-12-11 20:05:59  [ http-8080-18:230549 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_policeorg where state = 1 
+2014-12-11 20:05:59  [ http-8080-18:230550 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:05:59  [ http-8080-18:230571 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b1e8d]
+2014-12-11 20:05:59  [ http-8080-18:230572 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and dwtype = ? order by roleno desc 
+2014-12-11 20:05:59  [ http-8080-18:230572 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Long)
+2014-12-11 20:05:59  [ http-8080-18:230574 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a51abe]
+2014-12-11 20:05:59  [ http-8080-18:230574 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where userno = ? 
+2014-12-11 20:05:59  [ http-8080-18:230575 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: null
+2014-12-11 20:06:02  [ http-8080-18:234066 ] - [ INFO ] [com.web.action.base.BaseAction] do police drilist...<param>currentpage=null
+2014-12-11 20:06:06  [ http-8080-18:238347 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@c968fd]
+2014-12-11 20:06:06  [ http-8080-18:238347 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-11 20:06:06  [ http-8080-18:238347 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:06:06  [ http-8080-18:238349 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2b8861]
+2014-12-11 20:06:06  [ http-8080-18:238349 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-11 20:06:06  [ http-8080-18:238349 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:06:09  [ http-8080-18:240631 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@144b48c]
+2014-12-11 20:06:09  [ http-8080-18:240631 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_permission where state = 1 
+2014-12-11 20:06:09  [ http-8080-18:240631 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:06:09  [ http-8080-18:240633 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@ca516e]
+2014-12-11 20:06:09  [ http-8080-18:240633 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno desc limit ?,? 
+2014-12-11 20:06:09  [ http-8080-18:240633 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 20:06:12  [ http-8080-18:243613 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@8cd450]
+2014-12-11 20:06:12  [ http-8080-18:243613 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_permission where state = 1 order by perno 
+2014-12-11 20:06:12  [ http-8080-18:243613 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:06:13  [ http-8080-18:245299 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@afa5c2]
+2014-12-11 20:06:13  [ http-8080-18:245299 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_roles where state = 1 
+2014-12-11 20:06:13  [ http-8080-18:245300 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 20:06:13  [ http-8080-18:245301 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@b81b21]
+2014-12-11 20:06:13  [ http-8080-18:245301 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 order by roleno desc limit ?,? 
+2014-12-11 20:06:13  [ http-8080-18:245302 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:54:20  [ http-8080-18:6731778 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e19a1a]
+2014-12-11 21:54:20  [ http-8080-18:6731778 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-12-11 21:54:20  [ http-8080-18:6731779 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-11 21:54:20  [ http-8080-18:6731784 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17493c3]
+2014-12-11 21:54:20  [ http-8080-18:6731785 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2014-12-11 21:54:20  [ http-8080-18:6731785 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-11 21:54:20  [ http-8080-18:6731791 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@48fc0b]
+2014-12-11 21:54:20  [ http-8080-18:6731791 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2014-12-11 21:54:20  [ http-8080-18:6731792 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-11 21:54:25  [ http-8080-18:6736991 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15c089]
+2014-12-11 21:54:25  [ http-8080-18:6736991 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from config 
+2014-12-11 21:54:25  [ http-8080-18:6736992 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:54:25  [ http-8080-18:6737019 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2570bd]
+2014-12-11 21:54:25  [ http-8080-18:6737019 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select Id, siteName, keywords, address, code,telephone,telephoneSale, telephoneService,fax, email, homePage,qq1,qq2,msn1,msn2,addDateTime,updateTime , pdescription from config order by updateTime desc limit ? ,? 
+2014-12-11 21:54:25  [ http-8080-18:6737019 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:54:29  [ http-8080-18:6740593 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2a6d99]
+2014-12-11 21:54:29  [ http-8080-18:6740593 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select Id, siteName, keywords, address, code,telephone,telephoneSale, telephoneService,fax, email, homePage,qq1,qq2,msn1,msn2,addDateTime,updateTime , pdescription from config where Id = ? 
+2014-12-11 21:54:29  [ http-8080-18:6740593 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Integer)
+2014-12-11 21:54:36  [ http-8080-18:6748105 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3b7deb]
+2014-12-11 21:54:36  [ http-8080-18:6748105 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select Id, siteName, keywords, address, code,telephone,telephoneSale, telephoneService,fax, email, homePage,qq1,qq2,msn1,msn2,addDateTime,updateTime , pdescription from config where Id = ? 
+2014-12-11 21:54:36  [ http-8080-18:6748106 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Integer)
+2014-12-11 21:54:39  [ http-8080-18:6751279 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@f1bc93]
+2014-12-11 21:54:39  [ http-8080-18:6751279 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from config 
+2014-12-11 21:54:39  [ http-8080-18:6751279 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:54:39  [ http-8080-18:6751281 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1eef359]
+2014-12-11 21:54:39  [ http-8080-18:6751282 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select Id, siteName, keywords, address, code,telephone,telephoneSale, telephoneService,fax, email, homePage,qq1,qq2,msn1,msn2,addDateTime,updateTime , pdescription from config order by updateTime desc limit ? ,? 
+2014-12-11 21:54:39  [ http-8080-18:6751282 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:54:46  [ http-8080-18:6757730 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@314650]
+2014-12-11 21:54:46  [ http-8080-18:6757730 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from config 
+2014-12-11 21:54:46  [ http-8080-18:6757731 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:54:46  [ http-8080-18:6757732 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@638c1a]
+2014-12-11 21:54:46  [ http-8080-18:6757732 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select Id, siteName, keywords, address, code,telephone,telephoneSale, telephoneService,fax, email, homePage,qq1,qq2,msn1,msn2,addDateTime,updateTime , pdescription from config order by updateTime desc limit ? ,? 
+2014-12-11 21:54:46  [ http-8080-18:6757732 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:54:52  [ http-8080-18:6764366 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b9981a]
+2014-12-11 21:54:52  [ http-8080-18:6764366 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_rule_info where state = 1 
+2014-12-11 21:54:52  [ http-8080-18:6764367 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:54:52  [ http-8080-18:6764408 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@137f3e1]
+2014-12-11 21:54:52  [ http-8080-18:6764408 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc limit ? ,? 
+2014-12-11 21:54:52  [ http-8080-18:6764408 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:54:57  [ http-8080-18:6768897 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@10eff16]
+2014-12-11 21:54:57  [ http-8080-18:6768897 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-12-11 21:54:57  [ http-8080-18:6768898 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:01  [ http-8080-18:6772749 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6f6e28]
+2014-12-11 21:55:01  [ http-8080-18:6772750 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_edu_video where state = 1 
+2014-12-11 21:55:01  [ http-8080-18:6772750 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:01  [ http-8080-18:6772769 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1390e5e]
+2014-12-11 21:55:01  [ http-8080-18:6772770 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc limit ? ,? 
+2014-12-11 21:55:01  [ http-8080-18:6772770 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:04  [ http-8080-18:6775808 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@d8a408]
+2014-12-11 21:55:04  [ http-8080-18:6775808 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-12-11 21:55:04  [ http-8080-18:6775808 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:16  [ http-8080-17:6788345 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e9cee]
+2014-12-11 21:55:16  [ http-8080-17:6788345 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select a.*,b.orgname as name from tp_basic_policeorg a left join tp_basic_policeorg b on a.pid = b.id where a.state = 1 order by a.id limit ?,? 
+2014-12-11 21:55:16  [ http-8080-17:6788346 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 100(Integer)
+2014-12-11 21:55:17  [ http-8080-18:6788435 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@13cc81d]
+2014-12-11 21:55:17  [ http-8080-18:6788435 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_policeorg where state = 1 and id = ? 
+2014-12-11 21:55:17  [ http-8080-18:6788436 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(String)
+2014-12-11 21:55:17  [ http-8080-18:6788437 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3e1588]
+2014-12-11 21:55:17  [ http-8080-18:6788438 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select a.*,b.orgname as name from tp_basic_policeorg a left join tp_basic_policeorg b on a.pid = b.id where a.state = 1 and a.id = ? and a.id = ? order by a.id limit ?,? 
+2014-12-11 21:55:17  [ http-8080-18:6788438 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(String), 1(String), 0(Integer), 10(Integer)
+2014-12-11 21:55:19  [ http-8080-18:6791335 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2c3b80]
+2014-12-11 21:55:19  [ http-8080-18:6791335 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from ( SELECT p.*,org.orgname,a.areaname FROM tp_basic_police p left join tp_basic_policeorg org on p.orgid = org.id left join tp_basic_area a on p.areaid = a.areaid where p.state =1 and org.state =1 and a.state =1 order by opertime desc) t 
+2014-12-11 21:55:19  [ http-8080-18:6791336 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:19  [ http-8080-18:6791339 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1fde78f]
+2014-12-11 21:55:19  [ http-8080-18:6791339 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: SELECT p.*,org.orgname,a.areaname,u.userno FROM tp_basic_police p left join tp_basic_policeorg org on p.orgid = org.id left join tp_basic_area a on p.areaid = a.areaid left join tp_sys_user u on p.id = u.dwno and u.state =1 and u.typeid=2 where p.state =1 and org.state =1 and a.state =1 order by opertime desc limit ?,? 
+2014-12-11 21:55:19  [ http-8080-18:6791339 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:23  [ http-8080-18:6794563 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7876c7]
+2014-12-11 21:55:23  [ http-8080-18:6794564 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: SELECT p.*,org.orgname,a.areaname,u.userno FROM tp_basic_police p left join tp_basic_policeorg org on p.orgid = org.id left join tp_basic_area a on p.areaid = a.areaid left join tp_sys_user u on p.id = u.dwno and u.state =1 and u.typeid=2 where p.state =1 and org.state =1 and a.state =1 order by opertime desc 
+2014-12-11 21:55:23  [ http-8080-18:6794564 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:23  [ http-8080-18:6794568 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d63d6a]
+2014-12-11 21:55:23  [ http-8080-18:6794568 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_policeorg where state = 1 order by regtime desc 
+2014-12-11 21:55:23  [ http-8080-18:6794568 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:23  [ http-8080-18:6794571 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4d4018]
+2014-12-11 21:55:23  [ http-8080-18:6794572 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select areaid,areaname from tp_basic_area where state = 1 order by regtime desc 
+2014-12-11 21:55:23  [ http-8080-18:6794572 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:26  [ http-8080-18:6797757 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@bf72f0]
+2014-12-11 21:55:26  [ http-8080-18:6797757 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2014-12-11 21:55:26  [ http-8080-18:6797757 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:26  [ http-8080-18:6797790 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1492feb]
+2014-12-11 21:55:26  [ http-8080-18:6797791 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2014-12-11 21:55:26  [ http-8080-18:6797791 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:29  [ http-8080-18:6800636 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@85d24a]
+2014-12-11 21:55:29  [ http-8080-18:6800636 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_car bc left join tp_basic_company cp on (bc.comid = cp.comid and cp.state = 1) left join tp_basic_area ba on (bc.areaid = ba.areaid and ba.state = 1) where bc.state = 1 order by bc.regtime desc 
+2014-12-11 21:55:29  [ http-8080-18:6800636 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:29  [ http-8080-18:6800665 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e6a099]
+2014-12-11 21:55:29  [ http-8080-18:6800665 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car bc left join tp_basic_company cp on (bc.comid = cp.comid and cp.state = 1) left join tp_basic_area ba on (bc.areaid = ba.areaid and ba.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2014-12-11 21:55:29  [ http-8080-18:6800666 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:32  [ http-8080-18:6803700 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a6e499]
+2014-12-11 21:55:32  [ http-8080-18:6803700 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_driver d left join tp_basic_company c on d.dwid = c.comid where d.state = 1 
+2014-12-11 21:55:32  [ http-8080-18:6803700 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:32  [ http-8080-18:6803703 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3b144b]
+2014-12-11 21:55:32  [ http-8080-18:6803703 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c on d.dwid = c.comid where d.state = 1 order by d.id desc limit ?,? 
+2014-12-11 21:55:32  [ http-8080-18:6803703 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:36  [ http-8080-18:6808118 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@c86b31]
+2014-12-11 21:55:36  [ http-8080-18:6808119 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,c.comname,d.name,p.name as policename from tp_sys_user u left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id left join tp_basic_police p on u.username = p.id where u.state = 1 and username= ? 
+2014-12-11 21:55:36  [ http-8080-18:6808119 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2014-12-11 21:55:41  [ http-8080-18:6813039 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@87a5b3]
+2014-12-11 21:55:41  [ http-8080-18:6813039 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_rule_illegal where state = 1 
+2014-12-11 21:55:41  [ http-8080-18:6813039 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:41  [ http-8080-18:6813110 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1be5dbc]
+2014-12-11 21:55:41  [ http-8080-18:6813110 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select i.*,u.username,u.userno from tp_rule_illegal i left join tp_sys_user u on i.operid = u.userno where i.state = 1 and u.state=1 order by i.id desc limit ? ,? 
+2014-12-11 21:55:41  [ http-8080-18:6813111 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:46  [ http-8080-18:6817583 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@13de8da]
+2014-12-11 21:55:46  [ http-8080-18:6817584 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by id desc 
+2014-12-11 21:55:46  [ http-8080-18:6817584 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:49  [ http-8080-18:6820641 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@132adcb]
+2014-12-11 21:55:49  [ http-8080-18:6820641 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_branch where state = 1 
+2014-12-11 21:55:49  [ http-8080-18:6820642 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:49  [ http-8080-18:6820663 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1f0a26]
+2014-12-11 21:55:49  [ http-8080-18:6820664 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select i.*, u.loginname,u.userno from tp_basic_branch i left join tp_sys_user u on i.operid = u.userno where i.state = 1 and u.state=1 order by i.id desc limit ?,? 
+2014-12-11 21:55:49  [ http-8080-18:6820664 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:52  [ http-8080-18:6823724 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@43d694]
+2014-12-11 21:55:52  [ http-8080-18:6823724 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by id desc 
+2014-12-11 21:55:52  [ http-8080-18:6823724 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:55  [ http-8080-18:6827081 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@ab8e20]
+2014-12-11 21:55:55  [ http-8080-18:6827081 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from( select * from tp_traffic_notice where state = 1 and notice_type = 1 order by regtime desc )t 
+2014-12-11 21:55:55  [ http-8080-18:6827082 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:55:55  [ http-8080-18:6827105 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@41cec0]
+2014-12-11 21:55:55  [ http-8080-18:6827105 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by regtime desc limit ?,? 
+2014-12-11 21:55:55  [ http-8080-18:6827105 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:55:58  [ http-8080-18:6829598 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@d0b2cf]
+2014-12-11 21:55:58  [ http-8080-18:6829599 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by regtime desc 
+2014-12-11 21:55:58  [ http-8080-18:6829599 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:56:01  [ http-8080-18:6833158 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@18e56c2]
+2014-12-11 21:56:01  [ http-8080-18:6833158 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from ( select * from tp_traffic_notice where state = 1 and notice_type = 2 order by regtime desc )t 
+2014-12-11 21:56:01  [ http-8080-18:6833158 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:56:01  [ http-8080-18:6833161 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@beb699]
+2014-12-11 21:56:01  [ http-8080-18:6833161 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 2 order by regtime desc limit ?,? 
+2014-12-11 21:56:01  [ http-8080-18:6833161 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-11 21:56:06  [ http-8080-18:6838190 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@166a83b]
+2014-12-11 21:56:06  [ http-8080-18:6838190 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 2 order by regtime desc 
+2014-12-11 21:56:06  [ http-8080-18:6838190 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:56:17  [ http-8080-17:6848996 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17badfa]
+2014-12-11 21:56:17  [ http-8080-17:6848996 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select distinct r.dwid,c.comname from tp_reprimand r left join tp_basic_company c on r.dwid = c.comid where r.state = 1 and r.type = 1 
+2014-12-11 21:56:17  [ http-8080-17:6848996 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:56:17  [ http-8080-17:6849060 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@13bdf5]
+2014-12-11 21:56:17  [ http-8080-17:6849060 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_reprimand where state = 1 and type = ? 
+2014-12-11 21:56:17  [ http-8080-17:6849061 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Integer)
+2014-12-11 21:56:17  [ http-8080-17:6849063 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@c4e626]
+2014-12-11 21:56:17  [ http-8080-17:6849063 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select r.*,c.comname,d.name from tp_reprimand r left join tp_basic_company c on r.dwid = c.comid left join tp_basic_driver d on r.driverid = d.id where r.state = 1 and r.type = ? order by id desc limit ?,? 
+2014-12-11 21:56:17  [ http-8080-17:6849063 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2014-12-11 21:56:21  [ http-8080-17:6852633 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17cb6ef]
+2014-12-11 21:56:21  [ http-8080-17:6852633 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_interchange_question where 1=1 
+2014-12-11 21:56:21  [ http-8080-17:6852633 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-11 21:56:21  [ http-8080-17:6852648 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@18dc510]
+2014-12-11 21:56:21  [ http-8080-17:6852648 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.*,u.username from tp_interchange_question q left join tp_sys_user u on q.operid = u.userno where q.state =1 and u.state =1 order by opertime desc limit ? ,? 
+2014-12-11 21:56:21  [ http-8080-17:6852648 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)

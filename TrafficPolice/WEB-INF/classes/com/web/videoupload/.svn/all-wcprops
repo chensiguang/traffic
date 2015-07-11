@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/java/!svn/ver/16341/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload
+END
+tudou.oauth2-client.config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 255
+/svn/java/!svn/ver/16106/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/tudou.oauth2-client.config.xml
+END
+SDKException.java
+K 25
+svn:wc:ra_dav:version-url
+V 242
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/SDKException.java
+END
+HTTPUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/HTTPUtils.java
+END
+TudouUpload.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16284/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/TudouUpload.java
+END
+OAuthClientConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 247
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthClientConfig.java
+END
+OAuthConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthConfig.java
+END
+UploadUrl.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16253/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/UploadUrl.java
+END
+UploadUrlParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/java/!svn/ver/16261/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/UploadUrlParams.java
+END
+AccessTokenInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/AccessTokenInfo.java
+END
+AuthorizeParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/AuthorizeParams.java
+END
+OAuthExceptionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 249
+/svn/java/!svn/ver/16104/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthExceptionUtils.java
+END
+configs.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/16105/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/configs.dtd
+END
+VideoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16341/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/VideoInfo.java
+END
+tudou.open.config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/16117/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/tudou.open.config.xml
+END
+Demo.java
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16340/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/Demo.java
+END
+VideoInfoParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/java/!svn/ver/16341/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/VideoInfoParams.java
+END
+tudou.open.log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 252
+/svn/java/!svn/ver/16105/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/tudou.open.log4j.properties
+END
+JSONUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/JSONUtils.java
+END
+OAuthException.java
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthException.java
+END
+AccessToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/AccessToken.java
+END
+TudouVideoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/java/!svn/ver/16341/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/TudouVideoInfo.java
+END
+ErrorInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16104/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/ErrorInfo.java
+END
+AccessTokenParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 247
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/AccessTokenParams.java
+END
+RevokeAccessToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 247
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/RevokeAccessToken.java
+END
+OpenException.java
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OpenException.java
+END
+TudouOAuth2.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16253/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/TudouOAuth2.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/16142/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/Base64.java
+END
+OAuthParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16104/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthParams.java
+END
+Conf.java
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16115/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/Conf.java
+END
+OAuthPost.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16103/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthPost.java
+END
+OAuthError.java
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/16104/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/videoupload/OAuthError.java
+END

@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<script type="text/javascript">
+function nTabs(thisObj,Num){
+if(thisObj.className == "active")return;
+var tabObj = thisObj.parentNode.id;
+var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+for(i=0; i <tabList.length; i++)
+{
+  if (i == Num)
+  {
+   thisObj.className = "active"; 
+      document.getElementById(tabObj+"_Content"+i).style.display = "block";
+  }else{
+   tabList[i].className = "normal"; 
+   document.getElementById(tabObj+"_Content"+i).style.display = "none";
+  }
+} 
+}
+</script>
+
+<script type="text/javascript">
+function nTabs1(thisObj,Num){
+if(thisObj.className == "active1")return;
+var tabObj = thisObj.parentNode.id;
+var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+for(i=0; i <tabList.length; i++)
+{
+  if (i == Num)
+  {
+   thisObj.className = "active1"; 
+      document.getElementById(tabObj+"_Content1"+i).style.display = "block";
+  }else{
+   tabList[i].className = "normal1"; 
+   document.getElementById(tabObj+"_Content1"+i).style.display = "none";
+  }
+} 
+}
+</script>
+
+<script type="text/javascript">
+function nTabs2(thisObj,Num){
+if(thisObj.className == "active2")return;
+var tabObj = thisObj.parentNode.id;
+var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+for(i=0; i <tabList.length; i++)
+{
+  if (i == Num)
+  {
+   thisObj.className = "active2"; 
+      document.getElementById(tabObj+"_Content2"+i).style.display = "block";
+  }else{
+   tabList[i].className = "normal2"; 
+   document.getElementById(tabObj+"_Content2"+i).style.display = "none";
+  }
+} 
+}
+</script>
+
+
+<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ var oMoveBox = $("#col_box"), oArr = $("#arrow"), maxL = 185;
+ oArr.click(function(){
+  oMoveBox.animate({"height":"-="+maxL},185,function(){
+   maxL = -maxL;
+   $("#arrow").html(maxL<0 ? "﹀" : "︿");
+  })
+ });
+});
+</script>
+
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="top" id="box">
+
+<div id="col_box">
+
+<table width="100%" height="108" border="0" cellspacing="0" cellpadding="0" style="float:left">
+  <tr>
+    <td align="left" valign="middle"><span class="padding-left"><a href="index.html"><img src="images/logo.png" width="508" height="104" /></a></span></td>
+    <td rowspan="2" align="right" valign="bottom"><img src="images/logo_img1.png"/></td>
+  </tr>
+  <tr>
+    <td align="left" valign="middle"><div style="padding:10px 10px 10px 15px;width:100%">
+<div class="nav"><a href="jtfg.html"><img src="images/nav01.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="xjzx.html"><img src="images/nav02.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="jbxx.html"><img src="images/nav03.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="wfcx.html"><img src="images/nav04.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="kscl.html"><img src="images/nav05.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="aqtx.html"><img src="images/nav06.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="hytz.html"><img src="images/nav07.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="wthd.html"><img src="images/nav08.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="wbwx.html"><img src="images/nav09.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/nav10.png" width="60" height="60" /></a></div>
+</div></td>
+  </tr>
+</table>
+
+</div>
+<div class="clear"></div>
+<div id="arrow">﹀</div>
+</div>
+<div class="clear"></div>
+<div class="main">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+    <div class="jt_h3 pos"><span class="main_left"><img src="images/icon01.png" width="18" height="20" align="absmiddle" />&nbsp;&nbsp;交通法规<span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span></span></div>
+    <div class="box_nr">
+<div id=link_logo style="OVERFLOW: hidden; WIDTH: 100%; HEIGHT: 280px">
+  <div id=link_logo1 style="OVERFLOW: hidden">
+      <ul class="fg_list">
+      <li>中华人民共和国道路交通管理条例</li> 
+      <li>中华人民共和国机动车登记办法</li>  
+      <li>中华人民共和国机动车驾驶证管理办法</li>  
+      <li>中华人民共和国机动车驾驶员考试办法</li> 
+      <li>道路交通事故处理办法</li>   
+      <li>道路交通事故处理程序规定</li> 
+      <li>高速公路交通管理办法</li>               
+      <li>交通违章处罚程序规定交通违章处理程序规定</li>    
+      <li>机动车驾驶员交通违章记分办法</li>  
+      <li>北京市道路交通管理规定</li>    
+      <li>北京市机动车和机动车驾驶员管理办法</li>    
+      </ul>  
+      
+   </div>
+  <div id=link_logo2></div>
+</div>
+<script>
+ var speed=65
+  link_logo2.innerHTML=link_logo1.innerHTML
+    function Marquee2(){
+	  if(link_logo2.offsetTop-link_logo.scrollTop<=0)
+	     link_logo.scrollTop-=link_logo1.offsetHeight
+		   else{
+		    link_logo.scrollTop++
+			   }
+			      }
+				     var MyMar2=setInterval(Marquee2,speed)
+					    link_logo.onmouseover=function() {clearInterval(MyMar2)}
+						   link_logo.onmouseout=function() {MyMar2=setInterval(Marquee2,speed)}
+</script>      
+    </div>
+    </div>
+    </td>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+      
+      
+      
+      <div class="nTab"> 
+    <!-- 标题开始 -->
+    <div class="TabTitle">
+    <div class="jt_h3 pos"> <span class="left main_left"><img src="images/icon02.png" align="absmiddle" />&nbsp;&nbsp;宣教中心</span><span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span>
+      <ul id="myTab0">
+        <li class="active" onmouseover="nTabs(this,0);">视频</li>
+        <li class="normal" onmouseover="nTabs(this,1);">卡二</li>
+        <li class="normal" onmouseover="nTabs(this,2);">卡三</li>
+        <li class="normal" onmouseover="nTabs(this,3);">卡四</li>
+      </ul>
+    </div>
+    </div>
+    <!-- 内容开始 -->
+    <div class="TabContent">
+      <div id="myTab0_Content0">
+       	 <iframe height=280 width=100% src="http://player.youku.com/embed/XNDkyMzcxMzMy" frameborder=0 allowfullscreen></iframe>
+	  </div>
+      <div id="myTab0_Content1" class="none">
+	  2
+	  </div>
+      <div id="myTab0_Content2" class="none">
+	  3
+	  </div>
+      <div id="myTab0_Content3" class="none">
+	  4
+	  </div>
+    </div>
+</div>
+    
+    </div></td>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+    <div class="jt_h3 pos"><span class="main_left"><img src="images/icon03.png"  align="absmiddle" />&nbsp;&nbsp;基本信息<span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span></span></div>
+    
+    <div class="jbxx_nr">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr style="background:url(images/jb_list_top.gif) repeat-x;">
+    <td width="14%" height="26" align="center">姓名</td>
+    <td width="14%" height="27" align="center">年龄</td>
+    <td width="14%" height="27" align="center">性别</td>
+    <td width="16%" height="27" align="center">身份证号码</td>
+    <td height="27" align="center">地址</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">李一</td>
+    <td align="center">34</td>
+    <td align="center">男</td>
+    <td align="center"><p>33075619760</p>
+      <p>6295681</p></td>
+    <td>杭州市拱墅区北部软件园</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">李一</td>
+    <td align="center">34</td>
+    <td align="center">男</td>
+    <td align="center"><p>330756197606</p>
+      <p>295681</p></td>
+    <td>杭州市拱墅区北部软件园</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">李一</td>
+    <td align="center">34</td>
+    <td align="center">男</td>
+    <td align="center"><p>3307561976</p>
+      <p>06295681</p></td>
+    <td>杭州市拱墅区北部软件园</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">李一</td>
+    <td align="center">34</td>
+    <td align="center">男</td>
+    <td align="center"><p>330756197</p>
+      <p>606295681</p></td>
+    <td>杭州市拱墅区北部软件园</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">李一</td>
+    <td align="center">34</td>
+    <td align="center">男</td>
+    <td align="center"><p>330756197</p>
+      <p>606295681</p></td>
+    <td>杭州市拱墅区北部软件园</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">李一</td>
+    <td align="center">34</td>
+    <td align="center">男</td>
+    <td align="center"><p>33075619760</p>
+      <p>6295681</p></td>
+    <td>杭州市拱墅区北部软件园</td>
+  </tr>
+  
+</table>
+</div>
+   
+    </div></td>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+    <div class="jt_h3 pos"><span class="main_left"><img src="images/icon04.png"  align="absmiddle" />&nbsp;&nbsp;违法查询<span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span></span></div>
+    <div class="box_nr">
+    <ul class="fg_list">
+      <li><a href="#">中华人民共和国道路交通管理条例</a></li> 
+      <li><a href="#">中华人民共和国机动车登记办法</a></li>  
+      <li><a href="#">中华人民共和国机动车驾驶证管理办法</a></li>  
+      <li><a href="#">中华人民共和国机动车驾驶员考试办法</a></li> 
+      <li><a href="#">道路交通事故处理办法</a></li>   
+      <li><a href="#">道路交通事故处理程序规定</a></li> 
+      <li><a href="#">高速公路交通管理办法</a></li>               
+      <li><a href="#">交通违章处罚程序规定交通违章处理程序规定</a></li>    
+      <li><a href="#">机动车驾驶员交通违章记分办法</a></li>  
+      <li><a href="#">北京市道路交通管理规定</a></li>    
+      <li><a href="#">北京市机动车和机动车驾驶员管理办法</a></li>    
+      </ul>
+    </div>
+    </div>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+     
+    <div class="nTab1">
+    <!-- 标题开始 -->
+    <div class="TabTitle1">
+    <div class="jt_h3 pos"><span class="left main_left"><img src="images/icon05.png" align="absmiddle" />&nbsp;&nbsp;快速处理点</span><span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span>
+      <ul id="myTab10">
+        <li class="active1" onmouseover="nTabs1(this,0);">列表</li>
+        <li class="normal1" onmouseover="nTabs1(this,1);">地图</li>
+      </ul>
+    </div>
+    </div>
+    <!-- 内容开始 -->
+    <div class="TabContent1">
+      <div id="myTab10_Content10">
+       	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr style="background:url(images/cl_list_top.gif) repeat-x;">
+    <td width="40%" height="27" align="center">快速处理点</td>
+    <td width="40%" height="27" align="center">地址</td>
+    <td height="27" align="center">电话</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">惠济一路警务综合服务</td>
+    <td align="center">黄孝河路惠济一路路口</td>
+    <td>85391051</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">惠济一路警务综合务站</td>
+    <td align="center">黄孝河路惠济一路路口</td>
+    <td>85391051</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">惠济一路警务综合服站</td>
+    <td align="center">黄孝河路惠济一路路口</td>
+    <td>85391051</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">惠济一路警务综合务站</td>
+    <td align="center">黄孝河路惠济一路路口</td>
+    <td>85391051</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">惠济一路警务综合务站</td>
+    <td align="center">黄孝河路惠济一路路口</td>
+    <td>85391051</td>
+  </tr>
+  <tr>
+    <td height="36" align="center">惠济一路警务综合务站</td>
+    <td align="center">黄孝河路惠济一路路口</td>
+    <td>85391051</td>
+  </tr>
+</table>
+	  </div>
+      <div id="myTab10_Content11" class="none">
+	  2
+	  </div>
+    </div>
+</div>
+    
+
+   <div class="clear"></div>
+    </div>
+    </td>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+    <div class="jt_h3 pos"><span class="main_left"><img src="images/icon06.png"  align="absmiddle" />&nbsp;&nbsp;安全提醒<span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span></span></div>
+    
+    <div class="tx_nr">
+    <div id=link_logoa style="OVERFLOW: hidden; HEIGHT: 250px">
+  <div id=link_logoa1 style="OVERFLOW: hidden">
+
+    <p class="tx_h3"><strong>安全提醒通知</strong><span class="red">【紧急】</span></p>
+    <p>为切实加强职工群众安全防范意识，五大连池农场派出所精心组织开展了发送安全提示短信活动，在全场营造出"时时想安全、处处保安全、人人为安全"的良好氛围。</p>
+    <p>他们的具体做法是：在每周的第一天发送安全提示短信，提醒大家新的一周要开好头、起好步，时刻绷紧安全弦不放松。每逢重大节日和假日，工作人员都要精心编写重点提示短信，如"放假不等于没事，节日不等于安全"、"人人安全来防范，节日幸福保平安"、"物防技防加人防，人人欢乐保安全"、"平平安安过大年，春节愉快福满园！"等等。
+    这些温馨的提示短信，既起到了安全提示的效果，又对职工群众</p>
+    
+   </div>
+  <div id=link_logoa2></div>
+</div> 
+<script>
+ var speed=65
+  link_logoa2.innerHTML=link_logoa1.innerHTML
+    function Marquee2(){
+	  if(link_logoa2.offsetTop-link_logoa.scrollTop<=0)
+	     link_logoa.scrollTop-=link_logoa1.offsetHeight
+		   else{
+		    link_logoa.scrollTop++
+			   }
+			      }
+				     var MyMar2=setInterval(Marquee2,speed)
+					    link_logoa.onmouseover=function() {clearInterval(MyMar2)}
+						   link_logoa.onmouseout=function() {MyMar2=setInterval(Marquee2,speed)}
+</script>
+</div>
+   
+    </div>
+    </td>
+    <td width="25%" align="left" valign="top">
+    <div class="box">
+    <div class="jt_h3 pos"><span class="main_left"><img src="images/icon07.png"  align="absmiddle" />&nbsp;&nbsp;会议通知<span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span></span></div>
+    
+    <div class="tx_nr">
+    <div id=link_logob style="OVERFLOW: hidden; HEIGHT: 250px">
+  <div id=link_logob1 style="OVERFLOW: hidden">
+
+    <p class="tx_h3"><strong>会议通知</strong><span class="lv">【一般】</span></p>
+    <p>为切实加强职工群众安全防范意识，五大连池农场派出所精心组织开展了发送安全提示短信活动，在全场营造出"时时想安全、处处保安全、人人为安全"的良好氛围。</p>
+    <p>他们的具体做法是：在每周的第一天发送安全提示短信，提醒大家新的一周要开好头、起好步，时刻绷紧安全弦不放松。每逢重大节日和假日，工作人员都要精心编写重点提示短信，如"放假不等于没事，节日不等于安全"、"人人安全来防范，节日幸福保平安"、"物防技防加人防，人人欢乐保安全"、"平平安安过大年，春节愉快福满园！"等等。
+    这些温馨的提示短信，既起到了安全提示的效果，又对职工群众</p>
+    
+   </div>
+  <div id=link_logob2></div>
+</div> 
+<script>
+ var speed=65
+  link_logob2.innerHTML=link_logob1.innerHTML
+    function Marquee2(){
+	  if(link_logob2.offsetTop-link_logob.scrollTop<=0)
+	     link_logob.scrollTop-=link_logob1.offsetHeight
+		   else{
+		    link_logob.scrollTop++
+			   }
+			      }
+				     var MyMar2=setInterval(Marquee2,speed)
+					    link_logob.onmouseover=function() {clearInterval(MyMar2)}
+						   link_logob.onmouseout=function() {MyMar2=setInterval(Marquee2,speed)}
+</script>
+</div>
+   
+    </div>
+    </td>
+    <td width="25%" align="left" valign="top">
+    
+    <div class="box">
+     
+    <div class="nTab2">
+    <!-- 标题开始 -->
+    <div class="TabTitle2">
+    <div class="jt_h3 pos"><span class="left main_left"><img src="images/icon08.png" align="absmiddle" />&nbsp;&nbsp;微博微信</span><span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span>
+      <ul id="myTab20">
+        <li class="active2" onmouseover="nTabs2(this,0);">微博</li>
+        <li class="normal2" onmouseover="nTabs2(this,1);">微信</li>
+        <li class="normal2" onmouseover="nTabs2(this,2);">问题互动</li>
+      </ul>
+    </div>
+    </div>
+    <!-- 内容开始 -->
+    <div class="TabContent2">
+      <div id="myTab20_Content20">
+       	 <iframe width="100%" height="280" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=100%&height=280&fansRow=2&ptype=1&speed=300&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2660097961&verifier=fb050df3&dpc=1"></iframe>
+	  </div>
+      <div id="myTab20_Content21" class="none">
+	  2
+	  </div>
+      <div id="myTab20_Content22" class="none">
+	  3
+	  </div>
+    </div>
+</div>
+    
+
+   <div class="clear"></div>
+    </div>
+    </td>
+  </tr>
+</table>
+<div style="color:#2a81c4; text-align:center">版权所有：机动车网上交通安全宣传教育监控平台&nbsp;&nbsp;技术支持：浙江网泽</div>
+</div>
+
+</body>
+</html>

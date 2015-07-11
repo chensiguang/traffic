@@ -1,0 +1,30 @@
+2014-11-12 20:11:27  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2014-11-12 20:11:27  [ main:95 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2014-11-12 20:11:30  [ main:2856 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@98d94[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 98d94, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2014-11-12 20:11:32  [ main:5103 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2014-11-12 20:11:32  [ main:5385 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2014-11-12 20:11:33  [ main:5479 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2014-11-12 20:11:33  [ main:5494 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2014-11-12 20:11:33  [ main:5526 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2014-11-12 20:11:33  [ main:5572 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2014-11-12 20:11:33  [ main:5572 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2014-11-12 20:11:33  [ main:5572 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2014-11-12 20:11:34  [ main:6898 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-11-12 20:11:34  [ main:6898 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json

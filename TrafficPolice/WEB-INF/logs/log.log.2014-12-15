@@ -1,0 +1,81 @@
+2014-12-15 18:55:55  [ http-8080-17:341626822 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a368fc]
+2014-12-15 18:55:55  [ http-8080-17:341626853 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-12-15 18:55:55  [ http-8080-17:341626854 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-15 18:55:55  [ http-8080-17:341626926 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1472c56]
+2014-12-15 18:55:55  [ http-8080-17:341626926 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2014-12-15 18:55:55  [ http-8080-17:341626971 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-15 18:55:55  [ http-8080-17:341627022 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@8985ae]
+2014-12-15 18:55:55  [ http-8080-17:341627022 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2014-12-15 18:55:55  [ http-8080-17:341627022 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-15 18:56:01  [ http-8080-17:341632743 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@94aa74]
+2014-12-15 18:56:01  [ http-8080-17:341632743 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_roles where state = 1 
+2014-12-15 18:56:01  [ http-8080-17:341632743 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 18:56:01  [ http-8080-17:341632746 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@df54fb]
+2014-12-15 18:56:01  [ http-8080-17:341632746 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 order by roleno desc limit ?,? 
+2014-12-15 18:56:01  [ http-8080-17:341632746 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-15 18:56:04  [ http-8080-18:341635706 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16c9762]
+2014-12-15 18:56:04  [ http-8080-18:341635707 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 18:56:04  [ http-8080-18:341635707 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 18:56:04  [ http-8080-18:341635708 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5b1378]
+2014-12-15 18:56:04  [ http-8080-18:341635708 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 18:56:04  [ http-8080-18:341635708 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-15 18:58:07  [ http-8080-18:341758511 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@624346]
+2014-12-15 18:58:07  [ http-8080-18:341758511 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 18:58:07  [ http-8080-18:341758511 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 18:58:07  [ http-8080-18:341758513 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1fb0d73]
+2014-12-15 18:58:07  [ http-8080-18:341758513 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 18:58:07  [ http-8080-18:341758513 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10(Integer), 10(Integer)
+2014-12-15 18:58:49  [ http-8080-18:341801208 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a17783]
+2014-12-15 18:58:49  [ http-8080-18:341801208 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 and loginname like CONCAT('%',?,'%') 
+2014-12-15 18:58:49  [ http-8080-18:341801209 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-15 18:58:49  [ http-8080-18:341801241 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a7e9b8]
+2014-12-15 18:58:49  [ http-8080-18:341801241 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 and u.loginname like CONCAT('%',?,'%' ) order by u.typeid desc limit ?,? 
+2014-12-15 18:58:49  [ http-8080-18:341801242 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String), 0(Integer), 10(Integer)
+2014-12-15 19:00:49  [ http-8080-18:341921248 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@178fa45]
+2014-12-15 19:00:49  [ http-8080-18:341921248 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: update tp_sys_user set state = 0 where userno = ? 
+2014-12-15 19:00:49  [ http-8080-18:341921248 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 376(Integer)
+2014-12-15 19:00:51  [ http-8080-18:341923011 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@aad7a]
+2014-12-15 19:00:51  [ http-8080-18:341923011 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 19:00:51  [ http-8080-18:341923012 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 19:00:51  [ http-8080-18:341923014 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6bd9e4]
+2014-12-15 19:00:51  [ http-8080-18:341923014 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 19:00:51  [ http-8080-18:341923015 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-15 19:00:54  [ http-8080-18:341926371 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1754216]
+2014-12-15 19:00:54  [ http-8080-18:341926372 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 19:00:54  [ http-8080-18:341926372 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 19:00:54  [ http-8080-18:341926374 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ca7bdc]
+2014-12-15 19:00:54  [ http-8080-18:341926375 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 19:00:54  [ http-8080-18:341926375 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10(Integer), 10(Integer)
+2014-12-15 19:01:02  [ http-8080-18:341933808 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@62ab87]
+2014-12-15 19:01:02  [ http-8080-18:341933808 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-12-15 19:01:02  [ http-8080-18:341933809 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-15 19:01:03  [ http-8080-18:341935359 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15569e2]
+2014-12-15 19:01:03  [ http-8080-18:341935359 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-12-15 19:01:03  [ http-8080-18:341935360 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-15 19:01:29  [ http-8080-18:341961087 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@65ce1e]
+2014-12-15 19:01:29  [ http-8080-18:341961087 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-12-15 19:01:29  [ http-8080-18:341961087 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2014-12-15 19:01:29  [ http-8080-18:341961095 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6cccdd]
+2014-12-15 19:01:29  [ http-8080-18:341961095 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2014-12-15 19:01:29  [ http-8080-18:341961095 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-15 19:01:29  [ http-8080-18:341961097 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@271930]
+2014-12-15 19:01:29  [ http-8080-18:341961097 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2014-12-15 19:01:29  [ http-8080-18:341961097 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2014-12-15 19:01:33  [ http-8080-18:341964658 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@12a1bb9]
+2014-12-15 19:01:33  [ http-8080-18:341964658 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 19:01:33  [ http-8080-18:341964659 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 19:01:33  [ http-8080-18:341964661 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1008362]
+2014-12-15 19:01:33  [ http-8080-18:341964661 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 19:01:33  [ http-8080-18:341964661 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2014-12-15 19:01:35  [ http-8080-18:341967299 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@d26b80]
+2014-12-15 19:01:35  [ http-8080-18:341967299 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 19:01:35  [ http-8080-18:341967299 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 19:01:35  [ http-8080-18:341967301 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@174f506]
+2014-12-15 19:01:35  [ http-8080-18:341967301 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 19:01:35  [ http-8080-18:341967301 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10(Integer), 10(Integer)
+2014-12-15 19:02:43  [ http-8080-18:342035084 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b82ccf]
+2014-12-15 19:02:43  [ http-8080-18:342035085 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_sys_user where state = 1 
+2014-12-15 19:02:43  [ http-8080-18:342035085 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-12-15 19:02:43  [ http-8080-18:342035086 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e22065]
+2014-12-15 19:02:43  [ http-8080-18:342035087 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select u.*,r.rolename,d.name,police.name as policename,c.comname from tp_sys_user u left join tp_basic_police police on u.username = police.id left join tp_sys_roles r on u.roleno = r.roleno left join tp_basic_company c on u.dwno = c.comid left join tp_basic_driver d on u.username = d.id where u.state = 1 order by u.typeid desc limit ?,? 
+2014-12-15 19:02:43  [ http-8080-18:342035087 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)

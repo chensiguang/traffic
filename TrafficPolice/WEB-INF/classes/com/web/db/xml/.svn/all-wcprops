@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/java/!svn/ver/17828/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml
+END
+PoliceMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/17501/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/PoliceMapper.xml
+END
+MicromessageMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 242
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/MicromessageMapper.xml
+END
+SafeNoticeMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/SafeNoticeMapper.xml
+END
+ReprimandMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/17786/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/ReprimandMapper.xml
+END
+TypeMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16848/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/TypeMapper.xml
+END
+PoliceOrgMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/17817/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/PoliceOrgMapper.xml
+END
+PcarMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/PcarMapper.xml
+END
+InterchangeMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/17017/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/InterchangeMapper.xml
+END
+SafeGroupListMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/java/!svn/ver/17560/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/SafeGroupListMapper.xml
+END
+PermissionMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/17433/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/PermissionMapper.xml
+END
+AdminMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 235
+/svn/java/!svn/ver/17708/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/AdminMapper.xml
+END
+DriverMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/17828/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/DriverMapper.xml
+END
+SafeGroupMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/17558/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/SafeGroupMapper.xml
+END
+MeetNoticeMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/MeetNoticeMapper.xml
+END
+AccountMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/java/!svn/ver/17817/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/AccountMapper.xml
+END
+BranchMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/17786/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/BranchMapper.xml
+END
+SafeGroupCarDriverMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 248
+/svn/java/!svn/ver/17557/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/SafeGroupCarDriverMapper.xml
+END
+SafeLearnMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/17759/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/SafeLearnMapper.xml
+END
+RoleMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/17556/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/RoleMapper.xml
+END
+RuleIllegalMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16849/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/RuleIllegalMapper.xml
+END
+EduVideoMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 238
+/svn/java/!svn/ver/17786/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/EduVideoMapper.xml
+END
+ConfigMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/ConfigMapper.xml
+END
+CarMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/17817/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/CarMapper.xml
+END
+CompanyMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/java/!svn/ver/17687/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/CompanyMapper.xml
+END
+RuleMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16849/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/RuleMapper.xml
+END
+AreaMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/17046/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/AreaMapper.xml
+END
+PoliceOrgCompanyMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/17441/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/PoliceOrgCompanyMapper.xml
+END
+RolePermissionMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/java/!svn/ver/17527/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/db/xml/RolePermissionMapper.xml
+END

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.MicromessageDao" >
+  <resultMap id="BaseResultMap" type="com.web.pojo.Micromessage" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="microid" property="microid" jdbcType="INTEGER" />
+    <result column="microname" property="microname" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="VARCHAR" />
+	 <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+	
+  		<!-- 查找操作人 -->
+<!-- 	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Micromessage">
+		select i.*, u.username,u.userno from tp_micro_micromessage i left join tp_sys_user u
+        on i.operid = u.userno where i.id = #{id,jdbcType=INTEGER} 
+	</select> -->
+
+  <select id="selectMicromessageList" resultMap="BaseResultMap" >
+    select 
+    * 
+    from tp_micro_micromessage t
+    where t.state=1 order by t.createtime desc limit ${param1},${param2}
+  </select>
+  
+  <select id="selectCount" parameterType="map" resultType="java.lang.Integer" >
+    select 
+    count(id) 
+    from tp_micro_micromessage
+    where state =1
+  </select>
+</mapper>

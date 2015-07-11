@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- the mousewheel plugin -->
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/scroll-startstop.events.jquery.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+ var oMoveBox = $("#col_box"), oArr = $("#arrow"), maxL = 185;
+ oArr.click(function(){
+  oMoveBox.animate({"height":"-="+maxL},185,function(){
+   maxL = -maxL;
+   $("#arrow").html(maxL<0 ? "﹀" : "︿");
+  })
+ });
+});
+</script>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="top" id="box">
+
+<div id="col_box">
+
+<table width="100%" height="108" border="0" cellspacing="0" cellpadding="0" style="float:left">
+  <tr>
+    <td align="left" valign="middle"><span class="padding-left"><a href="index.html"><img src="images/logo.png" width="508" height="104" /></a></span></td>
+    <td rowspan="2" align="right" valign="bottom"><img src="images/logo_img1.png"/></td>
+  </tr>
+  <tr>
+    <td align="left" valign="middle"><div style="padding:10px 10px 10px 15px;width:100%">
+<div class="nav"><a href="jtfg.html"><img src="images/nav01.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="xjzx.html"><img src="images/nav02.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="jbxx.html"><img src="images/nav03.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="wfcx.html"><img src="images/nav04.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="kscl.html"><img src="images/nav05.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="aqtx.html"><img src="images/nav06.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="hytz.html"><img src="images/nav07.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="wthd.html"><img src="images/nav08.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="wbwx.html"><img src="images/nav09.png" width="60" height="60" /></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/nav10.png" width="60" height="60" /></a></div>
+</div></td>
+  </tr>
+</table>
+
+</div>
+<div class="clear"></div>
+<div id="arrow">﹀</div>
+</div>
+<div class="clear"></div>
+<div class="main">
+  <div class="box">
+    <div class="jt_h3 pos"><span class="main_left"><img src="images/icon01.png" width="18" height="20" align="absmiddle" />&nbsp;&nbsp;交通法规</span><span class="gb"><a href="#"><img src="images/close.png" width="10" height="10" /></a></span></div>
+    <div class="box_nr1  padding">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="40%" align="left" valign="top"><ul class="fg_list1">
+        <li><a href="#">中华人民共和国道路交通管理条例</a></li>
+        <li><a href="#">中华人民共和国机动车登记办法</a></li>
+        <li><a href="#">中华人民共和国机动车驾驶证管理办法</a></li>
+        <li><a href="#">中华人民共和国机动车驾驶员考试办法</a></li>
+        <li><a href="#">道路交通事故处理办法</a></li>
+        <li><a href="#">道路交通事故处理程序规定</a></li>
+        <li><a href="#">高速公路交通管理办法</a></li>
+
+      </ul>
+      <div class="clear"></div>
+      <div class="sabrosus"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>
+      </td>
+    <td align="left" valign="top">
+    
+    <div id="jp-container" class="jp-container">
+    <div style="padding:10px 15px; line-height:22px">
+	  <p>交通法规新规定2013(全文)</p>
+	  <p>来源：华律网整理    时间：2013年01月09日    浏览：868552 次 </p>
+	  <p>公安部10月8日公布了最新修订的《机动车驾驶证申领和使用规定》，新交通规则严格了对驾驶员的管理。最新交通法规扣分细则也更为严格，闯红灯交通违法记分将由3分提高到6分，不挂号牌或遮挡号牌的一次就将扣光12分。</p>
+	  <p> 最新交通法规中关于校车驾驶人管理的内容自发布之日起施行，其他规定将于2013年1月1日起正式施行。2013新交通规则提高了违法成本，记分项也由38项增加至52项。</p>
+	  <p> 具体扣分细节如下：	    </p>
+	  <p>交通违法的处理：</p>
+	  <p> 1、闯红灯，记6分。罚100元。</p>
+	  <p> 2、酒驾，扣12分。根据驾驶车辆和是否出事故等情况做出5年内不得再申领驾照、10年内不得再申领驾照、终身不的申领驾照处罚。（详见《机车驾驶证申领和使用规定》第12条、第16条、第72条、第77条规定）</p>
+	  <p> 3、不系安全带，记2分，罚100元。	    </p>
+	  <p>4、副驾驶不系安全带的，5元以上20元以下罚款。</p>
+	  <p> 5、行驶途中拨打手机，记2分。	    </p>
+	  <p>6、有意遮挡号牌，记12分。</p>
+	  <p> 7、超速驾驶，根据超速车辆、行驶道路、超速50%、超速20%等具体情况，分别记12分、6分、3分（详解下面具体扣分规定）。	    </p>
+	  <p>从2012年7月起，7种摄录违法(非现场处罚)罚款+记分：(是摄录罚款)</p>
+	  <p> 1、闯红灯，罚款200元.。	    </p>
+	  <p>2、不按导向车道行驶，罚款200元。</p>
+	  <p> 3、违反禁止标线行驶，罚款100元。</p>
+	  <p> 4、超速行车，罚款200元。	    </p>
+	  <p>5、机动车走非机动车车道，罚款100元。</p>
+	  <p> 6、逆行，罚款200元。	    </p>
+	  <p>7、违停车，罚款200元。	    </p>
+	  <p>机动车驾驶人有下列违法行为之一，一次记12分：	    </p>
+	  <p>（一）驾驶与准驾车型不符的机动车的；	    </p>
+	  <p>（二）饮酒后驾驶机动车的；	    </p>
+	  <p>（三）驾驶营运客车（不包括公共汽车）、校车载人超过核定人数20％以上的；</p>
+	  <p> （四）造成交通事故后逃逸，尚不构成犯罪的；	    </p>
+	  <p>（五）上道路行驶的机动车未悬挂机动车号牌的，或者故意遮挡、污损、不按规定安装机动车号牌的；	    </p>
+	  <p>（六）使用伪造、变造的机动车号牌、行驶证、驾驶证、校车标牌或者使用其他机动车号牌、行驶证的；</p>
+	  <p> （七）驾驶机动车在高速公路上倒车、逆行、穿越中央分隔带掉头的；	    </p>
+	  <p>（八）驾驶营运客车在高速公路车道内停车的；	    </p>
+	  <p>（九）驾驶中型以上载客载货汽车、校车、危险物品运输车辆在高速公路、城市快速路上行驶超过规定时速20％以上或者在高速公路、城市快速路以外的道路上行驶超过规定时速50％以上，以及驾驶其他机动车行驶超过规定时速50%以上的；	    </p>
+	  <p>（十）连续驾驶中型以上载客汽车、危险物品运输车辆超过4小时未停车休息或者停车休息时间少于20分钟的；</p>
+	  <p> （十一）未取得校车驾驶资格驾驶校车的。</p>
+      </div>
+</div>
+    <script type="text/javascript">
+		$(function() {
+		
+			// the element we want to apply the jScrollPane
+			var $el					= $('#jp-container').jScrollPane({
+				verticalGutter 	: -16
+			}),
+					
+			// the extension functions and options 	
+				extensionPlugin 	= {
+					
+					extPluginOpts	: {
+						// speed for the fadeOut animation
+						mouseLeaveFadeSpeed	: 500,
+						// scrollbar fades out after hovertimeout_t milliseconds
+						hovertimeout_t		: 1000,
+						// if set to false, the scrollbar will be shown on mouseenter and hidden on mouseleave
+						// if set to true, the same will happen, but the scrollbar will be also hidden on mouseenter after "hovertimeout_t" ms
+						// also, it will be shown when we start to scroll and hidden when stopping
+						useTimeout			: true,
+						// the extension only applies for devices with width > deviceWidth
+						deviceWidth			: 980
+					},
+					hovertimeout	: null, // timeout to hide the scrollbar
+					isScrollbarHover: false,// true if the mouse is over the scrollbar
+					elementtimeout	: null,	// avoids showing the scrollbar when moving from inside the element to outside, passing over the scrollbar
+					isScrolling		: false,// true if scrolling
+					addHoverFunc	: function() {
+						
+						// run only if the window has a width bigger than deviceWidth
+						if( $(window).width() <= this.extPluginOpts.deviceWidth ) return false;
+						
+						var instance		= this;
+						
+						// functions to show / hide the scrollbar
+						$.fn.jspmouseenter 	= $.fn.show;
+						$.fn.jspmouseleave 	= $.fn.fadeOut;
+						
+						// hide the jScrollPane vertical bar
+						var $vBar			= this.getContentPane().siblings('.jspVerticalBar').hide();
+						
+						/*
+						 * mouseenter / mouseleave events on the main element
+						 * also scrollstart / scrollstop - @James Padolsey : http://james.padolsey.com/javascript/special-scroll-events-for-jquery/
+						 */
+						$el.bind('mouseenter.jsp',function() {
+							
+							// show the scrollbar
+							$vBar.stop( true, true ).jspmouseenter();
+							
+							if( !instance.extPluginOpts.useTimeout ) return false;
+							
+							// hide the scrollbar after hovertimeout_t ms
+							clearTimeout( instance.hovertimeout );
+							instance.hovertimeout 	= setTimeout(function() {
+								// if scrolling at the moment don't hide it
+								if( !instance.isScrolling )
+									$vBar.stop( true, true ).jspmouseleave( instance.extPluginOpts.mouseLeaveFadeSpeed || 0 );
+							}, instance.extPluginOpts.hovertimeout_t );
+							
+							
+						}).bind('mouseleave.jsp',function() {
+							
+							// hide the scrollbar
+							if( !instance.extPluginOpts.useTimeout )
+								$vBar.stop( true, true ).jspmouseleave( instance.extPluginOpts.mouseLeaveFadeSpeed || 0 );
+							else {
+							clearTimeout( instance.elementtimeout );
+							if( !instance.isScrolling )
+									$vBar.stop( true, true ).jspmouseleave( instance.extPluginOpts.mouseLeaveFadeSpeed || 0 );
+							}
+							
+						});
+						
+						if( this.extPluginOpts.useTimeout ) {
+							
+							$el.bind('scrollstart.jsp', function() {
+							
+								// when scrolling show the scrollbar
+							clearTimeout( instance.hovertimeout );
+							instance.isScrolling	= true;
+							$vBar.stop( true, true ).jspmouseenter();
+							
+						}).bind('scrollstop.jsp', function() {
+							
+								// when stop scrolling hide the scrollbar (if not hovering it at the moment)
+							clearTimeout( instance.hovertimeout );
+							instance.isScrolling	= false;
+							instance.hovertimeout 	= setTimeout(function() {
+								if( !instance.isScrollbarHover )
+										$vBar.stop( true, true ).jspmouseleave( instance.extPluginOpts.mouseLeaveFadeSpeed || 0 );
+								}, instance.extPluginOpts.hovertimeout_t );
+							
+						});
+						
+							// wrap the scrollbar
+							// we need this to be able to add the mouseenter / mouseleave events to the scrollbar
+						var $vBarWrapper	= $('<div/>').css({
+							position	: 'absolute',
+							left		: $vBar.css('left'),
+							top			: $vBar.css('top'),
+							right		: $vBar.css('right'),
+							bottom		: $vBar.css('bottom'),
+							width		: $vBar.width(),
+							height		: $vBar.height()
+						}).bind('mouseenter.jsp',function() {
+							
+							clearTimeout( instance.hovertimeout );
+							clearTimeout( instance.elementtimeout );
+							
+							instance.isScrollbarHover	= true;
+							
+								// show the scrollbar after 100 ms.
+								// avoids showing the scrollbar when moving from inside the element to outside, passing over the scrollbar								
+							instance.elementtimeout	= setTimeout(function() {
+								$vBar.stop( true, true ).jspmouseenter();
+							}, 100 );	
+							
+						}).bind('mouseleave.jsp',function() {
+							
+								// hide the scrollbar after hovertimeout_t
+							clearTimeout( instance.hovertimeout );
+							instance.isScrollbarHover	= false;
+							instance.hovertimeout = setTimeout(function() {
+									// if scrolling at the moment don't hide it
+								if( !instance.isScrolling )
+										$vBar.stop( true, true ).jspmouseleave( instance.extPluginOpts.mouseLeaveFadeSpeed || 0 );
+								}, instance.extPluginOpts.hovertimeout_t );
+							
+						});
+						
+						$vBar.wrap( $vBarWrapper );
+						
+					}
+					
+					}
+					
+				},
+				
+				// the jScrollPane instance
+				jspapi 			= $el.data('jsp');
+				
+			// extend the jScollPane by merging	
+			$.extend( true, jspapi, extensionPlugin );
+			jspapi.addHoverFunc();
+		
+		});
+	</script>
+    </td>
+  </tr>
+</table>
+
+      
+      
+      
+    </div>
+  </div>
+  <div style="color:#2a81c4; text-align:center">版权所有：机动车网上交通安全宣传教育监控平台&nbsp;&nbsp;技术支持：浙江网泽</div>
+</div>
+</body>
+</html>

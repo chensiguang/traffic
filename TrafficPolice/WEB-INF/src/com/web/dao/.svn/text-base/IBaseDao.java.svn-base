@@ -1,0 +1,1 @@
+package com.web.dao;import java.util.HashMap;import java.util.List;public interface IBaseDao<T> {	 int getCountByAll(HashMap<String , Object> query);	    	 List<T> selectPage(HashMap<String, Object> query);}

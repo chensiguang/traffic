@@ -1,0 +1,30 @@
+2014-11-28 17:51:04  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:72874821 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.sql.SQLException: Connection is invalid
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:196)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)
+2014-11-28 17:51:04  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:72874857 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.sql.SQLException: Connection is invalid
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:196)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)
+2014-11-28 17:51:04  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:72875141 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.sql.SQLException: Connection is invalid
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:196)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)
+2014-11-28 17:51:04  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:72874859 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.sql.SQLException: Connection is invalid
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:196)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)
+2014-11-28 17:51:04  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:72874859 ] - [ WARN ] [com.mchange.v2.resourcepool.BasicResourcePool] BasicResourcePool: An idle resource is broken and will be purged.
+java.sql.SQLException: Connection is invalid
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.testPooledConnection(C3P0PooledConnectionPool.java:196)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1.refurbishIdleResource(C3P0PooledConnectionPool.java:136)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:368)

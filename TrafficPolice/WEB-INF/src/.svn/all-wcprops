@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/java/!svn/ver/17828/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/java/!svn/ver/16497/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/struts.xml
+END
+applicationContext-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 235
+/svn/java/!svn/ver/17759/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/applicationContext-service.xml
+END
+struts-upload.xml
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/java/!svn/ver/16506/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/struts-upload.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/applicationContext.xml
+END
+applicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/java/!svn/ver/17759/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/applicationContext-dao.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/java/!svn/ver/16521/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/log4j.properties
+END
+mybatis-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/java/!svn/ver/17759/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/mybatis-config.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/java/!svn/ver/13307/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/jdbc.properties
+END
+struts-action.xml
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/java/!svn/ver/17788/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/struts-action.xml
+END

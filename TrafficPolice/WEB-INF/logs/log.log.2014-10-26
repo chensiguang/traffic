@@ -1,0 +1,103 @@
+2014-10-26 19:35:47  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2014-10-26 19:35:47  [ main:261 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2014-10-26 19:35:51  [ main:4603 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@1158bbe[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1158bbe, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2014-10-26 19:35:55  [ main:8208 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2014-10-26 19:35:56  [ main:8749 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2014-10-26 19:35:56  [ main:8960 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2014-10-26 19:35:56  [ main:8976 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2014-10-26 19:35:56  [ main:8976 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2014-10-26 19:35:56  [ main:8976 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2014-10-26 19:35:56  [ main:8976 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2014-10-26 19:35:56  [ main:8976 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2014-10-26 19:35:56  [ main:8977 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2014-10-26 19:35:56  [ main:8977 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2014-10-26 19:35:56  [ main:8977 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2014-10-26 19:35:56  [ main:8977 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2014-10-26 19:35:56  [ main:8989 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2014-10-26 19:35:56  [ main:8989 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2014-10-26 19:35:56  [ main:8990 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2014-10-26 19:35:56  [ main:8991 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2014-10-26 19:35:56  [ main:9053 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2014-10-26 19:35:56  [ main:9053 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2014-10-26 19:35:56  [ main:9053 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2014-10-26 19:35:59  [ main:11728 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-26 19:35:59  [ main:11729 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-26 19:36:38  [ http-8080-1:51582 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-26 19:36:39  [ http-8080-1:52541 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1403562]
+2014-10-26 19:36:39  [ http-8080-1:52544 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-26 19:36:39  [ http-8080-1:52653 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:40  [ http-8080-1:53208 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7e1f14]
+2014-10-26 19:36:40  [ http-8080-1:53208 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-26 19:36:40  [ http-8080-1:53209 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:41  [ http-8080-1:53876 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@b78623]
+2014-10-26 19:36:41  [ http-8080-1:53879 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-26 19:36:41  [ http-8080-1:53879 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:41  [ http-8080-1:54243 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17b3304]
+2014-10-26 19:36:41  [ http-8080-1:54243 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-26 19:36:41  [ http-8080-1:54243 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:41  [ http-8080-1:54562 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2108c2]
+2014-10-26 19:36:41  [ http-8080-1:54562 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-26 19:36:41  [ http-8080-1:54563 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:41  [ http-8080-1:54572 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@18be08e]
+2014-10-26 19:36:41  [ http-8080-1:54573 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-26 19:36:41  [ http-8080-1:54573 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:41  [ http-8080-1:54624 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1acc227]
+2014-10-26 19:36:41  [ http-8080-1:54625 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-26 19:36:41  [ http-8080-1:54625 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:42  [ http-8080-1:54673 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@190399]
+2014-10-26 19:36:42  [ http-8080-1:54673 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by notice_time desc limit 0,3 
+2014-10-26 19:36:42  [ http-8080-1:54673 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:42  [ http-8080-1:54679 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@108d17e]
+2014-10-26 19:36:42  [ http-8080-1:54679 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,4 
+2014-10-26 19:36:42  [ http-8080-1:54679 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:42  [ http-8080-1:54845 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ea2b4b]
+2014-10-26 19:36:42  [ http-8080-1:54845 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_micro_micromessage t where t.state=1 order by t.createtime desc limit 0,20 
+2014-10-26 19:36:42  [ http-8080-1:54845 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:42  [ http-8080-1:54878 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@128abd9]
+2014-10-26 19:36:42  [ http-8080-1:54879 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car c1 left join tp_basic_company c2 on (c1.comid = c2.comid and c2.state = 1) where c1.state = 1 order by c1.regtime desc limit 0,20 
+2014-10-26 19:36:42  [ http-8080-1:54879 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:36:42  [ http-8080-1:55012 ] - [ INFO ] [com.web.action.base.BaseAction] end index view...
+2014-10-26 19:37:33  [ http-8080-3:106528 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-26 19:37:33  [ http-8080-3:106529 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1932672]
+2014-10-26 19:37:33  [ http-8080-3:106530 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-26 19:37:33  [ http-8080-3:106531 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106541 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17eeb7e]
+2014-10-26 19:37:33  [ http-8080-3:106541 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-26 19:37:33  [ http-8080-3:106541 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106561 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@182658f]
+2014-10-26 19:37:33  [ http-8080-3:106561 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-26 19:37:33  [ http-8080-3:106561 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106574 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a14174]
+2014-10-26 19:37:33  [ http-8080-3:106575 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-26 19:37:33  [ http-8080-3:106576 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106599 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@114cc93]
+2014-10-26 19:37:33  [ http-8080-3:106600 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-26 19:37:33  [ http-8080-3:106603 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106610 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16aeae0]
+2014-10-26 19:37:33  [ http-8080-3:106610 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-26 19:37:33  [ http-8080-3:106610 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106616 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1f33a02]
+2014-10-26 19:37:33  [ http-8080-3:106617 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-26 19:37:33  [ http-8080-3:106617 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106619 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@797817]
+2014-10-26 19:37:33  [ http-8080-3:106619 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by notice_time desc limit 0,3 
+2014-10-26 19:37:33  [ http-8080-3:106620 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106621 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@eec618]
+2014-10-26 19:37:33  [ http-8080-3:106621 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,4 
+2014-10-26 19:37:33  [ http-8080-3:106622 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106623 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@f50af4]
+2014-10-26 19:37:33  [ http-8080-3:106624 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_micro_micromessage t where t.state=1 order by t.createtime desc limit 0,20 
+2014-10-26 19:37:33  [ http-8080-3:106624 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:33  [ http-8080-3:106627 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@33819a]
+2014-10-26 19:37:33  [ http-8080-3:106627 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car c1 left join tp_basic_company c2 on (c1.comid = c2.comid and c2.state = 1) where c1.state = 1 order by c1.regtime desc limit 0,20 
+2014-10-26 19:37:33  [ http-8080-3:106627 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-26 19:37:34  [ http-8080-3:106804 ] - [ INFO ] [com.web.action.base.BaseAction] end index view...
+2014-10-26 19:39:37  [ http-8080-3:229931 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@db03b1]
+2014-10-26 19:39:37  [ http-8080-3:229931 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2014-10-26 19:39:37  [ http-8080-3:229932 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)

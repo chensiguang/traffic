@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<menu>
+	<item id="delete" text="删除"></item>
+	<item id="edit" text="修改"></item>
+	<item id="insert" text="新增"></item>
+</menu>

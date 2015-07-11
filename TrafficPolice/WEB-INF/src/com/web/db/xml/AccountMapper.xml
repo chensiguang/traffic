@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.AccountDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Account">
+		<id column="userno" property="userno" jdbcType="INTEGER" />
+		<result column="dwno" property="dwno" jdbcType="INTEGER" />
+		<result column="roleno" property="roleno" jdbcType="INTEGER" />
+		<result column="loginname" property="loginname" jdbcType="VARCHAR" />
+		<result column="username" property="username" jdbcType="VARCHAR" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
+		<result column="telephone" property="telephone" jdbcType="VARCHAR" />
+		<result column="address" property="address" jdbcType="VARCHAR" />
+		<result column="email" property="email" jdbcType="VARCHAR" />
+		<result column="typeid" property="typeid" jdbcType="INTEGER" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="regid" property="regid" jdbcType="INTEGER" />
+		<result column="regtime" property="regtime" jdbcType="TIMESTAMP" />
+		<result column="adminflag" property="adminflag" jdbcType="INTEGER" />
+		<association property="role" javaType="com.web.pojo.Role">
+		    <result column="rolename" property="rolename" jdbcType="VARCHAR" />
+		</association>
+		<association property="company" javaType="com.web.pojo.Company">
+		     <result column="comname" property="comname" jdbcType="VARCHAR" />
+		</association>
+    <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+    
+    <association property="driver" javaType="com.web.pojo.Driver">
+       <result property="name" jdbcType="VARCHAR" />
+    </association>
+    
+    <association property="police" javaType="com.web.pojo.Police">
+       <result property="name" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+
+	
+	<!-- 后台管理 -->
+	
+	<!-- 查找操作人 -->
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Account">
+		select i.*, u.username,u.userno from tp_sys_user i left join tp_sys_user u
+        on i.operid = u.userno where i.userno = #{id,jdbcType=INTEGER} 
+	</select>
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		select * from tp_sys_user 
+        where userno = #{id,jdbcType=INTEGER} 
+	</select>
+
+	<insert id="insertAccount" parameterType="com.web.pojo.Account">
+		insert into
+		tp_sys_user(userno,dwno,roleno,loginname,username,password,telephone,address,email,typeid,operid,opertime,remark,regtime)
+		values
+		(
+		#{userno,jdbcType=INTEGER},
+		#{dwno,jdbcType=INTEGER},
+		#{roleno,jdbcType=INTEGER},
+		#{loginname,jdbcType=VARCHAR},
+		#{username,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR},
+		#{telephone,jdbcType=VARCHAR},
+		#{address,jdbcType=VARCHAR},
+		#{email,jdbcType=VARCHAR},
+		#{typeid,jdbcType=INTEGER},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{regtime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Account">
+		select u.*,r.rolename,c.comname,d.name,p.name
+		from tp_sys_user u
+		left join tp_sys_roles r
+		on u.roleno = r.roleno
+		left join tp_basic_company c
+        on u.dwno = c.comid
+        left join tp_basic_driver d
+        on u.username = d.id
+        left join tp_basic_police p
+        on u.username = p.id
+		where userno = #{id,jdbcType=INTEGER}
+	</select>
+	
+	<select id="queryDataByUserno" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Account">
+		select u.*,r.rolename,c.comname,d.name,p.name as policename
+		from tp_sys_user u
+		left join tp_sys_roles r
+		on u.roleno = r.roleno
+		left join tp_basic_company c
+        on u.dwno = c.comid
+        left join tp_basic_driver d
+        on u.username = d.id
+        left join tp_basic_police p
+        on u.username = p.id
+		where u.state = 1 and username= #{userno,jdbcType=INTEGER}
+	</select>
+	
+	<update id="updateAccount" parameterType="com.web.pojo.Account">
+		update tp_sys_user
+		set
+		dwno = #{dwno,jdbcType=INTEGER},
+		roleno = #{roleno,jdbcType=INTEGER},
+		loginname = #{loginname,jdbcType=VARCHAR},
+		username = #{username,jdbcType=VARCHAR},
+		password = #{password,jdbcType=VARCHAR},
+		telephone = #{telephone,jdbcType=VARCHAR},
+		address = #{address,jdbcType=VARCHAR},
+		email = #{email,jdbcType=VARCHAR},
+		typeid = #{typeid,jdbcType=INTEGER},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		remark = #{remark,jdbcType=VARCHAR}
+		where userno = #{id,jdbcType=INTEGER}
+	</update>
+
+	
+	<update id="updatePassword" parameterType="com.web.pojo.Account">
+		update tp_sys_user
+		set
+		password = #{password,jdbcType=VARCHAR}
+		where userno = #{id,jdbcType=INTEGER}
+	</update>
+	
+	<update id="updateAdminflag" parameterType="java.lang.Integer">
+		update tp_sys_user
+		set
+		adminflag = 1
+		where state = 1 and userno = #{id,jdbcType=INTEGER}
+	</update>
+	
+	<update id="deleteAdminflag" parameterType="java.lang.Integer">
+		update tp_sys_user
+		set
+		adminflag = 0
+		where state = 1 and userno = #{id,jdbcType=INTEGER}
+	</update>
+	
+		
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_sys_user
+		 set state = 0
+		 where userno = #{id,jdbcType=INTEGER}
+	</update>
+	
+	<update id="deleteDataByUsername" parameterType="java.lang.Integer">
+		update tp_sys_user
+		 set state = 0
+		 where username= #{username,jdbcType=INTEGER}
+	</update>
+
+	
+	 <!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.Account">
+  		select 
+  			count(*) 
+  		from tp_sys_user 
+  		where state = 1
+  		<if test="id != null">
+  		and userno != #{id,jdbcType=INTEGER} 
+  		</if>
+  		and loginname = #{loginname,jdbcType=VARCHAR}
+  	</select>
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_sys_user where state = 1 
+		<if test="searchname != null">
+		   and loginname like CONCAT('%',#{searchname,jdbcType=VARCHAR},'%')
+		</if>
+	<!-- 	 <if test="searchroleno != 0">
+		   and roleno = #{searchroleno,jdbcType=INTEGER}
+		</if> -->
+		<if test="searchstarttime != null">
+		  and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		   and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select u.*,r.rolename,d.name,police.name as policename,c.comname
+		from tp_sys_user u 
+		left join tp_basic_police police on u.username = police.id
+		left join tp_sys_roles r on u.roleno = r.roleno
+		left join tp_basic_company c on u.dwno = c.comid
+        left join tp_basic_driver d on u.username = d.id
+		where u.state = 1 
+		<if test="searchname != null">
+		   and u.loginname like CONCAT('%',#{searchname},'%' )
+		</if>
+	<!-- 	<if test="searchroleno != 0">
+		     and u.roleno = #{searchroleno}
+		</if> -->
+		<if test="searchstarttime != null">
+		  and u.regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		   and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= u.regtime
+		</if>
+		order by u.typeid desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select> 
+
+</mapper>

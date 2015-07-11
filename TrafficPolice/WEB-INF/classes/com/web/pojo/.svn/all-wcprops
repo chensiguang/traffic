@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/java/!svn/ver/17820/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo
+END
+SafeLearn.java
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/17786/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/SafeLearn.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/16930/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Role.java
+END
+RuleIllegal.java
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/RuleIllegal.java
+END
+BasePojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/java/!svn/ver/16144/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/BasePojo.java
+END
+EduVideo.java
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/java/!svn/ver/17786/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/EduVideo.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Config.java
+END
+Car.java
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Car.java
+END
+Company.java
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/java/!svn/ver/17687/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Company.java
+END
+Rule.java
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Rule.java
+END
+Area.java
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Area.java
+END
+PoliceOrgCompany.java
+K 25
+svn:wc:ra_dav:version-url
+V 239
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/PoliceOrgCompany.java
+END
+RolePermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/java/!svn/ver/16755/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/RolePermission.java
+END
+Police.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/java/!svn/ver/17553/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Police.java
+END
+Micromessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 235
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Micromessage.java
+END
+SafeNotice.java
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/SafeNotice.java
+END
+Reprimand.java
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/17648/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Reprimand.java
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Type.java
+END
+PoliceOrg.java
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/17553/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/PoliceOrg.java
+END
+Pcar.java
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Pcar.java
+END
+Interchange.java
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Interchange.java
+END
+SafeGroupList.java
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/17557/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/SafeGroupList.java
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Permission.java
+END
+Admin.java
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svn/java/!svn/ver/17708/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Admin.java
+END
+Driver.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/java/!svn/ver/17820/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Driver.java
+END
+SafeGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/17557/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/SafeGroup.java
+END
+MeetNotice.java
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/MeetNotice.java
+END
+Account.java
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/java/!svn/ver/17708/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Account.java
+END
+Branch.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/java/!svn/ver/16164/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/Branch.java
+END
+SafeGroupCarDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/17501/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/pojo/SafeGroupCarDriver.java
+END

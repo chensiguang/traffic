@@ -1,0 +1,643 @@
+2013-10-23 17:30:40  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2013-10-23 17:30:40  [ main:26 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2013-10-23 17:30:41  [ main:1028 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@3d4c7deb[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 3d4c7deb, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://172.16.0.210:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2013-10-23 17:30:42  [ main:1771 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2013-10-23 17:30:42  [ main:1835 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2013-10-23 17:30:42  [ main:1891 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2013-10-23 17:30:42  [ main:1895 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2013-10-23 17:30:42  [ main:1895 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2013-10-23 17:30:42  [ main:1895 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2013-10-23 17:30:42  [ main:1896 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2013-10-23 17:30:42  [ main:1896 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2013-10-23 17:30:42  [ main:1896 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2013-10-23 17:30:42  [ main:1896 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2013-10-23 17:30:42  [ main:1896 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2013-10-23 17:30:42  [ main:1896 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2013-10-23 17:30:42  [ main:1898 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2013-10-23 17:30:42  [ main:1898 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2013-10-23 17:30:42  [ main:1898 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2013-10-23 17:30:42  [ main:1898 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2013-10-23 17:30:42  [ main:1898 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2013-10-23 17:30:42  [ main:1898 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2013-10-23 17:30:42  [ main:1905 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2013-10-23 17:30:42  [ main:1905 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2013-10-23 17:30:42  [ main:1906 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2013-10-23 17:30:42  [ main:1906 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2013-10-23 17:30:42  [ main:1925 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2013-10-23 17:30:42  [ main:1925 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2013-10-23 17:30:42  [ main:1925 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2013-10-23 17:30:42  [ main:2460 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:30:42  [ main:2461 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:30:50  [ http-8080-1:9807 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d81aed0]
+2013-10-23 17:30:50  [ http-8080-1:9810 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2013-10-23 17:30:50  [ http-8080-1:9836 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2013-10-23 17:30:50  [ http-8080-1:9869 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6d330af4]
+2013-10-23 17:30:50  [ http-8080-1:9869 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2013-10-23 17:30:50  [ http-8080-1:9870 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:30:50  [ http-8080-1:9873 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b286c71]
+2013-10-23 17:30:50  [ http-8080-1:9873 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2013-10-23 17:30:50  [ http-8080-1:9873 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:30:53  [ http-8080-1:12880 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5bab2ddb]
+2013-10-23 17:30:53  [ http-8080-1:12880 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:30:53  [ http-8080-1:12881 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:30:53  [ http-8080-1:12884 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@422ed1e8]
+2013-10-23 17:30:53  [ http-8080-1:12885 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:30:53  [ http-8080-1:12885 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:30:56  [ http-8080-1:15741 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6f112776]
+2013-10-23 17:30:56  [ http-8080-1:15742 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:30:56  [ http-8080-1:15742 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:30:56  [ http-8080-1:15744 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@95c90f4]
+2013-10-23 17:30:56  [ http-8080-1:15744 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:30:56  [ http-8080-1:15745 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:30:57  [ http-8080-1:17422 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4ec12ad8]
+2013-10-23 17:30:57  [ http-8080-1:17422 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:30:57  [ http-8080-1:17423 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:30:57  [ http-8080-1:17425 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3f3471d]
+2013-10-23 17:30:57  [ http-8080-1:17425 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:30:57  [ http-8080-1:17426 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:31:00  [ http-8080-1:19724 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3bdd6a67]
+2013-10-23 17:31:00  [ http-8080-1:19724 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:31:00  [ http-8080-1:19724 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:31:00  [ http-8080-1:19726 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@54aae359]
+2013-10-23 17:31:00  [ http-8080-1:19727 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:00  [ http-8080-1:19727 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:31:01  [ http-8080-1:20969 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@761b22ed]
+2013-10-23 17:31:01  [ http-8080-1:20969 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:31:01  [ http-8080-1:20970 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:31:01  [ http-8080-1:20974 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@76745477]
+2013-10-23 17:31:01  [ http-8080-1:20975 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:31:01  [ http-8080-1:20975 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:31:02  [ http-8080-1:22558 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@140de537]
+2013-10-23 17:31:02  [ http-8080-1:22558 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:31:02  [ http-8080-1:22559 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:31:02  [ http-8080-1:22561 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@65e26e12]
+2013-10-23 17:31:02  [ http-8080-1:22561 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:02  [ http-8080-1:22562 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:31:06  [ http-8080-1:25825 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@612c4b66]
+2013-10-23 17:31:06  [ http-8080-1:25825 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:31:06  [ http-8080-1:25827 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:31:06  [ http-8080-1:25831 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5a86506a]
+2013-10-23 17:31:06  [ http-8080-1:25831 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:06  [ http-8080-1:25832 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:31:08  [ http-8080-1:28203 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@58d67b44]
+2013-10-23 17:31:08  [ http-8080-1:28203 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:31:08  [ http-8080-1:28204 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:31:08  [ http-8080-1:28207 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@71d9a2ab]
+2013-10-23 17:31:08  [ http-8080-1:28207 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:08  [ http-8080-1:28208 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:31:10  [ http-8080-1:29899 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5978bb14]
+2013-10-23 17:31:10  [ http-8080-1:29899 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:31:10  [ http-8080-1:29900 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:31:10  [ http-8080-1:29902 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@51fe8884]
+2013-10-23 17:31:10  [ http-8080-1:29902 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:10  [ http-8080-1:29903 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:31:12  [ http-8080-1:32334 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@75ab4586]
+2013-10-23 17:31:12  [ http-8080-1:32334 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:31:12  [ http-8080-1:32335 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:31:12  [ http-8080-1:32337 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4e3a2053]
+2013-10-23 17:31:12  [ http-8080-1:32337 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:12  [ http-8080-1:32337 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:31:19  [ http-8080-1:38719 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2a29052b]
+2013-10-23 17:31:19  [ http-8080-1:38719 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:31:19  [ http-8080-1:38720 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:31:19  [ http-8080-1:38722 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@714cf72c]
+2013-10-23 17:31:19  [ http-8080-1:38722 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:19  [ http-8080-1:38723 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:31:29  [ http-8080-1:49207 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@57df9c23]
+2013-10-23 17:31:29  [ http-8080-1:49207 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:31:29  [ http-8080-1:49208 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:31:29  [ http-8080-1:49210 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@101873a6]
+2013-10-23 17:31:29  [ http-8080-1:49210 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:31:29  [ http-8080-1:49210 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:31:31  [ http-8080-1:51267 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@cbc71bd]
+2013-10-23 17:31:31  [ http-8080-1:51267 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1 and oc.flag = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:31:31  [ http-8080-1:51268 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:32:04  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2013-10-23 17:32:04  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:29 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2013-10-23 17:32:05  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:819 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@1617e649[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1617e649, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://172.16.0.210:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2013-10-23 17:32:05  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1570 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2013-10-23 17:32:05  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1634 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1677 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1682 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1683 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1683 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1683 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1683 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1684 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1684 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1684 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1684 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1686 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1686 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1686 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1687 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1702 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1703 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:1703 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:2130 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:32:06  [ ContainerBackgroundProcessor[StandardEngine[Catalina]]:2131 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:32:09  [ http-8080-6:5441 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@694435e5]
+2013-10-23 17:32:09  [ http-8080-6:5442 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2013-10-23 17:32:09  [ http-8080-6:5456 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2013-10-23 17:32:09  [ http-8080-6:5478 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3cdd197d]
+2013-10-23 17:32:09  [ http-8080-6:5478 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2013-10-23 17:32:09  [ http-8080-6:5478 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:32:09  [ http-8080-6:5481 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@75ab5e0b]
+2013-10-23 17:32:09  [ http-8080-6:5482 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2013-10-23 17:32:09  [ http-8080-6:5482 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:32:12  [ http-8080-6:8236 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6ff58334]
+2013-10-23 17:32:12  [ http-8080-6:8237 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:32:12  [ http-8080-6:8237 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:32:12  [ http-8080-6:8242 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6daa8eb7]
+2013-10-23 17:32:12  [ http-8080-6:8243 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:32:12  [ http-8080-6:8247 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:32:14  [ http-8080-6:9736 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7e073cd7]
+2013-10-23 17:32:14  [ http-8080-6:9736 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:32:14  [ http-8080-6:9736 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:32:14  [ http-8080-6:9739 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@19fb672f]
+2013-10-23 17:32:14  [ http-8080-6:9739 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:32:14  [ http-8080-6:9739 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:32:26  [ http-8080-6:22468 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@554d4f9]
+2013-10-23 17:32:26  [ http-8080-6:22468 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:32:26  [ http-8080-6:22468 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:32:26  [ http-8080-6:22471 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@cd30557]
+2013-10-23 17:32:26  [ http-8080-6:22472 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:32:26  [ http-8080-6:22472 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:32:27  [ http-8080-6:23454 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9bb8a29]
+2013-10-23 17:32:27  [ http-8080-6:23455 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:32:27  [ http-8080-6:23455 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:32:27  [ http-8080-6:23457 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2336f0c9]
+2013-10-23 17:32:27  [ http-8080-6:23457 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:32:27  [ http-8080-6:23458 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:32:33  [ http-8080-6:29196 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@43f7c3e3]
+2013-10-23 17:32:33  [ http-8080-6:29196 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:32:33  [ http-8080-6:29198 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:32:33  [ http-8080-6:29201 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1288e720]
+2013-10-23 17:32:33  [ http-8080-6:29202 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:32:33  [ http-8080-6:29202 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:32:59  [ http-8080-6:54821 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@53d11f70]
+2013-10-23 17:32:59  [ http-8080-6:54822 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:32:59  [ http-8080-6:54822 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:32:59  [ http-8080-6:54825 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@790417ad]
+2013-10-23 17:32:59  [ http-8080-6:54825 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:32:59  [ http-8080-6:54826 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:33:04  [ http-8080-6:60580 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6aa86249]
+2013-10-23 17:33:04  [ http-8080-6:60580 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:33:04  [ http-8080-6:60581 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:33:04  [ http-8080-6:60583 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7fa3eaa8]
+2013-10-23 17:33:04  [ http-8080-6:60583 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname from tp_safegrouplist bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:33:04  [ http-8080-6:60584 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:33:11  [ http-8080-6:67139 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16d14192]
+2013-10-23 17:33:11  [ http-8080-6:67140 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:33:11  [ http-8080-6:67140 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:33:11  [ http-8080-6:67143 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7db1be6]
+2013-10-23 17:33:11  [ http-8080-6:67143 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:33:11  [ http-8080-6:67144 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:33:12  [ http-8080-6:68542 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@43e47e37]
+2013-10-23 17:33:12  [ http-8080-6:68542 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:33:12  [ http-8080-6:68542 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:33:12  [ http-8080-6:68545 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4b11a903]
+2013-10-23 17:33:12  [ http-8080-6:68545 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:33:12  [ http-8080-6:68547 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:33:13  [ http-8080-6:69536 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2e02d950]
+2013-10-23 17:33:13  [ http-8080-6:69536 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:33:13  [ http-8080-6:69537 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:33:13  [ http-8080-6:69540 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7abdd25]
+2013-10-23 17:33:13  [ http-8080-6:69540 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:33:13  [ http-8080-6:69541 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:34:35  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2013-10-23 17:34:35  [ main:23 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2013-10-23 17:34:36  [ main:992 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@45d18084[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 45d18084, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://172.16.0.210:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2013-10-23 17:34:37  [ main:1692 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2013-10-23 17:34:37  [ main:1755 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2013-10-23 17:34:37  [ main:1797 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2013-10-23 17:34:37  [ main:1801 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2013-10-23 17:34:37  [ main:1801 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2013-10-23 17:34:37  [ main:1801 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2013-10-23 17:34:37  [ main:1801 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2013-10-23 17:34:37  [ main:1801 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2013-10-23 17:34:37  [ main:1801 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2013-10-23 17:34:37  [ main:1802 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2013-10-23 17:34:37  [ main:1802 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2013-10-23 17:34:37  [ main:1802 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2013-10-23 17:34:37  [ main:1804 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2013-10-23 17:34:37  [ main:1805 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2013-10-23 17:34:37  [ main:1805 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2013-10-23 17:34:37  [ main:1805 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2013-10-23 17:34:37  [ main:1820 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2013-10-23 17:34:37  [ main:1820 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2013-10-23 17:34:37  [ main:1820 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2013-10-23 17:34:37  [ main:2277 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:34:37  [ main:2279 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:34:41  [ http-8080-1:6381 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@65202d8a]
+2013-10-23 17:34:41  [ http-8080-1:6384 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2013-10-23 17:34:42  [ http-8080-1:6409 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2013-10-23 17:34:42  [ http-8080-1:6440 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@52a7b7ff]
+2013-10-23 17:34:42  [ http-8080-1:6441 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2013-10-23 17:34:42  [ http-8080-1:6441 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:34:42  [ http-8080-1:6444 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@75dfb148]
+2013-10-23 17:34:42  [ http-8080-1:6444 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2013-10-23 17:34:42  [ http-8080-1:6445 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:34:50  [ http-8080-1:15168 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d523d40]
+2013-10-23 17:34:50  [ http-8080-1:15168 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:34:50  [ http-8080-1:15168 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:34:50  [ http-8080-1:15171 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@384e23c3]
+2013-10-23 17:34:50  [ http-8080-1:15172 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:34:50  [ http-8080-1:15173 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:34:53  [ http-8080-1:17579 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@d2c9015]
+2013-10-23 17:34:53  [ http-8080-1:17580 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:34:53  [ http-8080-1:17580 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:34:53  [ http-8080-1:17582 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d023565]
+2013-10-23 17:34:53  [ http-8080-1:17583 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:34:53  [ http-8080-1:17583 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:34:54  [ http-8080-1:19153 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3e99f610]
+2013-10-23 17:34:54  [ http-8080-1:19153 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:34:54  [ http-8080-1:19154 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:34:54  [ http-8080-1:19157 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d382988]
+2013-10-23 17:34:54  [ http-8080-1:19158 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:34:54  [ http-8080-1:19158 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:36:19  [ http-8080-6:103704 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@19f71b53]
+2013-10-23 17:36:19  [ http-8080-6:103704 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:36:19  [ http-8080-6:103704 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:36:19  [ http-8080-6:103707 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@d1cbec9]
+2013-10-23 17:36:19  [ http-8080-6:103707 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:36:19  [ http-8080-6:103708 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:36:23  [ http-8080-6:108194 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5fda692f]
+2013-10-23 17:36:23  [ http-8080-6:108194 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:36:23  [ http-8080-6:108194 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:36:23  [ http-8080-6:108197 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6a844689]
+2013-10-23 17:36:23  [ http-8080-6:108197 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:36:23  [ http-8080-6:108198 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:36:25  [ http-8080-6:109946 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@ef0cda1]
+2013-10-23 17:36:25  [ http-8080-6:109946 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:36:25  [ http-8080-6:109947 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:36:25  [ http-8080-6:109950 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5b5034e0]
+2013-10-23 17:36:25  [ http-8080-6:109951 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:36:25  [ http-8080-6:109951 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:39:06  [ http-8080-5:270995 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5f048099]
+2013-10-23 17:39:06  [ http-8080-5:270996 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:39:06  [ http-8080-5:270997 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:39:06  [ http-8080-5:271002 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@670bb83e]
+2013-10-23 17:39:06  [ http-8080-5:271002 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:39:06  [ http-8080-5:271002 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:39:08  [ http-8080-5:272633 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@181860e4]
+2013-10-23 17:39:08  [ http-8080-5:272634 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:39:08  [ http-8080-5:272634 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:39:08  [ http-8080-5:272636 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17e7a4d0]
+2013-10-23 17:39:08  [ http-8080-5:272636 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:39:08  [ http-8080-5:272637 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:39:56  [ http-8080-5:321365 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@186c5ac4]
+2013-10-23 17:39:56  [ http-8080-5:321366 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:39:56  [ http-8080-5:321366 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:39:56  [ http-8080-5:321368 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@249b7336]
+2013-10-23 17:39:56  [ http-8080-5:321368 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:39:56  [ http-8080-5:321369 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:39:58  [ http-8080-5:322972 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1619b32e]
+2013-10-23 17:39:58  [ http-8080-5:322972 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:39:58  [ http-8080-5:322972 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:39:58  [ http-8080-5:322974 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ff335bb]
+2013-10-23 17:39:58  [ http-8080-5:322974 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:39:58  [ http-8080-5:322975 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:40:00  [ http-8080-5:324444 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6a46ca65]
+2013-10-23 17:40:00  [ http-8080-5:324444 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:40:00  [ http-8080-5:324445 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:40:00  [ http-8080-5:324455 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@31d91824]
+2013-10-23 17:40:00  [ http-8080-5:324456 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:40:00  [ http-8080-5:324456 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:40:58  [ http-8080-4:382452 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5dfc1b56]
+2013-10-23 17:40:58  [ http-8080-4:382453 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:40:58  [ http-8080-4:382453 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:40:58  [ http-8080-4:382455 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@715a64e6]
+2013-10-23 17:40:58  [ http-8080-4:382455 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:40:58  [ http-8080-4:382456 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:40:59  [ http-8080-4:383696 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a46a171]
+2013-10-23 17:40:59  [ http-8080-4:383696 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:40:59  [ http-8080-4:383696 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:40:59  [ http-8080-4:383698 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7fac9fff]
+2013-10-23 17:40:59  [ http-8080-4:383698 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:40:59  [ http-8080-4:383699 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:41:01  [ http-8080-4:386263 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@63adf08f]
+2013-10-23 17:41:01  [ http-8080-4:386263 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:41:01  [ http-8080-4:386264 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:41:01  [ http-8080-4:386266 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@19fef7b]
+2013-10-23 17:41:01  [ http-8080-4:386266 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:41:01  [ http-8080-4:386266 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:41:04  [ http-8080-4:388994 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@748455dd]
+2013-10-23 17:41:04  [ http-8080-4:388995 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:41:04  [ http-8080-4:388995 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:41:04  [ http-8080-4:388998 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e1c5dd1]
+2013-10-23 17:41:04  [ http-8080-4:388998 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:41:04  [ http-8080-4:388999 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:41:09  [ http-8080-4:394380 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@847fc71]
+2013-10-23 17:41:09  [ http-8080-4:394380 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:41:09  [ http-8080-4:394380 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:41:09  [ http-8080-4:394385 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@c00a029]
+2013-10-23 17:41:09  [ http-8080-4:394385 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:41:09  [ http-8080-4:394385 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:41:27  [ http-8080-4:412352 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@73e0e19d]
+2013-10-23 17:41:27  [ http-8080-4:412353 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:41:27  [ http-8080-4:412353 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:41:27  [ http-8080-4:412355 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3f29cfbb]
+2013-10-23 17:41:27  [ http-8080-4:412356 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:41:27  [ http-8080-4:412356 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:41:36  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2013-10-23 17:41:36  [ main:22 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2013-10-23 17:41:37  [ main:957 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@37d7f3f4[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 37d7f3f4, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://172.16.0.210:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2013-10-23 17:41:38  [ main:1655 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2013-10-23 17:41:38  [ main:1718 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2013-10-23 17:41:38  [ main:1759 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2013-10-23 17:41:38  [ main:1762 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2013-10-23 17:41:38  [ main:1762 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2013-10-23 17:41:38  [ main:1762 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2013-10-23 17:41:38  [ main:1762 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2013-10-23 17:41:38  [ main:1767 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2013-10-23 17:41:38  [ main:1768 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2013-10-23 17:41:38  [ main:1768 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2013-10-23 17:41:38  [ main:1768 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2013-10-23 17:41:38  [ main:1768 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2013-10-23 17:41:38  [ main:1769 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2013-10-23 17:41:38  [ main:1770 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2013-10-23 17:41:38  [ main:1785 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2013-10-23 17:41:38  [ main:1786 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2013-10-23 17:41:38  [ main:1786 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2013-10-23 17:41:39  [ main:2214 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:41:39  [ main:2216 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2013-10-23 17:42:23  [ http-8080-1:46870 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@199d4a86]
+2013-10-23 17:42:23  [ http-8080-1:46873 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_user where state = 1 and loginname = ? 
+2013-10-23 17:42:23  [ http-8080-1:46896 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: admin(String)
+2013-10-23 17:42:23  [ http-8080-1:46927 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3067ed13]
+2013-10-23 17:42:23  [ http-8080-1:46927 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select p.* from tp_sys_roles_permission p left join tp_sys_user u on p.roleno = u.roleno where p.state = 1 and p.roleno = ? 
+2013-10-23 17:42:23  [ http-8080-1:46928 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:42:23  [ http-8080-1:46933 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4ba4536d]
+2013-10-23 17:42:23  [ http-8080-1:46933 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_sys_roles where state = 1 and roleno = ? 
+2013-10-23 17:42:23  [ http-8080-1:46933 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 1(Long)
+2013-10-23 17:42:26  [ http-8080-1:50010 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@76bb9f5b]
+2013-10-23 17:42:26  [ http-8080-1:50010 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:42:26  [ http-8080-1:50010 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:42:26  [ http-8080-1:50014 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2b650cea]
+2013-10-23 17:42:26  [ http-8080-1:50014 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:42:26  [ http-8080-1:50015 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:42:28  [ http-8080-1:51179 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5035135a]
+2013-10-23 17:42:28  [ http-8080-1:51180 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:42:28  [ http-8080-1:51180 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:42:28  [ http-8080-1:51183 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@344c8b84]
+2013-10-23 17:42:28  [ http-8080-1:51183 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:42:28  [ http-8080-1:51184 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:42:29  [ http-8080-1:52660 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e91c310]
+2013-10-23 17:42:29  [ http-8080-1:52660 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:42:29  [ http-8080-1:52661 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:42:29  [ http-8080-1:52665 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7baf1ad8]
+2013-10-23 17:42:29  [ http-8080-1:52665 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:42:29  [ http-8080-1:52665 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:42:54  [ http-8080-4:77488 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@31efa79f]
+2013-10-23 17:42:54  [ http-8080-4:77489 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:42:54  [ http-8080-4:77489 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:42:54  [ http-8080-4:77491 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3957f3a4]
+2013-10-23 17:42:54  [ http-8080-4:77492 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:42:54  [ http-8080-4:77492 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:42:56  [ http-8080-4:79761 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@772a3766]
+2013-10-23 17:42:56  [ http-8080-4:79761 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:42:56  [ http-8080-4:79762 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 225(String)
+2013-10-23 17:42:56  [ http-8080-4:79765 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5af92541]
+2013-10-23 17:42:56  [ http-8080-4:79765 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:42:56  [ http-8080-4:79766 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 225(String), 0(Integer), 10(Integer)
+2013-10-23 17:43:43  [ http-8080-1:126894 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@71e001c8]
+2013-10-23 17:43:43  [ http-8080-1:126894 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(carid) from tp_basic_car where state = 1 order by regtime desc 
+2013-10-23 17:43:43  [ http-8080-1:126894 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:43:43  [ http-8080-1:126896 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1c2709da]
+2013-10-23 17:43:43  [ http-8080-1:126896 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car where state = 1 and comid = ? 
+2013-10-23 17:43:43  [ http-8080-1:126897 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2013-10-23 17:43:43  [ http-8080-1:126901 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'count':'17','size':'0'}
+2013-10-23 17:43:47  [ http-8080-6:130453 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1bbe4050]
+2013-10-23 17:43:47  [ http-8080-6:130453 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:43:47  [ http-8080-6:130454 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:43:47  [ http-8080-6:130458 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4ccbb612]
+2013-10-23 17:43:47  [ http-8080-6:130458 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:43:47  [ http-8080-6:130459 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:43:49  [ http-8080-6:133035 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1361c602]
+2013-10-23 17:43:49  [ http-8080-6:133035 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:43:49  [ http-8080-6:133036 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:43:49  [ http-8080-6:133038 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3eae775]
+2013-10-23 17:43:49  [ http-8080-6:133038 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:43:49  [ http-8080-6:133039 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:43:51  [ http-8080-6:134698 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@38e02fc4]
+2013-10-23 17:43:51  [ http-8080-6:134698 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:43:51  [ http-8080-6:134698 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:43:51  [ http-8080-6:134702 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@90dae16]
+2013-10-23 17:43:51  [ http-8080-6:134702 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:43:51  [ http-8080-6:134702 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:44:10  [ http-8080-4:153787 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1916a3de]
+2013-10-23 17:44:10  [ http-8080-4:153788 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_basic_driver where state = 1 order by id desc 
+2013-10-23 17:44:10  [ http-8080-4:153791 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:44:11  [ http-8080-4:154403 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5e335678]
+2013-10-23 17:44:11  [ http-8080-4:154404 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver where state = 1 and dwid = ? order by id desc 
+2013-10-23 17:44:11  [ http-8080-4:154413 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2013-10-23 17:44:12  [ http-8080-4:155793 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'count':'18','size':'0'}
+2013-10-23 17:45:00  [ http-8080-4:203330 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@27cf35d3]
+2013-10-23 17:45:00  [ http-8080-4:203330 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:45:00  [ http-8080-4:203330 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:45:00  [ http-8080-4:203332 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6b414655]
+2013-10-23 17:45:00  [ http-8080-4:203333 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:00  [ http-8080-4:203333 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:45:04  [ http-8080-4:207527 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@dc30dfa]
+2013-10-23 17:45:04  [ http-8080-4:207527 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:45:04  [ http-8080-4:207528 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:45:04  [ http-8080-4:207529 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@8ff557a]
+2013-10-23 17:45:04  [ http-8080-4:207530 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:04  [ http-8080-4:207530 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:45:06  [ http-8080-4:209523 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@65dfb0b5]
+2013-10-23 17:45:06  [ http-8080-4:209523 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:45:06  [ http-8080-4:209523 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:45:06  [ http-8080-4:209527 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16394576]
+2013-10-23 17:45:06  [ http-8080-4:209527 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:45:06  [ http-8080-4:209527 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:45:24  [ http-8080-4:228034 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5889dee2]
+2013-10-23 17:45:24  [ http-8080-4:228034 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:45:24  [ http-8080-4:228034 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:45:24  [ http-8080-4:228044 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5889b953]
+2013-10-23 17:45:24  [ http-8080-4:228045 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:24  [ http-8080-4:228045 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:45:26  [ http-8080-4:229115 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@693f87b1]
+2013-10-23 17:45:26  [ http-8080-4:229115 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:45:26  [ http-8080-4:229115 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:45:26  [ http-8080-4:229118 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4795dda9]
+2013-10-23 17:45:26  [ http-8080-4:229118 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:26  [ http-8080-4:229119 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:45:26  [ http-8080-4:229495 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@10d0c3d5]
+2013-10-23 17:45:26  [ http-8080-4:229495 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:45:26  [ http-8080-4:229496 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:45:26  [ http-8080-4:229498 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4cf824b7]
+2013-10-23 17:45:26  [ http-8080-4:229498 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:26  [ http-8080-4:229499 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:45:31  [ http-8080-4:234286 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4b59d3b2]
+2013-10-23 17:45:31  [ http-8080-4:234286 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:45:31  [ http-8080-4:234286 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:45:31  [ http-8080-4:234288 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2785982c]
+2013-10-23 17:45:31  [ http-8080-4:234289 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:31  [ http-8080-4:234289 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:45:32  [ http-8080-7:235617 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5b46c2cb]
+2013-10-23 17:45:32  [ http-8080-7:235617 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:45:32  [ http-8080-7:235618 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:45:32  [ http-8080-7:235620 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3c9c4703]
+2013-10-23 17:45:32  [ http-8080-7:235620 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:45:32  [ http-8080-7:235621 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:45:34  [ http-8080-7:237114 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@24a075e6]
+2013-10-23 17:45:34  [ http-8080-7:237114 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:45:34  [ http-8080-7:237114 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:45:34  [ http-8080-7:237117 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4ef56959]
+2013-10-23 17:45:34  [ http-8080-7:237117 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:45:34  [ http-8080-7:237118 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:46:24  [ http-8080-7:287993 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b7a7861]
+2013-10-23 17:46:24  [ http-8080-7:287994 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:46:24  [ http-8080-7:287994 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:46:24  [ http-8080-7:287996 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b1b315c]
+2013-10-23 17:46:24  [ http-8080-7:287997 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:46:24  [ http-8080-7:288013 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:46:27  [ http-8080-7:290727 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@201a755e]
+2013-10-23 17:46:27  [ http-8080-7:290728 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:46:27  [ http-8080-7:290728 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:46:27  [ http-8080-7:290731 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6f41f9f6]
+2013-10-23 17:46:27  [ http-8080-7:290731 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:46:27  [ http-8080-7:290731 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:46:30  [ http-8080-7:293619 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@78b4cbc5]
+2013-10-23 17:46:30  [ http-8080-7:293619 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:46:30  [ http-8080-7:293619 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 225(String)
+2013-10-23 17:46:30  [ http-8080-7:293622 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4019eb89]
+2013-10-23 17:46:30  [ http-8080-7:293622 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:46:30  [ http-8080-7:293622 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 225(String), 0(Integer), 10(Integer)
+2013-10-23 17:46:32  [ http-8080-7:295760 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5ef23a26]
+2013-10-23 17:46:32  [ http-8080-7:295761 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:46:32  [ http-8080-7:295761 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:46:32  [ http-8080-7:295763 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@40d3ab8b]
+2013-10-23 17:46:32  [ http-8080-7:295763 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:46:32  [ http-8080-7:295763 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:47:03  [ http-8080-7:326358 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@cfc9fac]
+2013-10-23 17:47:03  [ http-8080-7:326358 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:47:03  [ http-8080-7:326358 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:47:03  [ http-8080-7:326360 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@69f070e8]
+2013-10-23 17:47:03  [ http-8080-7:326360 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:47:03  [ http-8080-7:326361 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:47:08  [ http-8080-1:331239 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7af32927]
+2013-10-23 17:47:08  [ http-8080-1:331239 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:47:08  [ http-8080-1:331239 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:47:08  [ http-8080-1:331241 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@470f93f9]
+2013-10-23 17:47:08  [ http-8080-1:331242 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:47:08  [ http-8080-1:331242 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:47:09  [ http-8080-1:332832 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6cc235e1]
+2013-10-23 17:47:09  [ http-8080-1:332832 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:47:09  [ http-8080-1:332833 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:47:09  [ http-8080-1:332835 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4eb07663]
+2013-10-23 17:47:09  [ http-8080-1:332835 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:47:09  [ http-8080-1:332835 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:47:11  [ http-8080-1:334108 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@25394e9d]
+2013-10-23 17:47:11  [ http-8080-1:334108 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:47:11  [ http-8080-1:334109 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:47:11  [ http-8080-1:334113 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@39be9f72]
+2013-10-23 17:47:11  [ http-8080-1:334113 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:47:11  [ http-8080-1:334113 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:47:17  [ http-8080-1:340109 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6899712b]
+2013-10-23 17:47:17  [ http-8080-1:340109 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:47:17  [ http-8080-1:340110 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:47:17  [ http-8080-1:340111 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@21b20e62]
+2013-10-23 17:47:17  [ http-8080-1:340112 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:47:17  [ http-8080-1:340112 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:47:19  [ http-8080-1:342526 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5bfcb5c1]
+2013-10-23 17:47:19  [ http-8080-1:342526 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:47:19  [ http-8080-1:342527 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 229(String)
+2013-10-23 17:47:19  [ http-8080-1:342531 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a787ee7]
+2013-10-23 17:47:19  [ http-8080-1:342533 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:47:19  [ http-8080-1:342533 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 229(String), 0(Integer), 10(Integer)
+2013-10-23 17:47:28  [ http-8080-3:351763 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5f81a4ab]
+2013-10-23 17:47:28  [ http-8080-3:351763 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(carid) from tp_basic_car where state = 1 order by regtime desc 
+2013-10-23 17:47:28  [ http-8080-3:351764 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:47:28  [ http-8080-3:351766 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@14621bd7]
+2013-10-23 17:47:28  [ http-8080-3:351766 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car where state = 1 and comid = ? 
+2013-10-23 17:47:28  [ http-8080-3:351767 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2013-10-23 17:47:28  [ http-8080-3:351770 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'count':'17','size':'0'}
+2013-10-23 17:47:33  [ http-8080-1:356630 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7c1f3f7]
+2013-10-23 17:47:33  [ http-8080-1:356631 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_basic_driver where state = 1 order by id desc 
+2013-10-23 17:47:33  [ http-8080-1:356634 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:47:34  [ http-8080-1:357172 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@28bf47df]
+2013-10-23 17:47:34  [ http-8080-1:357172 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver where state = 1 and dwid = ? order by id desc 
+2013-10-23 17:47:34  [ http-8080-1:357174 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2013-10-23 17:47:35  [ http-8080-1:358368 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'count':'18','size':'0'}
+2013-10-23 17:48:18  [ http-8080-1:401394 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@aad33f6]
+2013-10-23 17:48:18  [ http-8080-1:401395 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:48:18  [ http-8080-1:401395 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:48:18  [ http-8080-1:401397 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@54faadb1]
+2013-10-23 17:48:18  [ http-8080-1:401397 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:18  [ http-8080-1:401397 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:48:24  [ http-8080-1:407206 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@225274a3]
+2013-10-23 17:48:24  [ http-8080-1:407207 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_edu_video where state = 1 
+2013-10-23 17:48:24  [ http-8080-1:407207 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:48:24  [ http-8080-1:407217 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2305454a]
+2013-10-23 17:48:24  [ http-8080-1:407217 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc limit ? ,? 
+2013-10-23 17:48:24  [ http-8080-1:407218 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:48:25  [ http-8080-7:408765 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@12699df5]
+2013-10-23 17:48:25  [ http-8080-7:408765 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:48:25  [ http-8080-7:408765 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:48:25  [ http-8080-7:408767 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@22013e9b]
+2013-10-23 17:48:25  [ http-8080-7:408767 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:25  [ http-8080-7:408768 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:48:27  [ http-8080-7:410655 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@33d18707]
+2013-10-23 17:48:27  [ http-8080-7:410655 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:48:27  [ http-8080-7:410655 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:48:27  [ http-8080-7:410657 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3078d976]
+2013-10-23 17:48:27  [ http-8080-7:410657 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:27  [ http-8080-7:410658 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:48:28  [ http-8080-7:412043 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6199ffdd]
+2013-10-23 17:48:28  [ http-8080-7:412043 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:48:28  [ http-8080-7:412043 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:48:29  [ http-8080-7:412047 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@21bdbf51]
+2013-10-23 17:48:29  [ http-8080-7:412047 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:48:29  [ http-8080-7:412047 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)
+2013-10-23 17:48:33  [ http-8080-7:417022 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@54a8f58d]
+2013-10-23 17:48:33  [ http-8080-7:417022 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:48:33  [ http-8080-7:417023 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:48:33  [ http-8080-7:417025 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2edf98c4]
+2013-10-23 17:48:33  [ http-8080-7:417025 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:33  [ http-8080-7:417025 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:48:40  [ http-8080-7:424005 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d6362fc]
+2013-10-23 17:48:40  [ http-8080-7:424005 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:48:40  [ http-8080-7:424005 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:48:40  [ http-8080-7:424007 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@59530fe3]
+2013-10-23 17:48:40  [ http-8080-7:424008 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:40  [ http-8080-7:424008 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:48:43  [ http-8080-7:426521 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6cab6dcb]
+2013-10-23 17:48:43  [ http-8080-7:426521 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_basic_company bc left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc 
+2013-10-23 17:48:43  [ http-8080-7:426521 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2013-10-23 17:48:43  [ http-8080-7:426523 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d88a478]
+2013-10-23 17:48:43  [ http-8080-7:426524 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,po.orgname,cc.comname as companyname from tp_basic_company bc left join tp_basic_company cc on (bc.pid = cc.comid and cc.state = 1) left join tp_basic_porg_company oc on (bc.comid = oc.comid and oc.state = 1) left join tp_basic_policeorg po on (oc.orgid = po.id and po.state = 1) where bc.state = 1 order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:43  [ http-8080-7:426524 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer), 10(Integer)
+2013-10-23 17:48:48  [ http-8080-7:431942 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@52ecfe38]
+2013-10-23 17:48:48  [ http-8080-7:431942 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(*) from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc 
+2013-10-23 17:48:48  [ http-8080-7:431942 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String)
+2013-10-23 17:48:48  [ http-8080-7:431944 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@c77d0d6]
+2013-10-23 17:48:48  [ http-8080-7:431944 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select bc.*,oc.comname,d.name,sf.groupname from tp_safegroup_driver_car bc left join tp_basic_company oc on (bc.dwid = oc.comid and oc.state = 1) left join tp_basic_driver d on (bc.zzid = d.id and oc.state = 1) left join tp_safegrouplist sf on (bc.groupid = sf.groupid and oc.state = 1) where bc.state = 1 and bc.dwid = ? order by bc.regtime desc limit ?,? 
+2013-10-23 17:48:48  [ http-8080-7:431944 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(String), 0(Integer), 10(Integer)
+2013-10-23 17:48:58  [ http-8080-7:441216 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b5e236a]
+2013-10-23 17:48:58  [ http-8080-7:441216 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_company where state = 1 and comid = ? 
+2013-10-23 17:48:58  [ http-8080-7:441217 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Integer)
+2013-10-23 17:48:58  [ http-8080-7:441220 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5437dd04]
+2013-10-23 17:48:58  [ http-8080-7:441221 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select s.*,d.name from tp_safegrouplist s left join tp_basic_driver d on s.zzid = d.id where s.state = 1 and s.flag = 1 and s.dwid = ? 
+2013-10-23 17:48:58  [ http-8080-7:441221 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 227(Long)

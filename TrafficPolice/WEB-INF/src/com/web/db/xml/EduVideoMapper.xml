@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.EduVideoDao" >
+  <resultMap id="BaseResultMap" type="com.web.pojo.EduVideo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="video_type" property="videoType" jdbcType="INTEGER" />
+    <result column="video_title" property="videoTitle" jdbcType="VARCHAR" />
+    <result column="video_release_time" property="videoReleaseTime" jdbcType="TIMESTAMP" />
+    <result column="video_url" property="videoUrl" jdbcType="VARCHAR" />
+    <result column="operid" property="operid" jdbcType="INTEGER" />
+    <result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="fileName" property="fileName" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR"/>
+    <result column="regtime" property="regtime" jdbcType="TIMESTAMP" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+     <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="loginname" jdbcType="VARCHAR" />
+    </association>
+     <association property="safelearn" javaType="com.web.pojo.SafeLearn">
+       <result property="sumtime" jdbcType="INTEGER" />
+    </association>
+    
+  </resultMap>
+
+  <select id="selectVideoList" resultMap="BaseResultMap" >
+    select 
+     * 
+    from tp_edu_video 
+    where state = 1 order by video_release_time desc limit ${param1},${param2}
+  </select>
+
+  <select id="selectVideoDetailById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+     * 
+    from tp_edu_video 
+    where state = 1 AND id = #{id,jdbcType=INTEGER}
+  </select>
+  
+  <select id="selectCount" resultType="java.lang.Integer" >
+    select 
+    count(id) 
+    from tp_edu_video 
+    where state = 1
+  </select>
+  
+  <!-- 后台管理 -->
+  
+   <select id="queryAll" resultMap="BaseResultMap">
+    select *  
+    from tp_edu_video where state = 1  order by id desc
+  </select>
+  
+   <insert id="insertEduVideo" parameterType="com.web.pojo.EduVideo">
+       insert into tp_edu_video(id,video_type,video_title,video_release_time,content,video_url,img,remark,operid,regtime,updatetime,opertime,fileName)
+       values
+       (
+       		#{id,jdbcType=INTEGER},
+       		#{videoType,jdbcType=INTEGER},
+       		#{videoTitle,jdbcType=VARCHAR},
+       		#{videoReleaseTime,jdbcType=TIMESTAMP},
+       		#{content,jdbcType=VARCHAR},
+       		#{videoUrl,jdbcType=VARCHAR},
+       		#{img,jdbcType=VARCHAR},
+       		#{remark,jdbcType=VARCHAR},
+       		#{operid,jdbcType=INTEGER},
+       		#{regtime,jdbcType=TIMESTAMP},
+       		#{updatetime,jdbcType=TIMESTAMP},
+       		#{opertime,jdbcType=TIMESTAMP},
+       		#{fileName,jdbcType=VARCHAR}
+       )
+       
+   </insert>
+   
+   <select id="queryDataById" resultMap="BaseResultMap" parameterType="com.web.pojo.EduVideo" >
+    select *
+    from tp_edu_video 
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+   <select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.EduVideo">
+		select i.*, u.loginname,u.userno from tp_edu_video i left join tp_sys_user u
+        on i.operid = u.userno where i.id = #{id,jdbcType=INTEGER} 
+	</select>
+  
+   <update id="updateEduVideo" parameterType="com.web.pojo.EduVideo">
+       update tp_edu_video
+       set
+				video_type = #{videoType,jdbcType=INTEGER},
+				video_title = #{videoTitle,jdbcType=VARCHAR},
+				content = #{content,jdbcType=VARCHAR},
+				video_url = #{videoUrl,jdbcType=VARCHAR},
+				img = #{img,jdbcType=VARCHAR},
+				remark = #{remark,jdbcType=VARCHAR},
+				operid = #{operid,jdbcType=INTEGER},
+				updatetime = #{updatetime,jdbcType=TIMESTAMP}
+       where id = #{id}
+   </update>
+  
+  <update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_edu_video
+		set state = 0
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+   
+        		 <!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.Rule">
+  		select 
+  			count(*) 
+  		from tp_edu_video 
+  		where state = 1
+  		<if test="id != null">
+  		and id != #{id,jdbcType=INTEGER} 
+  		</if>
+  		and video_title = #{videoTitle,jdbcType=VARCHAR}
+  	</select>
+   
+   
+  <!-- 后台管理分页 -->
+   <select id="getCountByAll" resultType="java.lang.Integer" parameterType="java.util.HashMap">
+     select 
+        count(*)
+     from 
+        tp_edu_video 
+     where state = 1 
+     <if test="searchtitle != null">
+		  and video_title like CONCAT('%',#{searchtitle},'%' )
+		 </if>
+		 
+		 <if test="searchstarttime != null">
+		  and video_release_time >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		 </if>
+		 
+		 <if test="searchendtime != null">
+	        and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= video_release_time
+		 </if>
+  </select>
+  
+  <select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap" >
+    select *
+    from tp_edu_video 
+     where state = 1 
+        <!-- <if test="driverid != null">
+		    and driverid = #{driverid}
+		 </if> -->
+         <if test="searchtitle != null">
+		    and video_title like CONCAT('%',#{searchtitle},'%' )
+		 </if>
+		 
+		 <if test="searchstarttime != null">
+		    and video_release_time >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		 </if>
+		 
+		 <if test="searchendtime != null">
+	        and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= video_release_time
+		 </if>
+    order by id desc limit #{curnum,jdbcType=INTEGER} ,#{pagesize,jdbcType=INTEGER}
+  </select>
+</mapper>

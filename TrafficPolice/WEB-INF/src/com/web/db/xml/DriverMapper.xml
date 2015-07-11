@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.DriverDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Driver">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="age" property="age" jdbcType="INTEGER" />
+		<result column="telephone" property="phone" jdbcType="VARCHAR" />
+		<result column="address" property="address" jdbcType="VARCHAR" />
+		<result column="identitycard" property="identitycard" jdbcType="VARCHAR" />
+		<result column="cartype" property="cartype" jdbcType="VARCHAR" />
+		<result column="sex" property="sex" jdbcType="VARCHAR" />
+		<result column="dwid" property="dwid" jdbcType="INTEGER" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="licenseno" property="licenseno" jdbcType="VARCHAR" />
+		<result column="learntime" property="learntime" jdbcType="VARCHAR" />
+		<result column="cars" property="cars" jdbcType="VARCHAR" />
+		<result column="certificationtime" property="certificationtime" jdbcType="TIMESTAMP" />
+		<result column="validtime" property="validtime" jdbcType="TIMESTAMP" />
+		<result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+		<result column="loginname" property="loginname" jdbcType="VARCHAR" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
+	<association property="admin" javaType="com.web.pojo.Admin">
+       <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+      </association>
+      <association property="company" javaType="com.web.pojo.Company">
+       <result property="comame" jdbcType="VARCHAR" />
+      </association>
+	</resultMap>
+
+	<select id="selectDriverList" resultMap="BaseResultMap">
+		select * 
+		from tp_basic_driver d
+		left join tp_basic_company c2 
+		on (d.dwid = c2.comid and c2.state = 1)
+		where d.state = 1 order by d.id desc limit
+		${param1},${param2}
+	</select>
+	
+	<select id="selectDriverListByDwid" resultMap="BaseResultMap">
+		SELECT d.* from tp_basic_driver d where d.id not in
+(
+		select d.id
+		from tp_basic_driver d
+		left join tp_sys_user u
+		on d.id = u.username
+		where d.state = 1 
+		and d.dwid = 235		
+)
+	</select>
+	
+	<select id="queryComnameByDwid" resultMap="BaseResultMap">
+		select d.*,c.comname
+		from tp_basic_driver d
+		on d.dwid = c.comid
+		where d.state = 1 
+		and d.dwid = #{dwid}
+	</select>
+	
+	 <select id="queryDataByDriverid" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select * 
+		from tp_basic_driver
+		where state = 1 
+  		and id = #{driverid,jdbcType=INTEGER}
+  	</select>
+  	
+	  
+	  <select id="queryAllComnameByDwid" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select * 
+		from tp_basic_driver
+		where state = 1 
+  		and dwid = #{dwid,jdbcType=INTEGER}
+  	</select>
+	 
+
+	<select id="selectDetailById" parameterType="java.lang.Integer"
+		resultMap="BaseResultMap">
+		select *
+		from tp_basic_driver d
+		left join tp_basic_company c2 
+		on (d.dwid = c2.comid and c2.state = 1)
+		where d.state = 1 AND d.id = #{id,jdbcType=INTEGER}
+	</select>
+
+	<select id="selectCount" parameterType="map" resultType="java.lang.Integer">
+		select
+		count(id)
+		from tp_basic_driver
+		where state = 1
+		<if test="dwid != null"> and dwid = #{dwid}</if>
+		order by id desc
+	</select>
+
+
+
+
+
+
+
+
+
+	<!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		select *
+		from tp_basic_driver where state = 1 
+		order by id desc
+	</select>
+
+	<insert id="insertDriver" parameterType="com.web.pojo.Driver" useGeneratedKeys="true" keyProperty="id">
+		insert into
+		tp_basic_driver(id,name,age,telephone,cartype,address,identitycard,sex,dwid,operid,opertime,remark,licenseno,validtime,certificationtime,updatetime,loginname,password)
+		values
+		(
+		#{id,jdbcType=INTEGER},
+		#{name,jdbcType=VARCHAR},
+		#{age,jdbcType=INTEGER},
+		#{phone,jdbcType=VARCHAR},
+		#{cartype,jdbcType=VARCHAR},
+		#{address,jdbcType=VARCHAR},
+		#{identitycard,jdbcType=VARCHAR},
+		#{sex,jdbcType=VARCHAR},
+		#{dwid,jdbcType=VARCHAR},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{licenseno,jdbcType=VARCHAR},
+		#{validtime,jdbcType=TIMESTAMP},
+		#{certificationtime,jdbcType=TIMESTAMP},
+		#{updatetime,jdbcType=TIMESTAMP},
+		#{loginname,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR}
+		)
+	</insert>
+	
+	<select id="selectDriverById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+	    select * from tp_basic_driver where id = #{id}
+	</select>
+	
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Driver">
+		select *
+		from tp_basic_driver
+		where id =
+		#{id,jdbcType=INTEGER}
+	</select>
+	
+	<select id="queryNameById" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select *
+		from tp_basic_driver
+		where id =
+		#{zzid,jdbcType=INTEGER}
+	</select>
+	
+	<select id="selectDrivernameByDwid" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select *
+		from tp_basic_driver
+		where dwid =
+		#{dwid,jdbcType=INTEGER}
+	</select>
+	
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Driver">
+		select i.*, u.username,u.userno from tp_basic_driver i left join tp_sys_user u
+        on i.operid = u.userno where i.id = #{id,jdbcType=INTEGER} 
+	</select>
+
+	<update id="updateDriver" parameterType="com.web.pojo.Driver">
+		update tp_basic_driver
+		set
+		telephone = #{phone,jdbcType=VARCHAR},
+		age = #{age,jdbcType=VARCHAR},
+		address = #{address,jdbcType=VARCHAR},
+		operid = #{operid,jdbcType=INTEGER},
+		name = #{name,jdbcType=VARCHAR},
+		identitycard = #{identitycard,jdbcType=VARCHAR},
+		sex = #{sex,jdbcType=VARCHAR},
+		dwid = #{dwid,jdbcType=VARCHAR},
+		cartype = #{cartype,jdbcType=VARCHAR},
+		remark = #{remark,jdbcType=VARCHAR},
+		licenseno = #{licenseno,jdbcType=VARCHAR},
+		validtime = #{validtime,jdbcType=TIMESTAMP},
+		updatetime = #{updatetime,jdbcType=TIMESTAMP},
+		certificationtime = #{certificationtime,jdbcType=TIMESTAMP},
+		loginname = #{loginname,jdbcType=VARCHAR},
+		password = #{password,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+	
+	<update id="updateCar" parameterType="com.web.pojo.Driver">
+		update tp_basic_driver
+		set
+		cars = #{cars,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+	
+	
+	<select id="queryLearntime" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select learntime 
+		from tp_basic_driver
+		where id = #{driverid,jdbcType=INTEGER}
+	</select>
+	
+	<update id="updateLearntime" parameterType="com.web.pojo.Driver">
+		update tp_basic_driver
+		set 
+		learntime =  #{learntime,jdbcType=INTEGER}
+		where id = #{driverid,jdbcType=INTEGER}
+	</update>
+	
+	
+	
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_basic_driver
+		set state = 0
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+	
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_basic_driver d
+		left join tp_basic_company c on d.dwid = c.comid
+		where d.state = 1 
+		<if test="searchname != null">
+		and d.name like CONCAT('%',#{searchname},'%' )
+		</if>
+		<if test="searchsex != null">
+		 and d.sex like CONCAT('%',#{searchsex},'%' )
+		</if>
+		<if test="searchcartype != null">
+		 and d.cartype like CONCAT('%',#{searchcartype},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		  and d.certificationtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+	       and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= d.certificationtime
+		</if>
+		
+		<if test="safecomid != null">
+		    and d.dwid = #{safecomid}
+		</if>
+		<if test="comid != null">
+		    and d.dwid = #{comid}
+		</if>
+		<if test="userno != null">
+		    and d.id = #{userno}
+		</if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select *
+		from tp_basic_driver d
+		left join tp_basic_company c on d.dwid = c.comid
+		where d.state = 1 
+		<if test="searchname != null">
+		and d.name like CONCAT('%',#{searchname},'%' )
+		</if>
+		<if test="searchsex != null">
+		 and d.sex like CONCAT('%',#{searchsex},'%' )
+		</if>
+		<if test="searchcartype != null">
+		 and d.cartype like CONCAT('%',#{searchcartype},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		  and d.certificationtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+	       and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= d.certificationtime
+		</if>
+		<if test="safecomid != null">
+		    and d.dwid = #{safecomid}
+		</if>
+		<if test="comid != null">
+		    and d.dwid = #{comid}
+		</if>
+		<if test="userno != null">
+		    and d.id = #{userno}
+		</if>
+		order by d.id desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+</mapper>

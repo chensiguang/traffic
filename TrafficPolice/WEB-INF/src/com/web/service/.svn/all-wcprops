@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/java/!svn/ver/17817/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service
+END
+MeetNoticeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 247
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/MeetNoticeServiceImpl.java
+END
+AccountServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/java/!svn/ver/17817/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/AccountServiceImpl.java
+END
+BranchServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/java/!svn/ver/16176/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/BranchServiceImpl.java
+END
+SafeGroupCarDriverServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 255
+/svn/java/!svn/ver/17501/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/SafeGroupCarDriverServiceImpl.java
+END
+SafeLearnServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/17759/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/SafeLearnServiceImpl.java
+END
+RoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/17441/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/RoleServiceImpl.java
+END
+RuleIllegalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 248
+/svn/java/!svn/ver/16849/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/RuleIllegalServiceImpl.java
+END
+EduVideoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 245
+/svn/java/!svn/ver/17058/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/EduVideoServiceImpl.java
+END
+ConfigServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/ConfigServiceImpl.java
+END
+CarServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/17488/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/CarServiceImpl.java
+END
+CompanyServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/java/!svn/ver/17441/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/CompanyServiceImpl.java
+END
+RuleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16849/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/RuleServiceImpl.java
+END
+AreaServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/17046/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/AreaServiceImpl.java
+END
+PoliceOrgCompanyServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/java/!svn/ver/17441/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/PoliceOrgCompanyServiceImpl.java
+END
+RolePermissionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 251
+/svn/java/!svn/ver/16755/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/RolePermissionServiceImpl.java
+END
+PoliceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/java/!svn/ver/17501/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/PoliceServiceImpl.java
+END
+MicromessageServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 249
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/MicromessageServiceImpl.java
+END
+SafeNoticeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 247
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/SafeNoticeServiceImpl.java
+END
+ReprimandServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/17684/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/ReprimandServiceImpl.java
+END
+TypeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16848/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/TypeServiceImpl.java
+END
+PoliceOrgServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/17501/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/PoliceOrgServiceImpl.java
+END
+PcarServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/PcarServiceImpl.java
+END
+InterchangeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 248
+/svn/java/!svn/ver/16844/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/InterchangeServiceImpl.java
+END
+SafeGroupListServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 250
+/svn/java/!svn/ver/17560/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/SafeGroupListServiceImpl.java
+END
+PermissionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 247
+/svn/java/!svn/ver/16848/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/PermissionServiceImpl.java
+END
+BaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/java/!svn/ver/15876/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/BaseService.java
+END
+AdminServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 242
+/svn/java/!svn/ver/15864/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/AdminServiceImpl.java
+END
+DriverServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/java/!svn/ver/17786/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/DriverServiceImpl.java
+END
+SafeGroupServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/17558/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/src/com/web/service/SafeGroupServiceImpl.java
+END

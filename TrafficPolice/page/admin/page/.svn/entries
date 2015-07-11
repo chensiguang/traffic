@@ -1,0 +1,245 @@
+10
+
+dir
+19682
+https://172.16.0.22:8443/svn/java/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/page/admin/page
+https://172.16.0.22:8443/svn/java
+
+
+
+2013-11-08T09:13:16.418125Z
+17827
+wqg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6cab64e7-e515-0244-804a-e0eddc75fd3b
+
+unit
+dir
+
+type
+dir
+
+upload
+dir
+
+pcar
+dir
+
+safegrouplist
+dir
+
+org
+dir
+
+interchange
+dir
+
+driver
+dir
+
+meetnotice
+dir
+
+safegroupcardriver
+dir
+
+NoticeViewList.jsp
+file
+
+
+
+
+2014-03-07T01:25:46.984375Z
+ff5e568b234b465037a6f5137aee16fd
+2013-09-13T10:07:27.605185Z
+16150
+jjl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2074
+
+car
+dir
+
+company
+dir
+
+area
+dir
+
+illegal
+dir
+
+police
+dir
+
+document
+dir
+
+safenotice
+dir
+
+Manage.jsp
+file
+
+
+
+
+2014-03-07T01:25:46.984375Z
+0dbde500650dcdeb6b4c08dc85dac8fd
+2013-11-08T05:21:48.746250Z
+17816
+wqg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11756
+
+policeorg
+dir
+
+Startpage.jsp
+file
+
+
+
+
+2014-03-07T01:25:46.984375Z
+feb4208c2b2ea1fe7c6e07dc5c11d0f1
+2013-10-10T02:29:49.050250Z
+16942
+ln
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5543
+
+permission
+dir
+
+safegroup
+dir
+
+account
+dir
+
+branch
+dir
+
+role
+dir
+
+success.jsp
+file
+
+
+
+
+2014-03-07T01:25:46.984375Z
+af22bcc7e0b5e3c874c8c72c26955dbb
+2013-10-24T02:49:30.918125Z
+17556
+wqg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1380
+
+config
+dir
+
+rule
+dir
+
+edu
+dir
+
+micromessage
+dir
+

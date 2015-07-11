@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>指标管理</title>
+
+<!--import need files-->
+<script type="text/javascript" src="js/dhtmlxcommon.js"></script>
+<script type="text/javascript" src="js/dhtmlxtree.js"></script>
+<script type="text/javascript" src="js/dhtmlxmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="css/dhtmlxtree.css"/>
+<link rel="stylesheet" type="text/css" href="css/MenuSkins/dhtmlxmenu_dhx_blue.css"/>
+</head>
+
+<body>
+
+<div id="divTree" style="width:200px;height:400px;border:1px solid #339966;"></div>
+<script type="text/javascript">
+	//初始化menu---------------------------------------------------------////
+	menu=new dhtmlXMenuObject("divTree");
+	menu.setImagePath("./images/DhtxMenu/");
+	menu.setIconsPath("../Monitor/images/MenuIcon/");
+	menu.renderAsContextMenu(true);
+	menu.attachEvent("onClick",HandleMClk);
+	menu.loadXML("./data/dhtmlxmenu.xml"); 
+	
+	//初始化tree----------------------------------------------------------////
+	tree=new dhtmlXTreeObject("divTree","100%","100%",0);
+	tree.setImagePath("./images/DhtxTree/csh_bluebooks/");
+	//tree.enableHighlighting(true);
+	
+	//绑定时间处理函数,注意一定要放在loadXML之前否则右键处理函数在ie下失效
+	tree.enableContextMenu(menu);
+	//tree.attachEvent("onClick",HandleTreeClk);
+	tree.loadXML("./data/tree.xml");
+	
+	//菜单事件处理函数----------------------------------------------------////
+	function HandleMClk(menuid,zoom){
+		alert("树节点ID:"+tree.rclk_id+",菜单ID:"+menuid);
+	} 
+	
+	//树事件处理函数------------------------------------------------------////
+	function HandleTreeClk(sId,sPreId){
+		var sTxt=tree.getItemText(sId);
+		var sTxtP=tree.getItemText(sPreId);
+
+		alert("你点击了节点:"+sTxt+",上次点击节点:"+sTxtP);
+	}
+</script>
+</body>
+</html>

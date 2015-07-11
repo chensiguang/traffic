@@ -1,0 +1,496 @@
+2014-10-25 21:37:22  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2014-10-25 21:37:22  [ main:89 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2014-10-25 21:37:25  [ main:3372 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@d5c657[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> d5c657, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2014-10-25 21:37:28  [ main:6036 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2014-10-25 21:37:28  [ main:6306 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2014-10-25 21:37:28  [ main:6387 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2014-10-25 21:37:28  [ main:6399 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2014-10-25 21:37:28  [ main:6399 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2014-10-25 21:37:28  [ main:6399 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2014-10-25 21:37:28  [ main:6399 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2014-10-25 21:37:28  [ main:6399 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2014-10-25 21:37:28  [ main:6400 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2014-10-25 21:37:28  [ main:6400 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2014-10-25 21:37:28  [ main:6400 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2014-10-25 21:37:28  [ main:6400 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2014-10-25 21:37:28  [ main:6412 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2014-10-25 21:37:28  [ main:6412 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2014-10-25 21:37:28  [ main:6412 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2014-10-25 21:37:28  [ main:6413 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2014-10-25 21:37:28  [ main:6413 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2014-10-25 21:37:28  [ main:6413 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2014-10-25 21:37:28  [ main:6413 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2014-10-25 21:37:28  [ main:6414 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2014-10-25 21:37:28  [ main:6414 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2014-10-25 21:37:28  [ main:6414 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2014-10-25 21:37:28  [ main:6464 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2014-10-25 21:37:28  [ main:6464 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2014-10-25 21:37:28  [ main:6464 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2014-10-25 21:37:30  [ main:7936 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-25 21:37:30  [ main:7937 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-25 21:38:27  [ http-8080-1:64770 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-25 21:38:27  [ http-8080-1:65033 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b3399]
+2014-10-25 21:38:27  [ http-8080-1:65044 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-25 21:38:27  [ http-8080-1:65091 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 21:38:27  [ http-8080-1:65482 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@802eff]
+2014-10-25 21:38:27  [ http-8080-1:65483 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-25 21:38:27  [ http-8080-1:65483 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 21:38:27  [ http-8080-1:65617 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@852ce7]
+2014-10-25 21:38:27  [ http-8080-1:65617 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-25 21:38:27  [ http-8080-1:65617 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 21:38:28  [ http-8080-1:65710 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@12faccf]
+2014-10-25 21:38:28  [ http-8080-1:65710 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 21:38:28  [ http-8080-1:65711 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 21:38:28  [ http-8080-1:65790 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@254f63]
+2014-10-25 21:38:28  [ http-8080-1:65790 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 21:38:28  [ http-8080-1:65791 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 21:38:28  [ http-8080-1:65801 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17cfd5f]
+2014-10-25 21:38:28  [ http-8080-1:65801 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-25 21:38:28  [ http-8080-1:65801 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 21:38:28  [ http-8080-1:65884 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1c2d25e]
+2014-10-25 21:38:28  [ http-8080-1:65884 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-25 21:38:28  [ http-8080-1:65885 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:16  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2014-10-25 22:40:16  [ main:74 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2014-10-25 22:40:18  [ main:2509 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@987e1e[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 987e1e, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2014-10-25 22:40:20  [ main:4148 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2014-10-25 22:40:20  [ main:4456 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2014-10-25 22:40:20  [ main:4566 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2014-10-25 22:40:20  [ main:4575 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2014-10-25 22:40:20  [ main:4576 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2014-10-25 22:40:20  [ main:4585 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2014-10-25 22:40:20  [ main:4585 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2014-10-25 22:40:20  [ main:4585 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2014-10-25 22:40:20  [ main:4585 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2014-10-25 22:40:20  [ main:4586 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2014-10-25 22:40:20  [ main:4586 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2014-10-25 22:40:20  [ main:4586 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2014-10-25 22:40:20  [ main:4586 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2014-10-25 22:40:20  [ main:4586 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2014-10-25 22:40:20  [ main:4586 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2014-10-25 22:40:20  [ main:4634 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2014-10-25 22:40:20  [ main:4634 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2014-10-25 22:40:20  [ main:4634 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2014-10-25 22:40:22  [ main:5870 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-25 22:40:22  [ main:5872 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-25 22:40:40  [ http-8080-1:24554 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-25 22:40:40  [ http-8080-1:24762 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@14fab1a]
+2014-10-25 22:40:40  [ http-8080-1:24772 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-25 22:40:40  [ http-8080-1:24816 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:24973 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d84118]
+2014-10-25 22:40:41  [ http-8080-1:24973 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-25 22:40:41  [ http-8080-1:24973 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25003 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@19c0a9d]
+2014-10-25 22:40:41  [ http-8080-1:25003 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-25 22:40:41  [ http-8080-1:25004 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25014 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e2c2f9]
+2014-10-25 22:40:41  [ http-8080-1:25015 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 22:40:41  [ http-8080-1:25015 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25019 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3b9617]
+2014-10-25 22:40:41  [ http-8080-1:25019 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 22:40:41  [ http-8080-1:25019 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25026 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@11651e]
+2014-10-25 22:40:41  [ http-8080-1:25026 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-25 22:40:41  [ http-8080-1:25027 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25034 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a8fc2d]
+2014-10-25 22:40:41  [ http-8080-1:25035 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-25 22:40:41  [ http-8080-1:25035 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25037 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@193a581]
+2014-10-25 22:40:41  [ http-8080-1:25037 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by notice_time desc limit 0,3 
+2014-10-25 22:40:41  [ http-8080-1:25038 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 22:40:41  [ http-8080-1:25040 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e42f61]
+2014-10-25 22:40:41  [ http-8080-1:25040 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,4 
+2014-10-25 22:40:41  [ http-8080-1:25040 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:20  [ main:0 ] - [ INFO ] [com.mchange.v2.log.MLog] MLog clients using log4j logging.
+2014-10-25 23:08:20  [ main:72 ] - [ INFO ] [com.mchange.v2.c3p0.C3P0Registry] Initializing c3p0-0.9.0 [built 11-July-2005 00:43:29 -0400; debug? true; trace: 10]
+2014-10-25 23:08:22  [ main:2087 ] - [ INFO ] [com.mchange.v2.c3p0.PoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@12cef5e[ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 25000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 12cef5e, idleConnectionTestPeriod -> 90, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/traffic_police?characterEncoding=utf-8, loginTimeout -> 0, maxIdleTime -> 1200, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+2014-10-25 23:08:24  [ main:3818 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-default.xml]
+2014-10-25 23:08:24  [ main:4000 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts-plugin.xml]
+2014-10-25 23:08:24  [ main:4047 ] - [ INFO ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] Parsing configuration file [struts.xml]
+2014-10-25 23:08:24  [ main:4057 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2014-10-25 23:08:24  [ main:4058 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2014-10-25 23:08:24  [ main:4058 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2014-10-25 23:08:24  [ main:4058 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2014-10-25 23:08:24  [ main:4058 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2014-10-25 23:08:24  [ main:4058 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2014-10-25 23:08:24  [ main:4058 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2014-10-25 23:08:24  [ main:4059 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2014-10-25 23:08:24  [ main:4059 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2014-10-25 23:08:24  [ main:4073 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2014-10-25 23:08:24  [ main:4073 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2014-10-25 23:08:24  [ main:4073 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [org.apache.struts2.config.BeanSelectionProvider] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2014-10-25 23:08:24  [ main:4074 ] - [ INFO ] [com.opensymphony.xwork2.config.impl.DefaultConfiguration] Overriding property struts.i18n.reload - old value: false new value: true
+2014-10-25 23:08:24  [ main:4110 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] Initializing Struts-Spring integration...
+2014-10-25 23:08:24  [ main:4135 ] - [ INFO ] [com.opensymphony.xwork2.spring.SpringObjectFactory] Setting autowire strategy to name
+2014-10-25 23:08:24  [ main:4135 ] - [ INFO ] [org.apache.struts2.spring.StrutsSpringObjectFactory] ... initialized Struts-Spring integration successfully
+2014-10-25 23:08:26  [ main:5526 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-25 23:08:26  [ main:5527 ] - [ WARN ] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] no default parameter defined for result of type json
+2014-10-25 23:08:32  [ http-8080-1:12042 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-25 23:08:32  [ http-8080-1:12263 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@8917cf]
+2014-10-25 23:08:32  [ http-8080-1:12275 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-25 23:08:33  [ http-8080-1:12325 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12470 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17bf6ba]
+2014-10-25 23:08:33  [ http-8080-1:12471 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-25 23:08:33  [ http-8080-1:12471 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12502 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1700eb2]
+2014-10-25 23:08:33  [ http-8080-1:12502 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-25 23:08:33  [ http-8080-1:12503 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12514 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1541df4]
+2014-10-25 23:08:33  [ http-8080-1:12514 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 23:08:33  [ http-8080-1:12514 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12519 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1451db0]
+2014-10-25 23:08:33  [ http-8080-1:12519 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:08:33  [ http-8080-1:12520 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12528 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@11694c5]
+2014-10-25 23:08:33  [ http-8080-1:12528 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-25 23:08:33  [ http-8080-1:12529 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12534 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@fb494a]
+2014-10-25 23:08:33  [ http-8080-1:12534 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-25 23:08:33  [ http-8080-1:12535 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12537 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@34dd3c]
+2014-10-25 23:08:33  [ http-8080-1:12538 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by notice_time desc limit 0,3 
+2014-10-25 23:08:33  [ http-8080-1:12538 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12540 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1dd9da1]
+2014-10-25 23:08:33  [ http-8080-1:12541 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,4 
+2014-10-25 23:08:33  [ http-8080-1:12541 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12553 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@add7db]
+2014-10-25 23:08:33  [ http-8080-1:12553 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_micro_micromessage t where t.state=1 order by t.createtime desc limit 0,20 
+2014-10-25 23:08:33  [ http-8080-1:12554 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12557 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@10c2a2e]
+2014-10-25 23:08:33  [ http-8080-1:12558 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car c1 left join tp_basic_company c2 on (c1.comid = c2.comid and c2.state = 1) where c1.state = 1 order by c1.regtime desc limit 0,20 
+2014-10-25 23:08:33  [ http-8080-1:12558 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:08:33  [ http-8080-1:12629 ] - [ INFO ] [com.web.action.base.BaseAction] end index view...
+2014-10-25 23:12:07  [ http-8080-6:227085 ] - [ INFO ] [com.web.action.base.BaseAction] do edvVideo list page...
+2014-10-25 23:12:07  [ http-8080-6:227086 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@d8bd50]
+2014-10-25 23:12:07  [ http-8080-6:227086 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 23:12:07  [ http-8080-6:227086 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:07  [ http-8080-6:227092 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@391ae4]
+2014-10-25 23:12:07  [ http-8080-6:227092 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:12:07  [ http-8080-6:227093 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:07  [ http-8080-6:227097 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1364c80]
+2014-10-25 23:12:07  [ http-8080-6:227098 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_edu_video where state = 1 
+2014-10-25 23:12:07  [ http-8080-6:227098 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:07  [ http-8080-6:227100 ] - [ INFO ] [com.web.action.base.BaseAction] end edvVideo list page... <return Data type: page;Data:> edvVideolist.jsp <Data:>2
+2014-10-25 23:12:07  [ http-8080-6:227100 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d8b9e9]
+2014-10-25 23:12:07  [ http-8080-6:227100 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:12:07  [ http-8080-6:227100 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:34  [ http-8080-6:253639 ] - [ INFO ] [com.web.action.base.BaseAction] do eduvideo eduList...<param>currentpage=1
+2014-10-25 23:12:34  [ http-8080-6:253640 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@76fc9]
+2014-10-25 23:12:34  [ http-8080-6:253641 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_edu_video where state = 1 
+2014-10-25 23:12:34  [ http-8080-3:253643 ] - [ INFO ] [com.web.action.base.BaseAction] do eduvideo eduList...<param>currentpage=1
+2014-10-25 23:12:34  [ http-8080-3:253771 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@131238e]
+2014-10-25 23:12:34  [ http-8080-3:253773 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_edu_video where state = 1 
+2014-10-25 23:12:34  [ http-8080-6:253777 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:34  [ http-8080-3:253777 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:34  [ http-8080-6:253784 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a0aab4]
+2014-10-25 23:12:34  [ http-8080-3:253784 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d5df15]
+2014-10-25 23:12:34  [ http-8080-3:253784 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,4 
+2014-10-25 23:12:34  [ http-8080-6:253784 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,4 
+2014-10-25 23:12:34  [ http-8080-6:253785 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:34  [ http-8080-3:253785 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:12:34  [ http-8080-6:253818 ] - [ INFO ] [com.web.action.base.BaseAction] end rule eduList...<return Data type: json;Data:>{'count':'2','eduvideos':[{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'},{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}],'size':'2'}
+2014-10-25 23:12:34  [ http-8080-3:253818 ] - [ INFO ] [com.web.action.base.BaseAction] end rule eduList...<return Data type: json;Data:>{'count':'2','eduvideos':[{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'},{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}],'size':'2'}
+2014-10-25 23:12:39  [ http-8080-3:258920 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10022
+2014-10-25 23:12:39  [ http-8080-6:258924 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10022
+2014-10-25 23:12:39  [ http-8080-6:258938 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@89bdca]
+2014-10-25 23:12:39  [ http-8080-3:258938 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@12eb5a3]
+2014-10-25 23:12:39  [ http-8080-6:258938 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:12:39  [ http-8080-3:258938 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:12:39  [ http-8080-6:258938 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10022(Integer)
+2014-10-25 23:12:39  [ http-8080-3:258938 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10022(Integer)
+2014-10-25 23:12:39  [ http-8080-3:258941 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'}
+2014-10-25 23:12:39  [ http-8080-6:258943 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'}
+2014-10-25 23:12:58  [ http-8080-6:277557 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10021
+2014-10-25 23:12:58  [ http-8080-6:277557 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15ececc]
+2014-10-25 23:12:58  [ http-8080-6:277557 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:12:58  [ http-8080-6:277557 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10021(Integer)
+2014-10-25 23:12:58  [ http-8080-6:277560 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}
+2014-10-25 23:13:01  [ http-8080-6:280935 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10021
+2014-10-25 23:13:01  [ http-8080-6:280936 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@111815d]
+2014-10-25 23:13:01  [ http-8080-6:280937 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:13:01  [ http-8080-6:280937 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10021(Integer)
+2014-10-25 23:13:01  [ http-8080-6:280943 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}
+2014-10-25 23:13:03  [ http-8080-6:282880 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10021
+2014-10-25 23:13:03  [ http-8080-6:282880 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1dcc07b]
+2014-10-25 23:13:03  [ http-8080-6:282880 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:13:03  [ http-8080-6:282881 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10021(Integer)
+2014-10-25 23:13:03  [ http-8080-6:282883 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}
+2014-10-25 23:13:03  [ http-8080-6:283037 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10021
+2014-10-25 23:13:03  [ http-8080-6:283037 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1dce7a9]
+2014-10-25 23:13:03  [ http-8080-6:283037 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:13:03  [ http-8080-6:283038 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10021(Integer)
+2014-10-25 23:13:03  [ http-8080-6:283041 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}
+2014-10-25 23:13:17  [ http-8080-3:296431 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10021
+2014-10-25 23:13:17  [ http-8080-3:296432 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1dfff7a]
+2014-10-25 23:13:17  [ http-8080-3:296433 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:13:17  [ http-8080-3:296434 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10021(Integer)
+2014-10-25 23:13:17  [ http-8080-3:296437 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}
+2014-10-25 23:13:32  [ http-8080-3:311363 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-25 23:13:32  [ http-8080-3:311364 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4bc91a]
+2014-10-25 23:13:32  [ http-8080-3:311364 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-25 23:13:32  [ http-8080-3:311364 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311369 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@78f444]
+2014-10-25 23:13:32  [ http-8080-3:311369 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-25 23:13:32  [ http-8080-3:311369 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311390 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@db9be]
+2014-10-25 23:13:32  [ http-8080-3:311391 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-25 23:13:32  [ http-8080-3:311391 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311396 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@11cfc0d]
+2014-10-25 23:13:32  [ http-8080-3:311396 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 23:13:32  [ http-8080-3:311397 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311399 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@f121fc]
+2014-10-25 23:13:32  [ http-8080-3:311399 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:13:32  [ http-8080-3:311399 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311402 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a447d3]
+2014-10-25 23:13:32  [ http-8080-3:311402 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-25 23:13:32  [ http-8080-3:311403 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311406 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1bf218e]
+2014-10-25 23:13:32  [ http-8080-3:311407 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-25 23:13:32  [ http-8080-3:311407 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311411 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9a9d14]
+2014-10-25 23:13:32  [ http-8080-3:311411 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by notice_time desc limit 0,3 
+2014-10-25 23:13:32  [ http-8080-3:311411 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311416 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ed022a]
+2014-10-25 23:13:32  [ http-8080-3:311416 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,4 
+2014-10-25 23:13:32  [ http-8080-3:311417 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311419 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1fb2c2e]
+2014-10-25 23:13:32  [ http-8080-3:311419 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_micro_micromessage t where t.state=1 order by t.createtime desc limit 0,20 
+2014-10-25 23:13:32  [ http-8080-3:311420 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311422 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@143db07]
+2014-10-25 23:13:32  [ http-8080-3:311422 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car c1 left join tp_basic_company c2 on (c1.comid = c2.comid and c2.state = 1) where c1.state = 1 order by c1.regtime desc limit 0,20 
+2014-10-25 23:13:32  [ http-8080-3:311423 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:32  [ http-8080-3:311455 ] - [ INFO ] [com.web.action.base.BaseAction] end index view...
+2014-10-25 23:13:57  [ http-8080-3:336991 ] - [ INFO ] [com.web.action.base.BaseAction] do edvVideo list page...
+2014-10-25 23:13:57  [ http-8080-3:336992 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ccad1e]
+2014-10-25 23:13:57  [ http-8080-3:336992 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 23:13:57  [ http-8080-3:336992 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:57  [ http-8080-3:336995 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@11d84e6]
+2014-10-25 23:13:57  [ http-8080-3:336995 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:13:57  [ http-8080-3:336995 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:57  [ http-8080-3:336998 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@155ffe4]
+2014-10-25 23:13:57  [ http-8080-3:336998 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_edu_video where state = 1 
+2014-10-25 23:13:57  [ http-8080-3:336999 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:13:57  [ http-8080-3:337000 ] - [ INFO ] [com.web.action.base.BaseAction] end edvVideo list page... <return Data type: page;Data:> edvVideolist.jsp <Data:>2
+2014-10-25 23:13:57  [ http-8080-3:337000 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@fd2520]
+2014-10-25 23:13:57  [ http-8080-3:337000 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:13:57  [ http-8080-3:337000 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:14:18  [ http-8080-6:358257 ] - [ INFO ] [com.web.action.base.BaseAction] do eduvideo eduList...<param>currentpage=1
+2014-10-25 23:14:18  [ http-8080-3:358258 ] - [ INFO ] [com.web.action.base.BaseAction] do eduvideo eduList...<param>currentpage=1
+2014-10-25 23:14:18  [ http-8080-6:358259 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@143454c]
+2014-10-25 23:14:18  [ http-8080-3:358259 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@124b13a]
+2014-10-25 23:14:18  [ http-8080-6:358259 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_edu_video where state = 1 
+2014-10-25 23:14:18  [ http-8080-3:358259 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_edu_video where state = 1 
+2014-10-25 23:14:18  [ http-8080-6:358259 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:14:18  [ http-8080-3:358259 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:14:18  [ http-8080-6:358261 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ab66fa]
+2014-10-25 23:14:18  [ http-8080-3:358262 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e4670d]
+2014-10-25 23:14:18  [ http-8080-6:358262 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,4 
+2014-10-25 23:14:18  [ http-8080-3:358262 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,4 
+2014-10-25 23:14:18  [ http-8080-6:358262 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:14:18  [ http-8080-3:358263 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:14:18  [ http-8080-6:358266 ] - [ INFO ] [com.web.action.base.BaseAction] end rule eduList...<return Data type: json;Data:>{'count':'2','eduvideos':[{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'},{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}],'size':'2'}
+2014-10-25 23:14:18  [ http-8080-3:358266 ] - [ INFO ] [com.web.action.base.BaseAction] end rule eduList...<return Data type: json;Data:>{'count':'2','eduvideos':[{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'},{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}],'size':'2'}
+2014-10-25 23:14:19  [ http-8080-3:358356 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10022
+2014-10-25 23:14:19  [ http-8080-6:358356 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10022
+2014-10-25 23:14:19  [ http-8080-6:358357 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@13ceed7]
+2014-10-25 23:14:19  [ http-8080-3:358357 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@13ceed7]
+2014-10-25 23:14:19  [ http-8080-6:358357 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:14:19  [ http-8080-3:358358 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:14:19  [ http-8080-6:358358 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10022(Integer)
+2014-10-25 23:14:19  [ http-8080-3:358358 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10022(Integer)
+2014-10-25 23:14:19  [ http-8080-6:358375 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'}
+2014-10-25 23:14:19  [ http-8080-3:358375 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10022','videotype':'null','videotitle':'交通安全教育','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4','content':'交通事故一直都是当今社会的一大难题，如何使得这个经济，政治文化快速发展的时代，交通事故不在成为威胁人类安全，交通安全教育刻不容缓','img':'/TrafficPolice/page/admin/video/img/anquan.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381538550346.mp4'}
+2014-10-25 23:14:22  [ http-8080-3:361741 ] - [ INFO ] [com.web.action.base.BaseAction] do EduVideo info...<param>eduid=10021
+2014-10-25 23:14:22  [ http-8080-3:361742 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@36ae6d]
+2014-10-25 23:14:22  [ http-8080-3:361742 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 AND id = ? 
+2014-10-25 23:14:22  [ http-8080-3:361742 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10021(Integer)
+2014-10-25 23:14:22  [ http-8080-3:361744 ] - [ INFO ] [com.web.action.base.BaseAction] end EduVideo info page... <return Data type: page;Data:>{'id':'10021','videotype':'null','videotitle':'关注中小学安全','videoreleasetime':'2013-10-09','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4','content':'关注中小学安全','img':'/TrafficPolice/page/admin/video/img/xueshengjpg.jpg','videourl':'/TrafficPolice/page/admin/video/media/1381298059871.mp4'}
+2014-10-25 23:16:14  [ http-8080-3:474129 ] - [ INFO ] [com.web.action.base.BaseAction] do driver list page...
+2014-10-25 23:16:14  [ http-8080-3:474130 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b0dad9]
+2014-10-25 23:16:14  [ http-8080-3:474130 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(qid) from ( select q.qid,q.question,q.opertime,a.aid,a.answer from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid where q.state=1 and a.state=1 ) as total 
+2014-10-25 23:16:14  [ http-8080-3:474131 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:14  [ http-8080-3:474133 ] - [ INFO ] [com.web.action.base.BaseAction] end interchange list page... <return Data type: page;Data:> interchangelist.jsp <Data:>7
+2014-10-25 23:16:15  [ http-8080-3:474530 ] - [ INFO ] [com.web.action.base.BaseAction] do interchange interlist...<param>currentpage=1
+2014-10-25 23:16:15  [ http-8080-3:474531 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@527fe4]
+2014-10-25 23:16:15  [ http-8080-3:474531 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(qid) from ( select q.qid,q.question,q.opertime,a.aid,a.answer from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid where q.state=1 and a.state=1 ) as total 
+2014-10-25 23:16:15  [ http-8080-3:474531 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:15  [ http-8080-3:474533 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16df8d0]
+2014-10-25 23:16:15  [ http-8080-3:474533 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,20 
+2014-10-25 23:16:15  [ http-8080-3:474534 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:15  [ http-8080-3:474538 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'count':'7','interchanges':[{'id':'null','qid':'2','aid':'9','question':'为什么要进行安全教育','answer':'ddd','username':'null'},{'id':'null','qid':'2','aid':'2','question':'为什么要进行安全教育','answer':'现在安全问题存在严重隐患,比较引起相关部门的高度重视!ffff','username':'null'},{'id':'null','qid':'1','aid':'3','question':'最近天气如何？','answer':'最近秋高气爽，比较适合旅游333333','username':'null'},{'id':'null','qid':'1','aid':'4','question':'最近天气如何？','answer':'sss','username':'null'},{'id':'null','qid':'1','aid':'1','question':'最近天气如何？','answer':'最近秋高气爽，比较适合旅游','username':'null'},{'id':'null','qid':'1','aid':'5','question':'最近天气如何？','answer':'ffffff','username':'null'},{'id':'null','qid':'1','aid':'7','question':'最近天气如何？','answer':'今天天气好晴朗,处处好风光,好风光……………………','username':'null'}],'size':'7'}
+2014-10-25 23:16:27  [ http-8080-3:487127 ] - [ INFO ] [com.web.action.base.BaseAction] do driver list page...
+2014-10-25 23:16:27  [ http-8080-3:487137 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3277c]
+2014-10-25 23:16:27  [ http-8080-3:487138 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_basic_driver where state = 1 order by id desc 
+2014-10-25 23:16:27  [ http-8080-3:487138 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:27  [ http-8080-3:487139 ] - [ INFO ] [com.web.action.base.BaseAction] end driver list page... <return Data type: page;Data:> driverlist.jsp <Data:>8
+2014-10-25 23:16:28  [ http-8080-3:487943 ] - [ INFO ] [com.web.action.base.BaseAction] do driver drilist...<param>currentpage=1
+2014-10-25 23:16:28  [ http-8080-3:487943 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d1a577]
+2014-10-25 23:16:28  [ http-8080-3:487944 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_basic_driver where state = 1 order by id desc 
+2014-10-25 23:16:28  [ http-8080-3:487945 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:28  [ http-8080-3:487947 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@15bfd2d]
+2014-10-25 23:16:28  [ http-8080-3:487948 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-25 23:16:28  [ http-8080-3:487948 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:28  [ http-8080-3:487964 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'count':'8','drivers':[{'id':'303','dwid':'顺丰快递','typeid':'1','phone':'123456','name':'李兴','address':'','identitycard':'9211011','sex':'男','cartype':'B1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'27','licenseno':'wqw4665w54'},{'id':'302','dwid':'德邦物流','typeid':'1','phone':'0571-85188528','name':'谢峰','address':'','identitycard':'9211011','sex':'男','cartype':'C1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'43','licenseno':'wqw4665w54'},{'id':'301','dwid':'顺丰快递','typeid':'1','phone':'123456','name':'陈聪','address':'','identitycard':'9211011','sex':'男','cartype':'B1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'32','licenseno':'wqw4665w54'},{'id':'300','dwid':'顺丰快递','typeid':'1','phone':'123456','name':'刘涛','address':'浙江杭州拱墅区','identitycard':'9211011','sex':'男','cartype':'C1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'22','licenseno':'wqw4665w54'},{'id':'299','dwid':'顺丰快递','typeid':'1','phone':'0571-85188528','name':'张翰','address':'','identitycard':'12132131313132','sex':'男','cartype':'A1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'37','licenseno':'wqw4665w54'},{'id':'298','dwid':'顺丰快递','typeid':'1','phone':'010-88158825','name':'张红','address':'','identitycard':'9211011','sex':'女','cartype':'B1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'33','licenseno':'wqw4665w54'},{'id':'297','dwid':'德邦物流','typeid':'1','phone':'0571-85188528','name':'小刘','address':'浙江杭州拱墅区','identitycard':'222222222222222222','sex':'男','cartype':'B1','validtime':'2013-11-05','certificationtime':'2013-11-05','age':'22','licenseno':'wqw4665w54'},{'id':'295','dwid':'德邦物流','typeid':'1','phone':'0571-85188528','name':'刘欢','address':'浙江杭州拱墅区','identitycard':'12132131313132','sex':'男','cartype':'B1','validtime':'2013-11-01','certificationtime':'2013-11-01','age':'34','licenseno':'wqw4665w54'}],'size':'8'}
+2014-10-25 23:16:28  [ http-8080-6:488005 ] - [ INFO ] [com.web.action.base.BaseAction] do carList...<param>currentpage=1
+2014-10-25 23:16:28  [ http-8080-6:488006 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@196cf94]
+2014-10-25 23:16:28  [ http-8080-6:488006 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(carid) from tp_basic_car where state = 1 order by regtime desc 
+2014-10-25 23:16:28  [ http-8080-6:488006 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:28  [ http-8080-6:488008 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@12f3cc5]
+2014-10-25 23:16:28  [ http-8080-6:488008 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car c1 left join tp_basic_company c2 on (c1.comid = c2.comid and c2.state = 1) where c1.state = 1 order by c1.regtime desc limit 0,15 
+2014-10-25 23:16:28  [ http-8080-6:488008 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:16:28  [ http-8080-6:488027 ] - [ INFO ] [com.web.action.base.BaseAction] end carList...<return Data type: json;Data:>{'count':'19','cars':[{'carid':'19','busLicPlate':'浙A4532','driver1':'','phone1':'null','regtime':'2013-10-28 12:56:33','regStartTime':'2013-10-28 12:56:33','regEndTime':'2013-10-28 12:56:33','busType':'货物运输车','comname':'德邦物流','manufacturer':'','factoryType':'','regCode':''},{'carid':'18','busLicPlate':'浙A3303','driver1':'null','phone1':'null','regtime':'2013-10-24 10:58:26','regStartTime':'2013-10-24 10:58:26','regEndTime':'2013-10-24 10:58:26','busType':'货物运输车','comname':'德邦物流','manufacturer':'','factoryType':'','regCode':''},{'carid':'17','busLicPlate':'赣A1232','driver1':'null','phone1':'null','regtime':'2013-10-18 09:05:10','regStartTime':'2013-10-18 09:05:10','regEndTime':'2013-10-18 09:05:10','busType':'货物运输车','comname':'德邦物流','manufacturer':'','factoryType':'','regCode':''},{'carid':'16','busLicPlate':'浙C2122','driver1':'null','phone1':'null','regtime':'2013-09-27 02:38:07','regStartTime':'2013-09-27 02:38:07','regEndTime':'2013-09-27 02:38:07','busType':'油罐车','comname':'德邦物流','manufacturer':'','factoryType':'','regCode':''},{'carid':'15','busLicPlate':'浙D0032','driver1':'null','phone1':'null','regtime':'2013-09-27 02:37:58','regStartTime':'2013-09-27 02:37:58','regEndTime':'2013-09-27 02:37:58','busType':'油罐车','comname':'德邦物流','manufacturer':'','factoryType':'','regCode':''},{'carid':'14','busLicPlate':'浙A1562','driver1':'null','phone1':'null','regtime':'2013-09-27 02:37:50','regStartTime':'2013-09-27 02:37:50','regEndTime':'2013-09-27 02:37:50','busType':'油罐车','comname':'顺丰快递','manufacturer':'','factoryType':'','regCode':''},{'carid':'13','busLicPlate':'浙E0942','driver1':'null','phone1':'null','regtime':'2013-09-27 02:37:41','regStartTime':'2013-09-27 02:37:41','regEndTime':'2013-09-27 02:37:41','busType':'搅拌车','comname':'顺丰快递','manufacturer':'','factoryType':'','regCode':''},{'carid':'12','busLicPlate':'浙B6742','driver1':'null','phone1':'null','regtime':'2013-09-27 02:37:26','regStartTime':'2013-09-27 02:37:26','regEndTime':'2013-09-27 02:37:26','busType':'油罐车','comname':'顺丰快递','manufacturer':'','factoryType':'','regCode':''},{'carid':'11','busLicPlate':'浙F1342','driver1':'null','phone1':'null','regtime':'2013-09-27 02:37:18','regStartTime':'2013-09-27 02:37:18','regEndTime':'2013-09-27 02:37:18','busType':'油罐车','comname':'顺丰快递','manufacturer':'放放风','factoryType':'11','regCode':''},{'carid':'10','busLicPlate':'沪B8969','driver1':'null','phone1':'null','regtime':'2013-09-26 01:45:23','regStartTime':'2013-09-26 01:45:23','regEndTime':'2013-09-26 01:45:23','busType':'搅拌车','comname':'顺丰快递','manufacturer':'','factoryType':'11111','regCode':''},{'carid':'9','busLicPlate':'浙A1562','driver1':'null','phone1':'null','regtime':'2013-09-25 10:45:10','regStartTime':'2013-09-25 10:45:10','regEndTime':'2013-09-25 10:45:10','busType':'搅拌车','comname':'null','manufacturer':'11','factoryType':'11','regCode':''},{'carid':'8','busLicPlate':'浙F1342','driver1':'null','phone1':'null','regtime':'2013-09-25 10:44:48','regStartTime':'2013-09-25 10:44:48','regEndTime':'2013-09-25 10:44:48','busType':'搅拌车','comname':'null','manufacturer':'11111','factoryType':'11','regCode':''},{'carid':'7','busLicPlate':'浙F1342','driver1':'null','phone1':'null','regtime':'2013-09-25 10:22:13','regStartTime':'2013-09-25 10:22:13','regEndTime':'2013-09-25 10:22:13','busType':'油罐车','comname':'null','manufacturer':'11111','factoryType':'1','regCode':''},{'carid':'6','busLicPlate':'浙A1658','driver1':'null','phone1':'null','regtime':'2013-09-25 08:45:22','regStartTime':'2013-09-25 08:45:22','regEndTime':'2013-09-25 08:45:22','busType':'货物运输车','comname':'null','manufacturer':'0000','factoryType':'0000','regCode':''},{'carid':'5','busLicPlate':'浙G1598','driver1':'null','phone1':'null','regtime':'2013-09-24 05:45:07','regStartTime':'2013-09-24 05:45:07','regEndTime':'2013-09-24 05:45:07','busType':'搅拌车','comname':'null','manufacturer':'','factoryType':'','regCode':''}],'size':'15'}
+2014-10-25 23:16:33  [ http-8080-6:492904 ] - [ INFO ] [com.web.action.base.BaseAction] do driver info...<param>driverid=303
+2014-10-25 23:16:33  [ http-8080-6:492904 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@8dc1ef]
+2014-10-25 23:16:33  [ http-8080-6:492904 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 AND d.id = ? 
+2014-10-25 23:16:33  [ http-8080-6:492905 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 303(Integer)
+2014-10-25 23:16:33  [ http-8080-6:492908 ] - [ INFO ] [com.web.action.base.BaseAction] end driver drilist...<return Data type: json;Data:>{'id':'303','dwid':'顺丰快递','typeid':'1','phone':'123456','name':'李兴','address':'','identitycard':'9211011','sex':'男','cartype':'B1','validtime':'2013-11-08','certificationtime':'2013-11-08','age':'27','licenseno':'wqw4665w54'}
+2014-10-25 23:17:22  [ http-8080-6:541556 ] - [ INFO ] [com.web.action.base.BaseAction] do rule list page...
+2014-10-25 23:17:22  [ http-8080-6:541557 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9fa635]
+2014-10-25 23:17:22  [ http-8080-6:541557 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_rule_info where state = 1 order by rule_insert_time desc 
+2014-10-25 23:17:22  [ http-8080-6:541557 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:22  [ http-8080-6:541559 ] - [ INFO ] [com.web.action.base.BaseAction] end rule list page... <return Data type: page;Data:> rulelist.jsp <Data:>7
+2014-10-25 23:17:22  [ http-8080-6:542025 ] - [ INFO ] [com.web.action.base.BaseAction] do rule info...<param>ruleid=0
+2014-10-25 23:17:22  [ http-8080-6:542027 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@138e57a]
+2014-10-25 23:17:22  [ http-8080-6:542027 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 and id = ? 
+2014-10-25 23:17:22  [ http-8080-6:542028 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2014-10-25 23:17:22  [ http-8080-3:542052 ] - [ INFO ] [com.web.action.base.BaseAction] do rule ruleList...<param>currentpage=1
+2014-10-25 23:17:22  [ http-8080-3:542052 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1bacb12]
+2014-10-25 23:17:22  [ http-8080-3:542052 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_rule_info where state = 1 order by rule_insert_time desc 
+2014-10-25 23:17:22  [ http-8080-3:542053 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:22  [ http-8080-3:542211 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@c88e61]
+2014-10-25 23:17:22  [ http-8080-3:542211 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select id,rule_type,rule_title,rule_insert_time,rule_content,operid,opertime,state,remark,rule_url from tp_rule_info where state = 1 order by rule_insert_time desc limit 0,15 
+2014-10-25 23:17:22  [ http-8080-3:542212 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:22  [ http-8080-3:542245 ] - [ INFO ] [com.web.action.base.BaseAction] end rule ruleList...<return Data type: json;Data:>{'count':'7','rules':[{'title':'下列交通违法行为一次记2分：','id':'10027'},{'title':'下述非现场处罚交通违法记3分','id':'10026'},{'title':'下述非现场处罚交通违法记6分','id':'10025'},{'title':'机动车驾驶人有下列违法行为之一，一次记12分','id':'10024'},{'title':'行驶途中拨打手机，记2分','id':'10021'},{'title':'闯红灯，记6分。罚100元。','id':'10015'},{'title':'酒驾，扣12分。根据驾驶车辆和是否出事故等情况','id':'10016'}],'size':'7'}
+2014-10-25 23:17:23  [ http-8080-3:542325 ] - [ INFO ] [com.web.action.base.BaseAction] do rule info...<param>ruleid=10027
+2014-10-25 23:17:23  [ http-8080-3:542326 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ada224]
+2014-10-25 23:17:23  [ http-8080-3:542326 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 and id = ? 
+2014-10-25 23:17:23  [ http-8080-3:542327 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 10027(Integer)
+2014-10-25 23:17:23  [ http-8080-3:542333 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'ruleType':'0','id':'10027','ruleTitle':'下列交通违法行为一次记2分：','ruleInsertTime':'2013-09-30 03:03:34','ruleContent':'（一）驾驶机动车行经交叉路口不按规定行车或者停车的；
+
+（二）驾驶机动车有拨打、接听手持电话等妨碍安全驾驶的行为的；
+
+（三）驾驶二轮摩托车，不戴安全头盔的；
+
+（四）驾驶机动车在高速公路或者城市快速路上行驶时，驾驶人未按规定系安全带的；
+
+（五）驾驶机动车遇前方机动车停车排队或者缓慢行驶时，借道超车或者占用对面车道、穿插等候车辆的；
+
+（六）不按照规定为校车配备安全设备，或者不按照规定对校车进行安全维护的；
+
+（七）驾驶校车运载学生，不按照规定放置校车标牌、开启校车标志灯，或者不按照经审核确定的线路行驶的；
+
+（八）校车上下学生，不按照规定在校车停靠站点停靠的；
+
+（九）校车未运载学生上道路行驶，使用校车标牌、校车标志灯和停车指示标志的；
+
+（十）驾驶校车上道路行驶前，未对校车车况是否符合安全技术要求进行检查，或者驾驶存在安全隐患的校车上道路行驶的；
+
+（十一）在校车载有学生时给车辆加油，或者在校车发动机引擎熄灭前离开驾驶座位的'}
+2014-10-25 23:17:33  [ http-8080-6:553155 ] - [ INFO ] [com.web.action.base.BaseAction] do branch list page...
+2014-10-25 23:17:33  [ http-8080-6:553155 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4e4be3]
+2014-10-25 23:17:33  [ http-8080-6:553155 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_basic_branch where state = 1 order by id desc 
+2014-10-25 23:17:33  [ http-8080-6:553156 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:33  [ http-8080-6:553157 ] - [ INFO ] [com.web.action.base.BaseAction] end branch list page... <return Data type: page;Data:> branchlist.jsp <Data:>7
+2014-10-25 23:17:34  [ http-8080-6:553992 ] - [ INFO ] [com.web.action.base.BaseAction] do Branch detailList...<param>currentpage=1
+2014-10-25 23:17:34  [ http-8080-6:553993 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16fe335]
+2014-10-25 23:17:34  [ http-8080-6:553993 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_basic_branch where state = 1 order by id desc 
+2014-10-25 23:17:34  [ http-8080-6:553993 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:34  [ http-8080-6:553995 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1527e25]
+2014-10-25 23:17:34  [ http-8080-6:553995 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,15 
+2014-10-25 23:17:34  [ http-8080-6:553995 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:34  [ http-8080-6:554002 ] - [ INFO ] [com.web.action.base.BaseAction] end Branch detailList...<return Data type: json;Data:>{'count':'7','branchlists':[{'id':'13','branchName':'文辉大桥','branchAddress':'浙江省杭州市下城区文辉大桥','branchPhone':'0571-88188828','lng':'null','lat':'null'},{'id':'12','branchName':'事故多发地拱墅桥','branchAddress':'杭州拱墅区古墩路与三墩路交叉口','branchPhone':'0571-88188828','lng':'null','lat':'null'},{'id':'11','branchName':'杭州市莫干山路处理点','branchAddress':'杭州市莫干山路与天目山路交叉口','branchPhone':'0571-88188828','lng':'null','lat':'null'},{'id':'5','branchName':'两岸咖啡（文二店）','branchAddress':'杭州西湖区两岸咖啡（文二店）','branchPhone':'0571-88128845','lng':'null','lat':'null'},{'id':'7','branchName':'杭州大厦','branchAddress':'杭州市杭州大厦','branchPhone':'0571-88128845','lng':'null','lat':'null'},{'id':'4','branchName':'市民中心','branchAddress':'杭州上城区','branchPhone':'0571-88178823','lng':'null','lat':'null'},{'id':'3','branchName':'杭州绿健科技有限公司','branchAddress':'杭州市上城区市民中心','branchPhone':'0571-88188828','lng':'null','lat':'null'}],'size':'7'}
+2014-10-25 23:17:36  [ http-8080-6:555802 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal list page...
+2014-10-25 23:17:36  [ http-8080-6:555802 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@151709e]
+2014-10-25 23:17:36  [ http-8080-6:555802 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_rule_illegal where state = 1 order by illegal_insert_time desc 
+2014-10-25 23:17:36  [ http-8080-6:555803 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:36  [ http-8080-6:555804 ] - [ INFO ] [com.web.action.base.BaseAction] end ruleIllegal list page... <return Data type: page;Data:> ruleIllegallist.jsp <Data:>9
+2014-10-25 23:17:36  [ http-8080-3:556238 ] - [ INFO ] [com.web.action.base.BaseAction] do rule ruleList...<param>currentpage=1
+2014-10-25 23:17:36  [ http-8080-3:556239 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e14ed3]
+2014-10-25 23:17:36  [ http-8080-3:556240 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select count(id) from tp_rule_illegal where state = 1 order by illegal_insert_time desc 
+2014-10-25 23:17:36  [ http-8080-3:556240 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:36  [ http-8080-3:556243 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@37f72b]
+2014-10-25 23:17:36  [ http-8080-3:556243 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,15 
+2014-10-25 23:17:36  [ http-8080-3:556244 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:17:36  [ http-8080-3:556258 ] - [ INFO ] [com.web.action.base.BaseAction] end rule ruleList...<return Data type: json;Data:>{'count':'9','ruleIllegals':[{'id':'12','illegalTitle':'公共场合抽烟','illegalContent':'公共场合抽烟是一种道德的行为','illegalInsertTime':'2013-09-12 05:06:29'},{'id':'8','illegalTitle':'驾驶公路客运车辆载人超过核定人数20%以上','illegalContent':'大的地方的所发生的水水水水','illegalInsertTime':'2013-09-04 04:36:46'},{'id':'7','illegalTitle':'驾驶营运客车在高速公路车道内停车水水水水','illegalContent':'驾驶营运客车在高速公路车道内停车','illegalInsertTime':'2013-07-17 01:36:50'},{'id':'6','illegalTitle':'机动车通过无交通信号控制路口未减速让行','illegalContent':'机动车通过无交通信号控制路口未减速让行','illegalInsertTime':'2013-07-17 01:36:40'},{'id':'5','illegalTitle':'违反禁令标志、警告标志、禁止禁线、警告标线指示','illegalContent':'违反禁令标志、警告标志、禁止禁线、警告标线指示','illegalInsertTime':'2013-07-17 01:36:28'},{'id':'4','illegalTitle':'没有划分中心线和机非分道的道路上不按规定行驶','illegalContent':'没有划分中心线和机非分道的道路上不按规定行驶','illegalInsertTime':'2013-07-17 01:36:13'},{'id':'3','illegalTitle':'逆向行驶','illegalContent':'逆向行驶是一种违反交通法则的事情','illegalInsertTime':'2013-07-17 01:36:01'},{'id':'2','illegalTitle':'用国家管制的精神药品或麻醉药品后驾驶机动车','illegalContent':'用国家管制的精神药品或麻醉药品后驾驶机动车','illegalInsertTime':'2013-07-17 01:35:52'},{'id':'1','illegalTitle':'驾驶安全设施不全的车辆上道路行驶','illegalContent':'驾驶安全设施不全的车辆上道路行驶','illegalInsertTime':'2013-07-17 01:35:19'}],'size':'9'}
+2014-10-25 23:17:36  [ http-8080-6:556258 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=0
+2014-10-25 23:17:36  [ http-8080-6:556259 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6f9a7e]
+2014-10-25 23:17:36  [ http-8080-6:556259 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:36  [ http-8080-6:556260 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 0(Integer)
+2014-10-25 23:17:37  [ http-8080-3:556342 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=12
+2014-10-25 23:17:37  [ http-8080-3:556343 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@e000a2]
+2014-10-25 23:17:37  [ http-8080-3:556343 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:37  [ http-8080-3:556343 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 12(Integer)
+2014-10-25 23:17:37  [ http-8080-3:556345 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'id':'12','illegalTitle':'公共场合抽烟','illegalContent':'公共场合抽烟是一种道德的行为','illegalInsertTime':'2013-09-12 05:06:29'}
+2014-10-25 23:17:40  [ http-8080-3:560070 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=12
+2014-10-25 23:17:40  [ http-8080-3:560071 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@566d9b]
+2014-10-25 23:17:40  [ http-8080-3:560071 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:40  [ http-8080-3:560072 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 12(Integer)
+2014-10-25 23:17:40  [ http-8080-3:560074 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'id':'12','illegalTitle':'公共场合抽烟','illegalContent':'公共场合抽烟是一种道德的行为','illegalInsertTime':'2013-09-12 05:06:29'}
+2014-10-25 23:17:43  [ http-8080-3:562356 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=8
+2014-10-25 23:17:43  [ http-8080-3:562357 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1dedd1e]
+2014-10-25 23:17:43  [ http-8080-3:562357 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:43  [ http-8080-3:562357 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 8(Integer)
+2014-10-25 23:17:43  [ http-8080-3:562359 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'id':'8','illegalTitle':'驾驶公路客运车辆载人超过核定人数20%以上','illegalContent':'大的地方的所发生的水水水水','illegalInsertTime':'2013-09-04 04:36:46'}
+2014-10-25 23:17:44  [ http-8080-3:564013 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=7
+2014-10-25 23:17:44  [ http-8080-3:564014 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@37ced]
+2014-10-25 23:17:44  [ http-8080-3:564014 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:44  [ http-8080-3:564014 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 7(Integer)
+2014-10-25 23:17:44  [ http-8080-3:564016 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'id':'7','illegalTitle':'驾驶营运客车在高速公路车道内停车水水水水','illegalContent':'驾驶营运客车在高速公路车道内停车','illegalInsertTime':'2013-07-17 01:36:50'}
+2014-10-25 23:17:47  [ http-8080-3:566305 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=6
+2014-10-25 23:17:47  [ http-8080-3:566305 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@126a89c]
+2014-10-25 23:17:47  [ http-8080-3:566305 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:47  [ http-8080-3:566306 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 6(Integer)
+2014-10-25 23:17:47  [ http-8080-3:566308 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'id':'6','illegalTitle':'机动车通过无交通信号控制路口未减速让行','illegalContent':'机动车通过无交通信号控制路口未减速让行','illegalInsertTime':'2013-07-17 01:36:40'}
+2014-10-25 23:17:48  [ http-8080-3:567580 ] - [ INFO ] [com.web.action.base.BaseAction] do ruleIllegal info...<param>ruleIllegalid=5
+2014-10-25 23:17:48  [ http-8080-3:567582 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1fef605]
+2014-10-25 23:17:48  [ http-8080-3:567582 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 and id = ? 
+2014-10-25 23:17:48  [ http-8080-3:567582 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 5(Integer)
+2014-10-25 23:17:48  [ http-8080-3:567591 ] - [ INFO ] [com.web.action.base.BaseAction] end rule info...<return Data type: json;Data:>{'id':'5','illegalTitle':'违反禁令标志、警告标志、禁止禁线、警告标线指示','illegalContent':'违反禁令标志、警告标志、禁止禁线、警告标线指示','illegalInsertTime':'2013-07-17 01:36:28'}
+2014-10-25 23:18:01  [ http-8080-3:581280 ] - [ INFO ] [com.web.action.base.BaseAction] do index view...
+2014-10-25 23:18:02  [ http-8080-3:581281 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b580dc]
+2014-10-25 23:18:02  [ http-8080-3:581281 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_info where state = 1 order by id desc 
+2014-10-25 23:18:02  [ http-8080-3:581281 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581285 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a9805a]
+2014-10-25 23:18:02  [ http-8080-3:581285 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_driver d left join tp_basic_company c2 on (d.dwid = c2.comid and c2.state = 1) where d.state = 1 order by d.id desc limit 0,20 
+2014-10-25 23:18:02  [ http-8080-3:581285 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581295 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@970cbc]
+2014-10-25 23:18:02  [ http-8080-3:581295 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_rule_illegal where state = 1 order by illegal_insert_time desc limit 0,20 
+2014-10-25 23:18:02  [ http-8080-3:581296 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581300 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2bbd7b]
+2014-10-25 23:18:02  [ http-8080-3:581300 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by video_release_time desc limit 0,1 
+2014-10-25 23:18:02  [ http-8080-3:581300 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581302 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@51460c]
+2014-10-25 23:18:02  [ http-8080-3:581302 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_edu_video where state = 1 order by id desc 
+2014-10-25 23:18:02  [ http-8080-3:581302 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581314 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@14dca04]
+2014-10-25 23:18:02  [ http-8080-3:581314 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_branch where state = 1 order by opertime desc limit 0,20 
+2014-10-25 23:18:02  [ http-8080-3:581315 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581318 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@a92471]
+2014-10-25 23:18:02  [ http-8080-3:581318 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type=2 order by notice_time desc limit 0,3 
+2014-10-25 23:18:02  [ http-8080-3:581318 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581320 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@bac56c]
+2014-10-25 23:18:02  [ http-8080-3:581321 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_traffic_notice where state = 1 and notice_type = 1 order by notice_time desc limit 0,3 
+2014-10-25 23:18:02  [ http-8080-3:581321 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581322 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@13adc7f]
+2014-10-25 23:18:02  [ http-8080-3:581322 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select q.qid,q.question,q.opertime,a.aid,a.answer,u.username from tp_interchange_question q left join tp_interchange_answer a on q.qid = a.qid left join tp_sys_user u on u.userno = q.operid where q.state=1 and a.state=1 order by q.opertime desc limit 0,4 
+2014-10-25 23:18:02  [ http-8080-3:581322 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581325 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1ba19d2]
+2014-10-25 23:18:02  [ http-8080-3:581325 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_micro_micromessage t where t.state=1 order by t.createtime desc limit 0,20 
+2014-10-25 23:18:02  [ http-8080-3:581325 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581327 ] - [ DEBUG ] [java.sql.Connection] ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@80776]
+2014-10-25 23:18:02  [ http-8080-3:581327 ] - [ DEBUG ] [java.sql.Connection] ==>  Preparing: select * from tp_basic_car c1 left join tp_basic_company c2 on (c1.comid = c2.comid and c2.state = 1) where c1.state = 1 order by c1.regtime desc limit 0,20 
+2014-10-25 23:18:02  [ http-8080-3:581327 ] - [ DEBUG ] [java.sql.PreparedStatement] ==> Parameters: 
+2014-10-25 23:18:02  [ http-8080-3:581346 ] - [ INFO ] [com.web.action.base.BaseAction] end index view...

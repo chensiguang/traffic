@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.RuleDao" >
+  <resultMap id="BaseResultMap" type="com.web.pojo.Rule" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="rule_type" property="ruleType" jdbcType="INTEGER" />
+    <result column="rule_title" property="ruleTitle" jdbcType="VARCHAR" />
+    <result column="rule_insert_time" property="ruleInsertTime" jdbcType="TIMESTAMP" />
+    <result column="rule_content" property="ruleContent" jdbcType="VARCHAR" />
+    <result column="operid" property="operid" jdbcType="INTEGER" />
+    <result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="rule_url" property="ruleUrl" jdbcType="VARCHAR" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+     <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+  <!-- 前台显示 -->
+  <select id="selectAllList" resultMap="BaseResultMap" >
+    select 
+    id,rule_type,rule_title,rule_insert_time,rule_content,operid,opertime,state,remark,rule_url 
+    from tp_rule_info 
+    where state = 1 order by rule_insert_time desc limit ${param1},${param2}
+  </select>
+  
+  <select id="selectCount" resultType="java.lang.Integer" >
+    select 
+    count(id) 
+    from tp_rule_info 
+    where state = 1 order by rule_insert_time desc
+  </select>
+  
+  <select id="selectRuleInfoById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select 
+     *  
+    from tp_rule_info 
+    where state = 1 and id = #{id,jdbcType=INTEGER}
+  </select>
+  
+  <!-- 后台管理 -->
+  
+   <select id="queryAll" resultMap="BaseResultMap">
+    select *  
+    from tp_rule_info where state = 1 order by id desc
+  </select>
+  
+   <insert id="insertRule" parameterType="com.web.pojo.Rule">
+       insert into tp_rule_info(id,rule_type,rule_title,rule_insert_time,rule_content,operid,remark,rule_url,updatetime,opertime)
+       values
+       (
+       		#{id,jdbcType=INTEGER},
+       		#{ruleType,jdbcType=INTEGER},
+       		#{ruleTitle,jdbcType=VARCHAR},
+       		#{ruleInsertTime,jdbcType=TIMESTAMP},
+       		#{ruleContent,jdbcType=VARCHAR},
+       		#{operid,jdbcType=VARCHAR},
+       		#{remark,jdbcType=VARCHAR},
+       		#{ruleUrl,jdbcType=VARCHAR},
+       		#{updatetime,jdbcType=TIMESTAMP},
+       		#{opertime,jdbcType=TIMESTAMP}
+       )
+       
+   </insert>
+   
+   <select id="queryDataById" resultMap="BaseResultMap" parameterType="com.web.pojo.Rule" >
+    select *
+    from tp_rule_info 
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+   <select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Rule">
+		select r.*, u.username,u.userno from tp_rule_info r left join tp_sys_user u
+        on r.operid = u.userno where r.id = #{id,jdbcType=INTEGER} 
+	</select>
+  
+   <update id="updateRule" parameterType="com.web.pojo.Rule">
+       update tp_rule_info
+       set
+				rule_type = #{ruleType,jdbcType=INTEGER},
+				rule_title = #{ruleTitle,jdbcType=VARCHAR},
+				rule_content = #{ruleContent,jdbcType=VARCHAR},
+				operid = #{operid,jdbcType=VARCHAR},
+       		    remark = #{remark,jdbcType=VARCHAR},
+       		    rule_url = #{ruleUrl,jdbcType=VARCHAR},
+       		    updatetime = #{updatetime,jdbcType=TIMESTAMP}
+       where id = #{id}
+   </update>
+  
+   <update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_rule_info
+		set state = 0
+		where id = #{id,jdbcType=INTEGER}
+  </update>
+   
+      		 <!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.Rule">
+  		select 
+  			count(*) 
+  		from tp_rule_info 
+  		where state = 1
+  		<if test="id != null">
+  		and id != #{id,jdbcType=INTEGER} 
+  		</if>
+  		and rule_title = #{ruleTitle,jdbcType=VARCHAR}
+  	</select>
+   
+  <!-- 后台管理分页 -->
+   <select id="getCountByAll" resultType="java.lang.Integer" parameterType="java.util.HashMap">
+    select 
+      count(*) 
+    from 
+    tp_rule_info 
+    where state = 1 
+    <if test="searchtitle != null">
+		 and rule_title like CONCAT('%',#{searchtitle},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		  and rule_insert_time >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+	       and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= rule_insert_time
+		</if>
+  </select>
+  
+  <select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap" >
+    select *
+    from tp_rule_info where state = 1 
+     <if test="searchtitle != null">
+		 and rule_title like CONCAT('%',#{searchtitle},'%' )
+	 </if>
+	 <if test="searchstarttime != null">
+		  and rule_insert_time >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+	 </if>
+	 <if test="searchendtime != null">
+	      and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= rule_insert_time
+	 </if>
+    order by id desc limit #{curnum,jdbcType=INTEGER} ,#{pagesize,jdbcType=INTEGER}
+  </select>
+</mapper>

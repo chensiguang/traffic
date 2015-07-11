@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/java/!svn/ver/16930/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib
+END
+slf4j-log4j12-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/slf4j-log4j12-1.6.2.jar
+END
+spring-beans-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 235
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-beans-3.1.1.RELEASE.jar
+END
+gson-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/java/!svn/ver/16930/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/gson-1.7.1.jar
+END
+spring-tx-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-tx-3.1.1.RELEASE.jar
+END
+javassist-3.11.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/javassist-3.11.0.GA.jar
+END
+commons-lang3-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-lang3-3.1.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/dom4j-1.6.1.jar
+END
+cglib-2.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/cglib-2.2.2.jar
+END
+httpclient-4.2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/httpclient-4.2.5.jar
+END
+commons-codec.jar
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/java/!svn/ver/16141/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-codec.jar
+END
+signpost-core-1.2.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/java/!svn/ver/16141/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/signpost-core-1.2.1.1.jar
+END
+jackson-databind-2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/jackson-databind-2.2.0.jar
+END
+httpcore-4.2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/httpcore-4.2.4.jar
+END
+commons-fileupload-1.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-fileupload-1.2.2.jar
+END
+standard-1.1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/java/!svn/ver/16630/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/standard-1.1.2.jar
+END
+ognl-3.0.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/ognl-3.0.5.jar
+END
+xwork-core-2.3.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/xwork-core-2.3.4.1.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/log4j-1.2.16.jar
+END
+mybatis-spring-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/mybatis-spring-1.1.1.jar
+END
+aopalliance-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/aopalliance-1.0.jar
+END
+mysql-connector-java-5.1.22-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/mysql-connector-java-5.1.22-bin.jar
+END
+spring-core-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-core-3.1.1.RELEASE.jar
+END
+mybatis-3.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/mybatis-3.1.1.jar
+END
+c3p0-0.9.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/c3p0-0.9.0.jar
+END
+jstl-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/java/!svn/ver/16630/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/jstl-1.2.jar
+END
+jackson-core-2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/jackson-core-2.2.0.jar
+END
+freemarker-2.3.19.jar
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/freemarker-2.3.19.jar
+END
+commons-io-2.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-io-2.0.1.jar
+END
+spring-expression-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-expression-3.1.1.RELEASE.jar
+END
+struts2-core-2.3.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/struts2-core-2.3.4.1.jar
+END
+spring-jdbc-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-jdbc-3.1.1.RELEASE.jar
+END
+jackson-annotations-2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/jackson-annotations-2.2.0.jar
+END
+asm-3.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/asm-3.3.1.jar
+END
+struts2-spring-plugin-2.3.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 238
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/struts2-spring-plugin-2.3.4.1.jar
+END
+ezmorph-1.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/ezmorph-1.0.6.jar
+END
+yao-util2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/yao-util2.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-collections-3.1.jar
+END
+json-lib-2.3-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/json-lib-2.3-jdk15.jar
+END
+struts2-json-plugin-2.3.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/struts2-json-plugin-2.3.4.1.jar
+END
+slf4j-api-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/slf4j-api-1.6.2.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-lang-2.4.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-logging-1.1.1.jar
+END
+yao-config.jar
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/java/!svn/ver/15971/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/yao-config.jar
+END
+spring-aop-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar
+END
+spring-asm-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-asm-3.1.1.RELEASE.jar
+END
+org.springframework.web-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 246
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/org.springframework.web-3.1.1.RELEASE.jar
+END
+commons-beanutils-1.8.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/commons-beanutils-1.8.0.jar
+END
+spring-context-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/java/!svn/ver/13156/%E6%9C%BA%E5%8A%A8%E8%BD%A6%E7%BD%91%E4%B8%8A%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E6%95%99%E8%82%B2%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0/TrafficPolice/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar
+END

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.RoleDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Role">
+		<id column="roleno" property="roleno" jdbcType="INTEGER" />
+		<result column="rolename" property="rolename" jdbcType="VARCHAR" />
+		<result column="dwtype" property="dwtype" jdbcType="INTEGER" />
+		<result column="description" property="description" jdbcType="VARCHAR" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="regid" property="regid" jdbcType="INTEGER" />
+		<result column="regtime" property="regtime" jdbcType="TIMESTAMP" />
+	<association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="loginname" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+
+	
+	<!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		select *
+		from tp_sys_roles where state = 1 
+		order by roleno desc
+	</select>
+	
+	<select id="queryAllByDwType" resultMap="BaseResultMap">
+		select *
+		from tp_sys_roles where state = 1 
+		   and dwtype = #{dwtype,jdbcType=INTEGER} 
+		order by roleno desc
+	</select>
+	
+	<select id="selectDwtypeByRoleno" resultMap="BaseResultMap">
+		select *
+		from tp_sys_roles where state = 1 
+		    and roleno = #{roleno,jdbcType=INTEGER} 
+	</select>
+
+	<insert id="insertRole" parameterType="com.web.pojo.Role">
+		insert into
+		tp_sys_roles(roleno,rolename,dwtype,description,operid,opertime,remark,regid,regtime)
+		values
+		(
+		#{roleno,jdbcType=INTEGER},
+		#{rolename,jdbcType=VARCHAR},
+		#{dwtype,jdbcType=INTEGER},
+		#{description,jdbcType=VARCHAR},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{regid,jdbcType=INTEGER},
+		#{regtime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Role">
+		select *
+		from tp_sys_roles
+		where roleno = #{id,jdbcType=INTEGER}
+	</select>
+	
+	  <select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Role">
+		select i.*, u.loginname,u.userno from tp_sys_roles i left join tp_sys_user u
+        on i.operid = u.userno where i.roleno = #{id,jdbcType=INTEGER} 
+	</select>
+	
+	<update id="updateRole" parameterType="com.web.pojo.Role">
+		update tp_sys_roles
+		set
+		rolename = #{rolename,jdbcType=VARCHAR},
+		dwtype = #{dwtype,jdbcType=VARCHAR},
+		description = #{description,jdbcType=VARCHAR},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		remark = #{remark,jdbcType=VARCHAR}
+		where roleno = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_sys_roles
+		set state = 0
+		where roleno = #{id,jdbcType=INTEGER}
+	</update>
+
+
+		 <!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.Role">
+  		select 
+  			count(*) 
+  		from tp_sys_roles 
+  		where state = 1
+  		<if test="id != null">
+  		and roleno != #{id,jdbcType=INTEGER} 
+  		</if>
+  		and rolename = #{rolename,jdbcType=VARCHAR}
+  	</select>
+	
+	<!-- 后台管理分页 -->
+
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_sys_roles where state = 1 
+		<if test="searchrolename != null">
+		    and rolename like CONCAT('%',#{searchrolename},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		    and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		     and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select *
+		from tp_sys_roles where state = 1 
+		
+		<if test="searchrolename != null">
+		    and rolename like CONCAT('%',#{searchrolename},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		    and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		     and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+		order by roleno desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+</mapper>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.dao.PermissionDao">
+	<resultMap id="BaseResultMap" type="com.web.pojo.Permission">
+		<id column="perno" property="perno" jdbcType="INTEGER" />
+		<result column="pername" property="pername" jdbcType="VARCHAR" />
+		<result column="functions" property="functions" jdbcType="VARCHAR" />
+		<result column="parentid" property="parentid" jdbcType="INTEGER" />
+		<result column="operid" property="operid" jdbcType="INTEGER" />
+		<result column="opertime" property="opertime" jdbcType="TIMESTAMP" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+		<result column="regid" property="regid" jdbcType="INTEGER" />
+		<result column="regtime" property="regtime" jdbcType="TIMESTAMP" />
+		<association property="roleper" javaType="com.web.pojo.RolePermission">
+		    
+		</association>
+	 <association property="admin" javaType="com.web.pojo.Admin">
+        <id property="userno" jdbcType="INTEGER" />
+       <result property="username" jdbcType="VARCHAR" />
+    </association>
+	</resultMap>
+	
+  		<!-- 查找操作人 -->
+	<select id="selectUsernameById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Permission">
+		select i.*, u.username,u.userno from tp_sys_permission i left join tp_sys_user u
+        on i.operid = u.userno where i.perno = #{id,jdbcType=INTEGER} 
+	</select>
+	
+	<!-- 后台管理 -->
+
+	<select id="queryAll" resultMap="BaseResultMap">
+		select *
+		from tp_sys_permission where state = 1 
+		order by perno 
+	</select>
+
+	<insert id="insertPermission" parameterType="com.web.pojo.Permission">
+		insert into
+		tp_sys_permission(perno,pername,functions,parentid,operid,opertime,remark,regtime)
+		values
+		(
+		#{perno,jdbcType=INTEGER},
+		#{pername,jdbcType=VARCHAR},
+		#{functions,jdbcType=VARCHAR},
+		#{parentid,jdbcType=INTEGER},
+		#{operid,jdbcType=INTEGER},
+		#{opertime,jdbcType=TIMESTAMP},
+		#{remark,jdbcType=VARCHAR},
+		#{regtime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<select id="queryDataById" resultMap="BaseResultMap"
+		parameterType="com.web.pojo.Permission">
+		select *
+		from tp_sys_permission
+		where perno = #{id,jdbcType=INTEGER}
+	</select>
+	
+	<select id="findPermissionByPerno" resultMap="BaseResultMap" parameterType="long">
+		select distinct p.functions
+		from tp_sys_permission p
+		left join tp_sys_roles_permission rp
+		on p.perno = rp.perno
+		where p.state = 1 and p.perno = #{perno,jdbcType=INTEGER}
+	</select>
+	
+	
+	
+	<update id="updatePermission" parameterType="com.web.pojo.Permission">
+		update tp_sys_permission
+		set
+		pername = #{pername,jdbcType=VARCHAR},
+		functions = #{functions,jdbcType=VARCHAR},
+		parentid = #{parentid,jdbcType=INTEGER},
+		opertime = #{opertime,jdbcType=TIMESTAMP},
+		remark = #{remark,jdbcType=VARCHAR}
+		where perno = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="deleteDataById" parameterType="java.lang.Integer">
+		update tp_sys_permission
+		set state = 0
+		where perno = #{id,jdbcType=INTEGER}
+	</update>
+
+			 <!--查看新增或者修改是否重复 -->
+  	<select id="newOrUpdate" resultType="java.lang.Integer" parameterType="com.web.pojo.Role">
+  		select 
+  			count(*) 
+  		from tp_sys_permission 
+  		where state = 1
+  		<if test="id != null">
+  		and perid != #{id,jdbcType=INTEGER} 
+  		</if>
+  		and pername = #{pername,jdbcType=VARCHAR}
+  	</select>
+	
+
+	<!-- 后台管理分页 -->
+	<select id="getCountByAll" resultType="java.lang.Integer"
+		parameterType="java.util.HashMap">
+		select count(*) from tp_sys_permission where state = 1 
+		<if test="searchpermissionname != null">
+		    and pername like CONCAT('%',#{searchpermissionname},'%' )
+		</if>
+		<if test="searchstarttime != null">
+		    and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		     and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+	</select>
+
+	<select id="selectPage" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+		select *
+		from tp_sys_permission where state = 1 
+		<if test="searchpermissionname != null">
+		    and pername like CONCAT('%',#{searchpermissionname},'%')
+		</if>
+		<if test="searchstarttime != null">
+		    and regtime >= str_to_date(#{searchstarttime},'%Y-%m-%d')
+		</if>
+		<if test="searchendtime != null">
+		     and DATE_ADD(str_to_date(#{searchendtime},'%Y-%m-%d'),INTERVAL 1 day) >= regtime
+		</if>
+		order by perno desc limit
+		#{curnum,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+	</select>
+</mapper>
